@@ -1,0 +1,76 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=4
+Current Config=compile
+
+[Configurations]
+compile=Controller
+
+[Library]
+Controller=.\Controller\Controller.lib
+
+[$LibMap$]
+Controller=.
+Active_lib=
+
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+
+[SpecTracer]
+WindowVisible=0
+
+[HierarchyViewer]
+HierarchyInformation=simheatadc_tb|TB_ARCHITECTURE|0  
+ShowHide=ShowTopLevel
+Selected=
+
+[Groups]
+TestBench=1
+
+[Files]
+/Controller.vhd=-1
+/RTC CLOCK.vhd=-1
+/ATO.vhd=-1
+/Heat control.vhd=-1
+/Lighting control.vhd=-1
+/7Seganderror.vhd=-1
+/SimHeatADC.vhd=-1
+/SimPH.vhd=-1
+/SimSalinity.vhd=-1
+/HeatADCSIM.asdb=-1
+/HeatADCSIM.awc=-1
+TestBench/rtc_TB.vhd=-1
+TestBench/rtc_TB_runtest.do=-1
+TestBench/lighting_control_TB.vhd=-1
+TestBench/lighting_control_TB_runtest.do=-1
+TestBench/ato_TB.vhd=-1
+TestBench/ato_TB_runtest.do=-1
+TestBench/simheatadc_TB.vhd=-1
+TestBench/simheatadc_TB_runtest.do=-1
+
+[Files.Data]
+.\src\Controller.vhd=VHDL Source Code
+.\src\RTC CLOCK.vhd=VHDL Source Code
+.\src\ATO.vhd=VHDL Source Code
+.\src\Heat control.vhd=VHDL Source Code
+.\src\Lighting control.vhd=VHDL Source Code
+.\src\7Seganderror.vhd=VHDL Source Code
+.\src\SimHeatADC.vhd=VHDL Source Code
+.\src\SimPH.vhd=VHDL Source Code
+.\src\SimSalinity.vhd=VHDL Source Code
+.\src\HeatADCSIM.asdb=Accelerated Waveform File
+.\src\HeatADCSIM.awc=Accelerated Waveform Configuration
+.\src\TestBench\rtc_TB.vhd=VHDL Test Bench
+.\src\TestBench\rtc_TB_runtest.do=Macro
+.\src\TestBench\lighting_control_TB.vhd=VHDL Test Bench
+.\src\TestBench\lighting_control_TB_runtest.do=Macro
+.\src\TestBench\ato_TB.vhd=VHDL Test Bench
+.\src\TestBench\ato_TB_runtest.do=Macro
+.\src\TestBench\simheatadc_TB.vhd=VHDL Test Bench
+.\src\TestBench\simheatadc_TB_runtest.do=Macro
+

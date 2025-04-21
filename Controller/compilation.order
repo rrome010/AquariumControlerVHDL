@@ -1,0 +1,13 @@
+.\src\Controller.vhd
+.\src\RTC CLOCK.vhd
+.\src\ATO.vhd
+.\src\Heat control.vhd
+.\src\Lighting control.vhd
+.\src\7Seganderror.vhd
+.\src\SimHeatADC.vhd
+.\src\SimPH.vhd
+.\src\SimSalinity.vhd
+.\src\TestBench\rtc_TB.vhd
+.\src\TestBench\lighting_control_TB.vhd
+.\src\TestBench\ato_TB.vhd
+.\src\TestBench\simheatadc_TB.vhd

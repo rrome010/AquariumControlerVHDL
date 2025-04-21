@@ -1,0 +1,14 @@
+i<>.\src\RTC CLOCK.vhd
+i<>.\src\TestBench\rtc_TB.vhd
+i<>.\src\Lighting control.vhd
+i<>.\src\TestBench\lighting_control_TB.vhd
+i<>.\src\Heat control.vhd
+i<>.\src\ATO.vhd
+i<>.\src\TestBench\ato_TB.vhd
+i<>.\src\Controller.vhd
+i<>.\src\PH.vhd
+i<>.\src\Salinity.vhd
+i<>.\src\7Seg.vhd
+i<>.\src\HeatADCComs.vhd
+i<>.\src\SimHeatADC.vhd
+i<>.\src\TestBench\simheatadc_TB.vhd

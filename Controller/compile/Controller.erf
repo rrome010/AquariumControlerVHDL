@@ -1,0 +1,5 @@
+WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
+MESSAGE "File: C:/My_Designs/Aquarium_Controller/Controller/src/SimHeatADC.vhd" 
+MESSAGE "Compile Entity "SimHeatADC"" 
+MESSAGE "Compile Architecture "behavior" of Entity "SimHeatADC"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]" 
