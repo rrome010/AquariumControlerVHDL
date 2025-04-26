@@ -1,4 +1,4 @@
-97
+107
 ~E 1 "../src/ATO.vhd" 5 ATO
 ~A 1 "../src/ATO.vhd" 17 Behavioral
 ~E 1 "../src/TestBench/ato_TB.vhd" 5 ato_tb
@@ -27,4 +27,4 @@
 ~C 1 "../src/TestBench/ds18b20_sim_TB.vhd" 48 testbench_for_ds18b20_sim
 ~C 1 "../src/TestBench/lighting_control_TB.vhd" 129 testbench_for_lighting_control
 ~C 1 "../src/TestBench/rtc_TB.vhd" 102 testbench_for_rtc
-~C 1 "../src/TestBench/simheatadc_TB.vhd" 52 testbench_for_simheatadc
+~C 1 "../src/TestBench/simheatadc_TB.vhd" 49 testbench_for_simheatadc

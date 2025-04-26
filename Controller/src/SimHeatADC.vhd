@@ -5,7 +5,7 @@ use ieee.numeric_std.all;
 -- Not synthesizable: simulation-only DS18B20 interface
 entity SimHeatADC is
     port (
-        clk_us         : in  std_logic;
+        clk_1mhz         : in  std_logic;
         one_wire       : out std_logic;
         currentTempsim : out unsigned(11 downto 0)
     );
@@ -25,9 +25,9 @@ begin
     one_wire <= ow;
     currentTempsim <= temp_latched;	 --to 'save' incoming data
 
-    process(clk_us)
+    process(clk_1mhz)
     begin
-        if rising_edge(clk_us) then
+        if rising_edge(clk_1mhz) then
 
             case state is
 

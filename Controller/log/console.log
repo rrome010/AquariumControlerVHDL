@@ -1,4 +1,227 @@
 # ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration time 0.1 [s].
+acom -O3 -e 100 -work Controller -2002  "$dsn/src/Heat control.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Aquarium_Controller/Controller/src/Heat control.vhd
+# Compile Entity "Heat_control"
+# Compile Architecture "behavioral" of Entity "Heat_control"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+acom -O3 -e 100 -work Controller -2002  "$dsn/src/Heat control.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Aquarium_Controller/Controller/src/Heat control.vhd
+# Compile Entity "Heat_control"
+# Compile Architecture "behavioral" of Entity "Heat_control"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+acom -O3 -e 100 -work Controller -2002  "$dsn/src/Heat control.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Aquarium_Controller/Controller/src/Heat control.vhd
+# Compile Entity "Heat_control"
+# Compile Architecture "behavioral" of Entity "Heat_control"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work Controller -2002  "$dsn/src/Heat control.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Aquarium_Controller/Controller/src/Heat control.vhd
+# Compile Entity "Heat_control"
+# Compile Architecture "behavioral" of Entity "Heat_control"
+# Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]
+# Waveform file 'C:/My_Designs/Aquarium_Controller/Controller/src/HeatADCSIM.awc' connected to 'C:/My_Designs/Aquarium_Controller/Controller/src/HeatADCSIM.asdb'.
+acom -O3 -e 100 -work Controller -2002  $dsn/src/SimHeatADC.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Aquarium_Controller/Controller/src/SimHeatADC.vhd
+# Compile Entity "SimHeatADC"
+# Compile Architecture "behavior" of Entity "SimHeatADC"
+# Error: COMP96_0078: SimHeatADC.vhd : (28, 13): Unknown identifier "clk_us".
+# Error: COMP96_0348: SimHeatADC.vhd : (28, 13): Name on sensitivity list must denote a signal.
+# Error: COMP96_0078: SimHeatADC.vhd : (30, 24): Unknown identifier "clk_us".
+# Error: COMP96_0133: SimHeatADC.vhd : (30, 24): Cannot find object declaration.
+# Error: COMP96_0104: SimHeatADC.vhd : (30, 24): Undefined type of expression.
+# Error: COMP96_0152: SimHeatADC.vhd : (30, 24): Formal "s" of class signal must be associated with a signal.
+# Compile failure 6 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work Controller -2002  $dsn/src/SimHeatADC.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Aquarium_Controller/Controller/src/SimHeatADC.vhd
+# Compile Entity "SimHeatADC"
+# Compile Architecture "behavior" of Entity "SimHeatADC"
+# Error: COMP96_0078: SimHeatADC.vhd : (28, 13): Unknown identifier "clk_1mz".
+# Error: COMP96_0348: SimHeatADC.vhd : (28, 13): Name on sensitivity list must denote a signal.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work Controller -2002  $dsn/src/SimHeatADC.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Aquarium_Controller/Controller/src/SimHeatADC.vhd
+# Compile Entity "SimHeatADC"
+# Compile Architecture "behavior" of Entity "SimHeatADC"
+# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
+acom -O3 -e 100 -work Controller -2002  $dsn/src/TestBench/simheatadc_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Aquarium_Controller/Controller/src/TestBench/simheatadc_TB.vhd
+# Compile Entity "SimHeatADC_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "SimHeatADC_tb"
+# Warning: ELAB1_0026: TestBench/simheatadc_TB.vhd : (27, 0): There is no default binding for component "SimHeatADC". (Port "clk_us" is not on the entity).
+# Error: COMP96_0078: TestBench/simheatadc_TB.vhd : (29, 33): Unknown identifier "clk_1mhz".
+# Error: COMP96_0078: TestBench/simheatadc_TB.vhd : (38, 13): Unknown identifier "clk_1mhz".
+# Error: COMP96_0133: TestBench/simheatadc_TB.vhd : (38, 13): Cannot find object declaration.
+# Error: COMP96_0078: TestBench/simheatadc_TB.vhd : (40, 13): Unknown identifier "clk_1mhz".
+# Error: COMP96_0133: TestBench/simheatadc_TB.vhd : (40, 13): Cannot find object declaration.
+# Compile Configuration "TESTBENCH_FOR_SimHeatADC"
+# Error: ELAB1_0011: TestBench/simheatadc_TB.vhd : (54, 0): Port "clk_1mhz" is on entity "SimHeatADC" but not on the component declaration.
+# Error: ELAB1_0030: TestBench/simheatadc_TB.vhd : (54, 0): Port "clk_us" is on component "SimHeatADC" but not on the entity "SimHeatADC".
+# Error: COMP96_0203: TestBench/simheatadc_TB.vhd : (55, 13): Binding indication has neither a generic map aspect nor a port map aspect.
+# Error: ELAB1_0011: TestBench/simheatadc_TB.vhd : (55, 0): Port "clk_1mhz" is on entity "SimHeatADC" but not on the component declaration.
+# Error: ELAB1_0030: TestBench/simheatadc_TB.vhd : (55, 0): Port "clk_us" is on component "SimHeatADC" but not on the entity "SimHeatADC".
+# Compile failure 10 Errors 1 Warnings  Analysis time :  63.0 [ms]
+acom -O3 -e 100 -work Controller -2002  $dsn/src/TestBench/simheatadc_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Aquarium_Controller/Controller/src/TestBench/simheatadc_TB.vhd
+# Compile Entity "SimHeatADC_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "SimHeatADC_tb"
+# Warning: ELAB1_0026: TestBench/simheatadc_TB.vhd : (27, 0): There is no default binding for component "SimHeatADC". (Port "clk_us" is not on the entity).
+# Error: COMP96_0078: TestBench/simheatadc_TB.vhd : (29, 33): Unknown identifier "clk_1mhz".
+# Error: COMP96_0078: TestBench/simheatadc_TB.vhd : (38, 13): Unknown identifier "clk_1mhz".
+# Error: COMP96_0133: TestBench/simheatadc_TB.vhd : (38, 13): Cannot find object declaration.
+# Error: COMP96_0078: TestBench/simheatadc_TB.vhd : (40, 13): Unknown identifier "clk_1mhz".
+# Error: COMP96_0133: TestBench/simheatadc_TB.vhd : (40, 13): Cannot find object declaration.
+# Compile Configuration "TESTBENCH_FOR_SimHeatADC"
+# Error: ELAB1_0011: TestBench/simheatadc_TB.vhd : (54, 0): Port "clk_1mhz" is on entity "SimHeatADC" but not on the component declaration.
+# Error: ELAB1_0030: TestBench/simheatadc_TB.vhd : (54, 0): Port "clk_us" is on component "SimHeatADC" but not on the entity "SimHeatADC".
+# Error: COMP96_0203: TestBench/simheatadc_TB.vhd : (55, 13): Binding indication has neither a generic map aspect nor a port map aspect.
+# Error: ELAB1_0011: TestBench/simheatadc_TB.vhd : (55, 0): Port "clk_1mhz" is on entity "SimHeatADC" but not on the component declaration.
+# Error: ELAB1_0030: TestBench/simheatadc_TB.vhd : (55, 0): Port "clk_us" is on component "SimHeatADC" but not on the entity "SimHeatADC".
+# Compile failure 10 Errors 1 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work Controller -2002  $dsn/src/SimHeatADC.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Aquarium_Controller/Controller/src/SimHeatADC.vhd
+# Compile Entity "SimHeatADC"
+# Compile Architecture "behavior" of Entity "SimHeatADC"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work Controller -2002  $dsn/src/TestBench/simheatadc_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Aquarium_Controller/Controller/src/TestBench/simheatadc_TB.vhd
+# Compile Entity "SimHeatADC_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "SimHeatADC_tb"
+# Warning: ELAB1_0026: TestBench/simheatadc_TB.vhd : (27, 0): There is no default binding for component "SimHeatADC". (Port "clk_us" is not on the entity).
+# Error: COMP96_0078: TestBench/simheatadc_TB.vhd : (29, 33): Unknown identifier "clk_1mhz".
+# Error: COMP96_0078: TestBench/simheatadc_TB.vhd : (38, 13): Unknown identifier "clk_1mhz".
+# Error: COMP96_0133: TestBench/simheatadc_TB.vhd : (38, 13): Cannot find object declaration.
+# Error: COMP96_0078: TestBench/simheatadc_TB.vhd : (40, 13): Unknown identifier "clk_1mhz".
+# Error: COMP96_0133: TestBench/simheatadc_TB.vhd : (40, 13): Cannot find object declaration.
+# Compile Configuration "TESTBENCH_FOR_SimHeatADC"
+# Error: ELAB1_0011: TestBench/simheatadc_TB.vhd : (54, 0): Port "clk_1mhz" is on entity "SimHeatADC" but not on the component declaration.
+# Error: ELAB1_0030: TestBench/simheatadc_TB.vhd : (54, 0): Port "clk_us" is on component "SimHeatADC" but not on the entity "SimHeatADC".
+# Error: COMP96_0203: TestBench/simheatadc_TB.vhd : (55, 13): Binding indication has neither a generic map aspect nor a port map aspect.
+# Error: ELAB1_0011: TestBench/simheatadc_TB.vhd : (55, 0): Port "clk_1mhz" is on entity "SimHeatADC" but not on the component declaration.
+# Error: ELAB1_0030: TestBench/simheatadc_TB.vhd : (55, 0): Port "clk_us" is on component "SimHeatADC" but not on the entity "SimHeatADC".
+# Compile failure 10 Errors 1 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work Controller -2002  $dsn/src/TestBench/simheatadc_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Aquarium_Controller/Controller/src/TestBench/simheatadc_TB.vhd
+# Compile Entity "SimHeatADC_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "SimHeatADC_tb"
+# Warning: ELAB1_0026: TestBench/simheatadc_TB.vhd : (27, 0): There is no default binding for component "SimHeatADC". (Port "clk_us" is not on the entity).
+# Error: COMP96_0078: TestBench/simheatadc_TB.vhd : (29, 33): Unknown identifier "clk_1mhz".
+# Error: COMP96_0078: TestBench/simheatadc_TB.vhd : (38, 13): Unknown identifier "clk_1mhz".
+# Error: COMP96_0133: TestBench/simheatadc_TB.vhd : (38, 13): Cannot find object declaration.
+# Error: COMP96_0078: TestBench/simheatadc_TB.vhd : (40, 13): Unknown identifier "clk_1mhz".
+# Error: COMP96_0133: TestBench/simheatadc_TB.vhd : (40, 13): Cannot find object declaration.
+# Compile Configuration "TESTBENCH_FOR_SimHeatADC"
+# Error: ELAB1_0011: TestBench/simheatadc_TB.vhd : (54, 0): Port "clk_1mhz" is on entity "SimHeatADC" but not on the component declaration.
+# Error: ELAB1_0030: TestBench/simheatadc_TB.vhd : (54, 0): Port "clk_us" is on component "SimHeatADC" but not on the entity "SimHeatADC".
+# Error: COMP96_0203: TestBench/simheatadc_TB.vhd : (55, 13): Binding indication has neither a generic map aspect nor a port map aspect.
+# Error: ELAB1_0011: TestBench/simheatadc_TB.vhd : (55, 0): Port "clk_1mhz" is on entity "SimHeatADC" but not on the component declaration.
+# Error: ELAB1_0030: TestBench/simheatadc_TB.vhd : (55, 0): Port "clk_us" is on component "SimHeatADC" but not on the entity "SimHeatADC".
+# Compile failure 10 Errors 1 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work Controller -2002  $dsn/src/SimHeatADC.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Aquarium_Controller/Controller/src/SimHeatADC.vhd
+# Compile Entity "SimHeatADC"
+# Compile Architecture "behavior" of Entity "SimHeatADC"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work Controller -2002  $dsn/src/TestBench/simheatadc_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Aquarium_Controller/Controller/src/TestBench/simheatadc_TB.vhd
+# Compile Entity "SimHeatADC_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "SimHeatADC_tb"
+# Warning: ELAB1_0026: TestBench/simheatadc_TB.vhd : (27, 0): There is no default binding for component "SimHeatADC". (Port "clk_us" is not on the entity).
+# Error: COMP96_0078: TestBench/simheatadc_TB.vhd : (29, 33): Unknown identifier "clk_1mhz".
+# Error: COMP96_0078: TestBench/simheatadc_TB.vhd : (38, 13): Unknown identifier "clk_1mhz".
+# Error: COMP96_0133: TestBench/simheatadc_TB.vhd : (38, 13): Cannot find object declaration.
+# Error: COMP96_0078: TestBench/simheatadc_TB.vhd : (40, 13): Unknown identifier "clk_1mhz".
+# Error: COMP96_0133: TestBench/simheatadc_TB.vhd : (40, 13): Cannot find object declaration.
+# Compile Configuration "TESTBENCH_FOR_SimHeatADC"
+# Error: ELAB1_0011: TestBench/simheatadc_TB.vhd : (54, 0): Port "clk_1mhz" is on entity "SimHeatADC" but not on the component declaration.
+# Error: ELAB1_0030: TestBench/simheatadc_TB.vhd : (54, 0): Port "clk_us" is on component "SimHeatADC" but not on the entity "SimHeatADC".
+# Error: COMP96_0203: TestBench/simheatadc_TB.vhd : (55, 13): Binding indication has neither a generic map aspect nor a port map aspect.
+# Error: ELAB1_0011: TestBench/simheatadc_TB.vhd : (55, 0): Port "clk_1mhz" is on entity "SimHeatADC" but not on the component declaration.
+# Error: ELAB1_0030: TestBench/simheatadc_TB.vhd : (55, 0): Port "clk_us" is on component "SimHeatADC" but not on the entity "SimHeatADC".
+# Compile failure 10 Errors 1 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work Controller -2002  $dsn/src/TestBench/simheatadc_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Aquarium_Controller/Controller/src/TestBench/simheatadc_TB.vhd
+# Compile Entity "SimHeatADC_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "SimHeatADC_tb"
+# Warning: ELAB1_0026: TestBench/simheatadc_TB.vhd : (27, 0): There is no default binding for component "SimHeatADC". (Port "clk_us" is not on the entity).
+# Error: COMP96_0078: TestBench/simheatadc_TB.vhd : (29, 33): Unknown identifier "clk_1mhz".
+# Error: COMP96_0078: TestBench/simheatadc_TB.vhd : (38, 13): Unknown identifier "clk_1mhz".
+# Error: COMP96_0133: TestBench/simheatadc_TB.vhd : (38, 13): Cannot find object declaration.
+# Error: COMP96_0078: TestBench/simheatadc_TB.vhd : (40, 13): Unknown identifier "clk_1mhz".
+# Error: COMP96_0133: TestBench/simheatadc_TB.vhd : (40, 13): Cannot find object declaration.
+# Compile Configuration "TESTBENCH_FOR_SimHeatADC"
+# Error: ELAB1_0011: TestBench/simheatadc_TB.vhd : (54, 0): Port "clk_1mhz" is on entity "SimHeatADC" but not on the component declaration.
+# Error: ELAB1_0030: TestBench/simheatadc_TB.vhd : (54, 0): Port "clk_us" is on component "SimHeatADC" but not on the entity "SimHeatADC".
+# Error: COMP96_0203: TestBench/simheatadc_TB.vhd : (55, 13): Binding indication has neither a generic map aspect nor a port map aspect.
+# Error: ELAB1_0011: TestBench/simheatadc_TB.vhd : (55, 0): Port "clk_1mhz" is on entity "SimHeatADC" but not on the component declaration.
+# Error: ELAB1_0030: TestBench/simheatadc_TB.vhd : (55, 0): Port "clk_us" is on component "SimHeatADC" but not on the entity "SimHeatADC".
+# Compile failure 10 Errors 1 Warnings  Analysis time :  16.0 [ms]
+acom -O3 -e 100 -work Controller -2002  $dsn/src/TestBench/simheatadc_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Aquarium_Controller/Controller/src/TestBench/simheatadc_TB.vhd
+# Compile Entity "SimHeatADC_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "SimHeatADC_tb"
+# Error: COMP96_0078: TestBench/simheatadc_TB.vhd : (29, 33): Unknown identifier "clk_1mhz".
+# Error: COMP96_0078: TestBench/simheatadc_TB.vhd : (38, 13): Unknown identifier "clk_1mhz".
+# Error: COMP96_0133: TestBench/simheatadc_TB.vhd : (38, 13): Cannot find object declaration.
+# Error: COMP96_0078: TestBench/simheatadc_TB.vhd : (40, 13): Unknown identifier "clk_1mhz".
+# Error: COMP96_0133: TestBench/simheatadc_TB.vhd : (40, 13): Cannot find object declaration.
+# Compile Configuration "TESTBENCH_FOR_SimHeatADC"
+# Error: ELAB1_0011: TestBench/simheatadc_TB.vhd : (54, 0): Port "clk_1mhz" is on entity "SimHeatADC" but not on the component declaration.
+# Error: ELAB1_0030: TestBench/simheatadc_TB.vhd : (54, 0): Port "clk_us" is on component "SimHeatADC" but not on the entity "SimHeatADC".
+# Error: COMP96_0203: TestBench/simheatadc_TB.vhd : (55, 13): Binding indication has neither a generic map aspect nor a port map aspect.
+# Error: ELAB1_0011: TestBench/simheatadc_TB.vhd : (55, 0): Port "clk_1mhz" is on entity "SimHeatADC" but not on the component declaration.
+# Error: ELAB1_0030: TestBench/simheatadc_TB.vhd : (55, 0): Port "clk_us" is on component "SimHeatADC" but not on the entity "SimHeatADC".
+# Compile failure 10 Errors 0 Warnings  Analysis time :  31.0 [ms]
+acom -O3 -e 100 -work Controller -2002  $dsn/src/TestBench/simheatadc_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Aquarium_Controller/Controller/src/TestBench/simheatadc_TB.vhd
+# Compile Entity "SimHeatADC_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "SimHeatADC_tb"
+# Error: COMP96_0078: TestBench/simheatadc_TB.vhd : (29, 33): Unknown identifier "clk_1mhz".
+# Error: COMP96_0078: TestBench/simheatadc_TB.vhd : (38, 13): Unknown identifier "clk_1mhz".
+# Error: COMP96_0133: TestBench/simheatadc_TB.vhd : (38, 13): Cannot find object declaration.
+# Error: COMP96_0078: TestBench/simheatadc_TB.vhd : (40, 13): Unknown identifier "clk_1mhz".
+# Error: COMP96_0133: TestBench/simheatadc_TB.vhd : (40, 13): Cannot find object declaration.
+# Compile Configuration "TESTBENCH_FOR_SimHeatADC"
+# Error: ELAB1_0011: TestBench/simheatadc_TB.vhd : (54, 0): Port "clk_1mhz" is on entity "SimHeatADC" but not on the component declaration.
+# Error: ELAB1_0030: TestBench/simheatadc_TB.vhd : (54, 0): Port "clk_us" is on component "SimHeatADC" but not on the entity "SimHeatADC".
+# Error: COMP96_0203: TestBench/simheatadc_TB.vhd : (55, 13): Binding indication has neither a generic map aspect nor a port map aspect.
+# Error: ELAB1_0011: TestBench/simheatadc_TB.vhd : (55, 0): Port "clk_1mhz" is on entity "SimHeatADC" but not on the component declaration.
+# Error: ELAB1_0030: TestBench/simheatadc_TB.vhd : (55, 0): Port "clk_us" is on component "SimHeatADC" but not on the entity "SimHeatADC".
+# Compile failure 10 Errors 0 Warnings  Analysis time :  15.0 [ms]
+acom -O3 -e 100 -work Controller -2002  $dsn/src/TestBench/simheatadc_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Aquarium_Controller/Controller/src/TestBench/simheatadc_TB.vhd
+# Compile Entity "SimHeatADC_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "SimHeatADC_tb"
+# Compile Configuration "TESTBENCH_FOR_SimHeat"
+# Error: COMP96_0019: TestBench/simheatadc_TB.vhd : (49, 0): Keyword 'of' expected.
+# Error: COMP96_0018: TestBench/simheatadc_TB.vhd : (49, 0): Identifier expected.
+# Compile failure 2 Errors 0 Warnings  Analysis time :  46.0 [ms]
+acom -O3 -e 100 -work Controller -2002  $dsn/src/TestBench/simheatadc_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Aquarium_Controller/Controller/src/TestBench/simheatadc_TB.vhd
+# Compile Entity "SimHeatADC_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "SimHeatADC_tb"
+# Compile Configuration "TESTBENCH_FOR_SimHeatADC"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
 # Warning: Failed to connect to the license server. 4 tries left.
+# Warning: Failed to connect to the license server. 3 tries left.
+# Warning: Failed to connect to the license server. 2 tries left.
 # Connection to the license server has been restored.

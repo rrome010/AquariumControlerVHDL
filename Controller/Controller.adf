@@ -25,7 +25,7 @@ FAMILY=
 WindowVisible=0
 
 [HierarchyViewer]
-HierarchyInformation=simheatadc_tb|TB_ARCHITECTURE|0  
+HierarchyInformation=simheatadc_tb|TB_ARCHITECTURE|0 
 ShowHide=ShowTopLevel
 Selected=
 
@@ -44,14 +44,15 @@ TestBench=1
 /SimSalinity.vhd=-1
 /HeatADCSIM.asdb=-1
 /HeatADCSIM.awc=-1
+/ClockDivider.vhd=-1
 TestBench/rtc_TB.vhd=-1
 TestBench/rtc_TB_runtest.do=-1
 TestBench/lighting_control_TB.vhd=-1
 TestBench/lighting_control_TB_runtest.do=-1
 TestBench/ato_TB.vhd=-1
 TestBench/ato_TB_runtest.do=-1
-TestBench/simheatadc_TB.vhd=-1
 TestBench/simheatadc_TB_runtest.do=-1
+TestBench/simheatadc_TB.vhd=-1
 
 [Files.Data]
 .\src\Controller.vhd=VHDL Source Code
@@ -65,6 +66,7 @@ TestBench/simheatadc_TB_runtest.do=-1
 .\src\SimSalinity.vhd=VHDL Source Code
 .\src\HeatADCSIM.asdb=Accelerated Waveform File
 .\src\HeatADCSIM.awc=Accelerated Waveform Configuration
+.\src\ClockDivider.vhd=VHDL Source Code
 .\src\TestBench\rtc_TB.vhd=VHDL Test Bench
 .\src\TestBench\rtc_TB_runtest.do=Macro
 .\src\TestBench\lighting_control_TB.vhd=VHDL Test Bench

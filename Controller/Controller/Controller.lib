@@ -1,13 +1,13 @@
-timestamp=1744898214895
+timestamp=1745352876482
 
 [~A]
-ModifyID=97
+ModifyID=107
 Version=74
 
 [~MFT]
-0=2|0Controller.mgf|131537|96874
-1=2|1Controller.mgf|199898|175536
-3=2|3Controller.mgf|45649|35315
+0=8|0Controller.mgf|141179|106288
+1=4|1Controller.mgf|221302|195288
+3=2|3Controller.mgf|50091|38639
 
 [ato]
 A/behavioral=A/Behavioral 21|../src/ATO.vhd|17|1*122098
@@ -65,15 +65,15 @@ Version=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|00bae70e108b2c416
 Version/behavior=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|f9bccf16e2dce5a640f0ad5e8eaa0283e08d679eaf1bc9de9439630905b37e5fd2ebf52cb9a58ec6ea01bb128d3c4979
 
 [heat_control]
-A/behavioral=21|../src/Heat control.vhd|21|1*197278
-BinI32/behavioral=3*44069
+A/behavioral=21|../src/Heat control.vhd|21|1*209851
+BinI32/behavioral=3*47047
 I=0*128674
-I/behavioral=0*131283
+I/behavioral=0*136281
 M=11|0|ve8|1744898174994|../src/RTC CLOCK.vhd|0*128045*0xa759829d07a51d3d6490ca5931099334b721b011|0*128588*0x23b75c12e3e89f2ef000564498faa8c2
-M/behavioral=21|0|ve8|1744898208782|../src/RTC CLOCK.vhd|0*128917*0xf0df683f42d09060dccfb42c607f1330e2286d31|0*130684*0x20116f55b147878295aeff36dce7fc50
+M/behavioral=21|0|ve8|1745350533662|../src/Heat control.vhd|0*134288*0x91246a7455cf49ffe61c2c47b456b911f09004fd|0*136178*0x20116f55b147878295aeff36dce7fc50
 R=../src/RTC CLOCK.vhd|5
 Version=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|6419f5da94c798392b76df6bab0e45d6c63811ad10da57ccbc943022b4233c5b780b5b337887d2119d644a50f94286fe
-Version/behavioral=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|35f8e56ee514308d50318f7abb190927faf8176ad6902a7357df79bb1a85bff46cb1bdbb04c424f963e67e693e371b07
+Version/behavioral=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|35f8e56ee514308d50318f7abb190927faf8176ad6902a7357df79bb1a85bff44a70256abc41499b5e539ec1d954ae15
 
 [lighting_control]
 A/behavioral=A/Behavioral 21|../src/Lighting control.vhd|23|1*60048
@@ -120,26 +120,26 @@ Version=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|e989936b141933260
 Version/tb_architecture=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|da2d76821309f33ed1264ca4678a936a8f84fef0fc5d0f10f1a8cfc2ad534bea7abbe6e39f24284c1572d429bb6a71aa
 
 [simheatadc]
-A/behavior=21|../src/SimHeatADC.vhd|14|1*199898
-BinI32/behavior=3*45649
-I=0*94601
-I/behavior=0*131537
-M=11|0|ve8|1744891020037|../src/SimHeatADC.vhd|0*94233*0x1f29479932ad3c1e77f4e2b17ea8ecf3ae473621|0*94516*0x23b75c12e3e89f2ef000564498faa8c2
-M/behavior=21|0|ve8|1744898214860|../src/SimHeatADC.vhd|0*119264*0x65ab70af7959564c448a00548c096b22f8418193|0*121222*0x20116f55b147878295aeff36dce7fc50
+A/behavior=21|../src/SimHeatADC.vhd|14|1*216661
+BinI32/behavior=3*48695
+I=0*137143
+I/behavior=0*139443
+M=11|0|ve8|1745352348933|../src/SimHeatADC.vhd|0*136773*0x9301b6dbfb967da7b997338748bf65a81cfd2b8b|0*137058*0x23b75c12e3e89f2ef000564498faa8c2
+M/behavior=21|0|ve8|1745352494679|../src/SimHeatADC.vhd|0*137384*0x4fc11057fbf2e30832135a9454afd791067752fe|0*139346*0x20116f55b147878295aeff36dce7fc50
 R=../src/SimHeatADC.vhd|6
-Version=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|04d4d642234d5995ef0ef0fe9f1eba9417df3cdb814762bda61138a13c15b2055578f4e24c5b821814e85c13f06fc773
-Version/behavior=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|f9bccf16e2dce5a640f0ad5e8eaa0283e08d679eaf1bc9de9439630905b37e5f395359add17648b14c320d49a3460837
+Version=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|04d4d642234d5995ef0ef0fe9f1eba9417df3cdb814762bda61138a13c15b205d18f064470d3e241652774ba469262df
+Version/behavior=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|f9bccf16e2dce5a640f0ad5e8eaa0283e08d679eaf1bc9de9439630905b37e5fd1809543526731cb1b6ac3f73bc8c3eb
 
 [simheatadc_tb]
-A/tb_architecture=A/TB_ARCHITECTURE 21|../src/TestBench/simheatadc_TB.vhd|8|1*175308
-BinI32/tb_architecture=3*37595
+A/tb_architecture=A/TB_ARCHITECTURE 21|../src/TestBench/simheatadc_TB.vhd|8|1*220029
+BinI32/tb_architecture=3*50091
 I=0*97706
-I/tb_architecture=I/TB_ARCHITECTURE 0*116344
+I/tb_architecture=I/TB_ARCHITECTURE 0*140442
 M=11|0|ve8|1744891294563|../src/TestBench/simheatadc_TB.vhd|0*97384*0x3d1f893692c6ce96458cf93f257928d70ef0e74d|0*97605*0x23b75c12e3e89f2ef000564498faa8c2
-M/tb_architecture=M/TB_ARCHITECTURE 21|0|ve8|1744892774678|../src/TestBench/simheatadc_TB.vhd|0*107307*0xaeb98573f3c78d475b167c99af5979986ebfe8de|0*107924*0x20116f55b147878295aeff36dce7fc50
+M/tb_architecture=M/TB_ARCHITECTURE 21|0|ve8|1745352876461|../src/TestBench/simheatadc_TB.vhd|0*139693*0xfa195794a5bcee425446b3aae89a2d43ddee2ebd|0*140322*0x20116f55b147878295aeff36dce7fc50
 R=../src/TestBench/simheatadc_TB.vhd|5
 Version=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|e3366baf56146e2d056f1b80da23c4c03fdf4c97b6494ef6a43134c5e5804be51c4c1ae4ec81f98fb5890e83e32005e8
-Version/tb_architecture=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|da2d76821309f33ed1264ca4678a936a8f84fef0fc5d0f10f1a8cfc2ad534bea17e9a770c061a2192510ac0ae20954ef
+Version/tb_architecture=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|da2d76821309f33ed1264ca4678a936a8f84fef0fc5d0f10f1a8cfc2ad534bea5e49360145bbf44813e084b168cc0208
 
 [testbench_for_ato]
 Configures=ato_tb.TB_ARCHITECTURE
@@ -175,11 +175,11 @@ Version=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|5efd636a07bb57613
 
 [testbench_for_simheatadc]
 Configures=SimHeatADC_tb.TB_ARCHITECTURE
-E=1*176573
-I=0*116643
-M=2|0|ve8|1744892774681|../src/TestBench/simheatadc_TB.vhd|0*108343*0xdc2f6f62369f7e8a21ba1f845c338a0c8558fad7|0*108651*0x20116f55b147878295aeff36dce7fc50
-R=../src/TestBench/simheatadc_TB.vhd|52
-Version=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|5efd636a07bb57613e35fadc81a5c3e5228be3323e807eda71f933437a52f42ab830bfc57bc6e9664bacae8c00353acdf1886b539f99bc2a030ad6aff833a950
+E=1*221302
+I=0*141179
+M=2|0|ve8|1745352876462|../src/TestBench/simheatadc_TB.vhd|0*140743*0x8776454688637744b08503fba975f46c355e70e9|0*141051*0x20116f55b147878295aeff36dce7fc50
+R=../src/TestBench/simheatadc_TB.vhd|49
+Version=12.0.118.7745 (Windows)|00000003789cd3f5370600015b00b0|5efd636a07bb57613e35fadc81a5c3e5228be3323e807eda71f933437a52f42ab830bfc57bc6e9664bacae8c00353acd4cdd645cf5cfda794db38d2bc1f80482
 
 [~U]
 ato=ATO 11|0*48288|
@@ -192,7 +192,7 @@ lighting_control=Lighting_Control 11|0*44106|
 lighting_control_tb=11|0*35618|
 rtc=RTC 11|0*17949|
 rtc_tb=11|0*4364|
-simheatadc=SimHeatADC 11|0*93997|
+simheatadc=SimHeatADC 11|0*136535|
 simheatadc_tb=SimHeatADC_tb 11|0*97252|
 testbench_for_ato=TESTBENCH_FOR_ato 2||
 testbench_for_ds18b20_sim=TESTBENCH_FOR_ds18b20_sim 2||

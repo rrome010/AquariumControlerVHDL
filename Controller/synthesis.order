@@ -11,4 +11,5 @@ i<>.\src\Salinity.vhd
 i<>.\src\7Seg.vhd
 i<>.\src\HeatADCComs.vhd
 i<>.\src\SimHeatADC.vhd
+i<>.\src\ClockDivider.vhd
 i<>.\src\TestBench\simheatadc_TB.vhd

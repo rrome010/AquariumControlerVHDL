@@ -36,7 +36,9 @@ begin
     begin
         if reset_heat = '1' then
             set_usr      <= to_unsigned(408, 13);
-            error_flag   <= '0';
+            set_min      <= to_unsigned(400, 13);
+			set_max      <= to_unsigned(416, 13);
+			error_flag   <= '0';
             heater_on    <= '0';
             current_state <= NORMAL;
             min_start    <= (others => '0');
@@ -45,14 +47,15 @@ begin
         elsif rising_edge(compclock) then
             if btn_change_temp = '1' then
                 if btn_temp_up = '1' then					   	
-                    set_usr <= set_usr + 8;
+                    set_usr <= set_usr + 8;	
+					set_min <= set_min + 8;
+					set_max <= set_usr + 8;
                 elsif btn_temp_down = '1' then
                     set_usr <= set_usr - 8;
+					set_min <= set_min - 8;
+					set_max <= set_usr - 8;
                 end if;
             end if;
-
-            set_max <= set_usr + 8; -- +0.5°C
-            set_min <= set_usr - 8; -- -0.5°C
 
             case current_state is
                 when NORMAL =>
@@ -74,7 +77,7 @@ begin
                     end if;
 
                 when UNDER_TEMP =>
-                    if CurrentTemp >= set_min then
+                    if CurrentTemp >= set_usr then
                         heater_on    <= '0';
                         error_flag   <= '0';
                         time_active  <= '0';

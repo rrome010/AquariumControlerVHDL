@@ -3,7 +3,7 @@ comp -include "$dsn\src\SimHeatADC.vhd"
 comp -include "$dsn\src\TestBench\simheatadc_TB.vhd" 
 asim +access +r TESTBENCH_FOR_simheatadc 
 wave 
-wave -noreg clk_us
+wave -noreg clk_1mhz
 wave -noreg one_wire
 wave -noreg currentTempsim
 # The following lines can be used for timing simulation
