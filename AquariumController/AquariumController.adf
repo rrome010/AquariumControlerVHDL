@@ -1,0 +1,91 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=4
+Current Config=compile
+
+[Configurations]
+compile=aquariumcontroller
+
+[Library]
+AquariumController=.\AquariumController\AquariumController.lib
+
+[$LibMap$]
+AquariumController=.
+Active_lib=
+
+[Settings]
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=
+
+[SpecTracer]
+WindowVisible=0
+
+[ORDER]
+Synchronize=0
+
+[HierarchyViewer]
+HierarchyInformation=feedmode_tb|TB_ARCHITECTURE|0 toplevel_tb|Behavioral|0
+ShowHide=ShowTopLevel
+Selected=
+
+[Files.Data]
+.\src\ATO.vhd=VHDL Source Code
+.\src\Heat control.vhd=VHDL Source Code
+.\src\Lighting control.vhd=VHDL Source Code
+.\src\RTC CLOCK.vhd=VHDL Source Code
+.\src\SimHeatADC.vhd=VHDL Source Code
+.\src\Maitenence.vhd=VHDL Source Code
+.\src\Feed mode.vhd=VHDL Source Code
+.\src\TopLevel.vhd=VHDL Source Code
+.\src\HeatADCSIM.awc=Accelerated Waveform Configuration
+.\src\ATOwave.awc=Accelerated Waveform Configuration
+.\src\HeatControl.awc=Accelerated Waveform Configuration
+.\src\toplevelwaveform.asdb=Accelerated Waveform File
+.\src\toplevelwaveform.awc=Accelerated Waveform Configuration
+.\..\..\..\Users\Robert\Documents\GitHub\AquariumControlerVHDL\Controller\src\TestBench\simheatadc_TB.vhd=VHDL Source Code
+.\..\..\..\Users\Robert\Documents\GitHub\AquariumControlerVHDL\Controller\src\TestBench\rtc_TB.vhd=VHDL Source Code
+.\..\..\..\Users\Robert\Documents\GitHub\AquariumControlerVHDL\Controller\src\TestBench\lighting_control_TB.vhd=VHDL Source Code
+.\..\..\..\Users\Robert\Documents\GitHub\AquariumControlerVHDL\Controller\src\TestBench\heat_control_TB.vhd=VHDL Source Code
+.\..\..\..\Users\Robert\Documents\GitHub\AquariumControlerVHDL\Controller\src\TestBench\ato_TB.vhd=VHDL Source Code
+.\..\..\..\Users\Robert\Documents\GitHub\AquariumControlerVHDL\Controller\src\TestBench\simheatadc_TB_runtest.do=Macro
+.\src\TestBench\toplevel_TB.vhd=VHDL Test Bench
+.\src\TestBench\toplevel_TB_runtest.do=Macro
+.\src\TestBench\feedmode_TB.vhd=VHDL Test Bench
+.\src\TestBench\feedmode_TB_runtest.do=Macro
+.\src\TestBench\lighting_control_TB.vhd=VHDL Source Code
+.\src\TestBench\heat_control_TB.vhd=VHDL Source Code
+.\src\TestBench\ato_TB.vhd=VHDL Source Code
+.\src\TestBench\simheatadc_TB.vhd=VHDL Source Code
+.\src\TestBench\rtc_TB.vhd=VHDL Source Code
+
+[Groups]
+TestBench=1
+
+[Files]
+/ATO.vhd=-1
+/Lighting control.vhd=-1
+/Heat control.vhd=-1
+/RTC CLOCK.vhd=-1
+/SimHeatADC.vhd=-1
+/Maitenence.vhd=-1
+/Feed mode.vhd=-1
+/TopLevel.vhd=-1
+/HeatADCSIM.awc=-1
+/ATOwave.awc=-1
+/HeatControl.awc=-1
+/toplevelwaveform.asdb=-1
+/toplevelwaveform.awc=-1
+TestBench/toplevel_TB.vhd=-1
+TestBench/toplevel_TB_runtest.do=-1
+TestBench/feedmode_TB.vhd=-1
+TestBench/feedmode_TB_runtest.do=-1
+TestBench/lighting_control_TB.vhd=-1
+TestBench/heat_control_TB.vhd=-1
+TestBench/ato_TB.vhd=-1
+TestBench/simheatadc_TB.vhd=-1
+TestBench/rtc_TB.vhd=-1
+

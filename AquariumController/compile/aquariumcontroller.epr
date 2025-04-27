@@ -1,0 +1,16 @@
+"C:/My_Designs/Controller/AquariumController/src/simheatadc.vhd" VHDL aquariumcontroller 1 0 0 -02
+"C:/My_Designs/Controller/AquariumController/src/ato.vhd" VHDL aquariumcontroller 1 0 0 -02
+"C:/My_Designs/Controller/AquariumController/src/rtc clock.vhd" VHDL aquariumcontroller 1 0 0 -02
+"C:/My_Designs/Controller/AquariumController/src/heat control.vhd" VHDL aquariumcontroller 1 0 0 -02
+"C:/My_Designs/Controller/AquariumController/src/lighting control.vhd" VHDL aquariumcontroller 1 0 0 -02
+"C:/My_Designs/Controller/AquariumController/src/maitenence.vhd" VHDL aquariumcontroller 1 0 0 -02
+"C:/My_Designs/Controller/AquariumController/src/feed mode.vhd" VHDL aquariumcontroller 1 0 0 -02
+"C:/My_Designs/Controller/AquariumController/src/toplevel.vhd" VHDL aquariumcontroller 1 0 0 -02
+"C:/My_Designs/Controller/AquariumController/src/testbench/toplevel_tb.vhd" VHDL aquariumcontroller 1 0 0 -02
+"C:/My_Designs/Controller/AquariumController/src/testbench/feedmode_tb.vhd" VHDL aquariumcontroller 1 0 0 -02
+"C:/My_Designs/Controller/AquariumController/src/testbench/lighting_control_tb.vhd" VHDL aquariumcontroller 1 0 0 -02
+"C:/My_Designs/Controller/AquariumController/src/testbench/heat_control_tb.vhd" VHDL aquariumcontroller 1 0 0 -02
+"C:/My_Designs/Controller/AquariumController/src/testbench/ato_tb.vhd" VHDL aquariumcontroller 1 0 0 -02
+"C:/My_Designs/Controller/AquariumController/src/testbench/simheatadc_tb.vhd" VHDL aquariumcontroller 1 0 0 -02
+"C:/My_Designs/Controller/AquariumController/src/testbench/rtc_tb.vhd" VHDL aquariumcontroller 1 0 0 -02
+. . 0 0 0
