@@ -7,7 +7,7 @@ entity feedmode is
         compclock : in std_logic;
         clk_1hz   : in std_logic;
         feed_mode : in std_logic;
-        pumps     : out std_logic;
+        Feed_Pumps     : out std_logic;
         skimmer   : out std_logic
     );
 end feedmode;
@@ -27,7 +27,7 @@ begin
         if rising_edge(compclock) then
             case current_state is
                 when normal =>
-                    pumps   <= '1';
+                    Feed_Pumps   <= '1';
                     skimmer <= '1';
                     feed_counter <= (others => '0');  -- Reset counter
                     
@@ -42,10 +42,10 @@ begin
                     end if;
                     
                     if feed_counter > to_unsigned(600, feed_counter'length) then
-                        pumps   <= '1';   -- Pumps ON during first 600 seconds
+                        Feed_Pumps   <= '1';   -- Pumps ON during first 600 seconds
                         skimmer <= '0';
                     else
-                        pumps <= '0';     -- Pumps OFF after 600 seconds
+                        Feed_Pumps <= '0';     -- Pumps OFF after 600 seconds
                         if feed_counter >= to_unsigned(14400, feed_counter'length) then
                             skimmer <= '1';  -- Skimmer ON after 4 hours
                             current_state <= normal;

@@ -4,7 +4,6 @@ i<>.\src\SimHeatADC.vhd
 i<>.\src\ATO.vhd
 i<>.\src\Heat control.vhd
 i<>.\src\TopLevel.vhd
-i<>.\src\TestBench\toplevel_TB.vhd
 i<>.\src\Maitenence.vhd
 i<>.\src\Feed mode.vhd
 i<>.\src\TestBench\feedmode_TB.vhd

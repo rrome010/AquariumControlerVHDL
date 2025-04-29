@@ -9,11 +9,17 @@ entity TopLevel is
         reset          : in std_logic;
         btn_feed       : in std_logic;
         sw_maint       : in std_logic;
-
+		
+		Feed : in std_logic;
+		Skimmer : out std_logic;
+		Pumps : out std_logic;
+		
         heater_out     : out std_logic;
         light_out      : out std_logic;
         ato_pump_out   : out std_logic;
         Hold_Heat      : out std_logic;
+		
+		
 
         -- Debug outputs
         min_on_out     : out unsigned(5 downto 0);
@@ -58,7 +64,12 @@ architecture Behavioral of TopLevel is
 
     -- Internal signals
     signal maintenance_in       : std_logic := '0';
-    signal maintenance_holdheat : std_logic := '0'; -- <<< ADDED CORRECTLY
+    signal maintenance_holdheat : std_logic := '0';
+	signal maint_pumps : std_logic;
+	signal feed_pumps  : std_logic;
+
+	
+	signal Feed_in : std_logic := '0';
 
     signal feed_active      : std_logic := '0';
     signal feed_start_min   : unsigned(5 downto 0) := (others => '0');
@@ -82,7 +93,9 @@ architecture Behavioral of TopLevel is
     signal tempmax_sig      : unsigned(12 downto 0) := (others => '0');
     signal tempmin_sig      : unsigned(12 downto 0) := (others => '0');
 
-    -- Function to convert BIT to STD_LOGIC
+	signal ato_error_signal : std_logic;
+	
+	-- Function to convert BIT to STD_LOGIC
     function to_stdlogic(b: bit) return std_logic is
     begin
         if b = '0' then
@@ -148,24 +161,50 @@ begin
         port map (
             compclock => compclock,
             swmaint   => sw_maint,
-            holdheat  => maintenance_holdheat -- <<< feeds internal signal
+            holdheat  => maintenance_holdheat,
+			maint_pumps    => maint_pumps
         );
+-- Instantiation of feed mode
+    FeedMode_Inst : entity work.feedmode
+    port map (
+        compclock => compclock,
+        clk_1hz   => clk_1hz,
+        feed_mode => Feed, 
+        feed_pumps => feed_pumps,
+        skimmer   => Skimmer
+    );
+	-- Instantiation of ATO
+	ATOController: entity work.ATO
+    port map (
+        clk_1hz        => clk_1hz,
+        compclock      => compclock,
+        ATO_RESET      => reset,
+        maintenance_in => maintenance_in,
+        S1ATO          => S1ATO_override,
+        S2ATO          => S2ATO_override,
+        ATO_PUMP       => ato_pump_signal,
+        ATO_ERROR      => ato_error_signal
+    );
+
 
     -- Outputs mapping
     heater_out    <= heater_signal;
     light_out     <= to_stdlogic(light_on_off_sig);
     ato_pump_out  <= ato_pump_signal;
-    Hold_Heat     <= maintenance_holdheat; -- <<< output port connection
-
+    Hold_Heat     <= maintenance_holdheat; 
+   	Pumps <=  (maint_pumps or feed_pumps);
     min_on_out    <= min_on_sig;
     hour_on_out   <= hour_on_sig;
     min_off_out   <= min_off_sig;
     hour_off_out  <= hour_off_sig;
     tempuser_out  <= tempuser_sig;
+	ato_pump_out <= ato_pump_signal;
+	ATO_ERROR    <= ato_error_signal;
+
 
     -- Debug outputs
     light_on_off   <= to_stdlogic(light_on_off_sig);
-    ATO_ERROR      <= '0'; -- hardwired for now
+    ATO_ERROR      <= '0'; 
     sec_out_debug  <= sec_out;
     min_out_debug  <= min_out;
     hour_out_debug <= hour_out;

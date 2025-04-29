@@ -1,10 +1,10 @@
-.\src\simheatadc.vhd
-.\src\ato.vhd
 .\src\rtc clock.vhd
-.\src\heat control.vhd
+.\src\simheatadc.vhd
 .\src\lighting control.vhd
 .\src\maitenence.vhd
-.\src\feed mode.vhd
+.\src\feed.vhd
+.\src\heat control.vhd
+.\src\ato.vhd
 .\src\toplevel.vhd
 .\src\testbench\toplevel_tb.vhd
 .\src\testbench\feedmode_tb.vhd

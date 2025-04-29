@@ -6,7 +6,8 @@ entity maintenance is
     Port (
         compclock : in std_logic;
         swmaint   : in std_logic;
-        holdheat  : out std_logic
+        holdheat  : out std_logic;
+		maint_pumps  : out std_logic
     );
 end maintenance;
 
@@ -27,6 +28,7 @@ begin
                         current_state <= maint;
                     else
                         holdheat <= '0';
+						maint_pumps <= '0';
                     end if;
 
                 when maint =>
@@ -34,6 +36,7 @@ begin
                         current_state <= normal;
                     else
                         holdheat <= '1';
+						maint_pumps <= '1';
                     end if;
                     
                 when others =>

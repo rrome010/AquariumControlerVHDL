@@ -1,10 +1,10 @@
-136
+212
 ~E 1 "../src/ATO.vhd" 5 ATO
 ~A 1 "../src/ato.vhd" 18 Behavioral
 ~E 1 "../../../../users/robert/documents/github/aquariumcontrolervhdl/controller/src/testbench/ato_tb.vhd" 5 ato_tb
 ~A 1 "../src/testbench/ato_tb.vhd" 8 TB_ARCHITECTURE
-~E 1 "../src/Feed mode.vhd" 5 feedmode
-~A 1 "../src/feed mode.vhd" 15 Behavioral
+~E 1 "../src/Feed.vhd" 5 feedmode
+~A 1 "../src/feed.vhd" 15 Behavioral
 ~E 1 "../src/TestBench/feedmode_TB.vhd" 5 feedmode_tb
 ~A 1 "../src/testbench/feedmode_tb.vhd" 8 TB_ARCHITECTURE
 ~E 1 "../src/Heat control.vhd" 5 Heat_control
@@ -16,7 +16,7 @@
 ~E 1 "../../../../users/robert/documents/github/aquariumcontrolervhdl/controller/src/testbench/lighting_control_tb.vhd" 5 lighting_control_tb
 ~A 1 "../src/testbench/lighting_control_tb.vhd" 8 TB_ARCHITECTURE
 ~E 1 "../src/Maitenence.vhd" 5 maintenance
-~A 1 "../src/maitenence.vhd" 13 Behavioral
+~A 1 "../src/maitenence.vhd" 14 Behavioral
 ~E 1 "../src/RTC CLOCK.vhd" 5 RTC
 ~A 1 "../src/rtc clock.vhd" 18 Behavioral
 ~E 1 "../../../../users/robert/documents/github/aquariumcontrolervhdl/controller/src/testbench/rtc_tb.vhd" 5 rtc_tb
@@ -33,7 +33,7 @@
 ~C 1 "../src/testbench/simheatadc_tb.vhd" 49 testbench_for_simheatadc
 ~C 1 "../src/testbench/toplevel_tb.vhd" 401 testbench_for_toplevel
 ~E 1 "../src/TopLevel.vhd" 5 TopLevel
-~A 1 "../src/toplevel.vhd" 57 Behavioral
+~A 1 "../src/toplevel.vhd" 63 Behavioral
 ~E 1 "../src/TestBench/toplevel_TB.vhd" 7 TopLevel_tb
 ~A 1 "../src/testbench/toplevel_tb.vhd" 10 Behavioral
 ~A 1 "../src/testbench/toplevel_tb.vhd" 8 tb_architecture
