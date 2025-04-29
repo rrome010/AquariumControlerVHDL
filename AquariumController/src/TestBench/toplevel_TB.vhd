@@ -145,6 +145,10 @@ begin
 		
 		wait for 5 ms;
 		
+		wait for 10 ms;
+		sw_maint <= '1';
+		wait for 50 ms;
+		sw_maint <= '0';
 		
 		-- Set RTC Time to 08:20
 		btn_time <= '1'; 

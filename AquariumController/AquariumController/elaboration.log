@@ -1,29 +1,41 @@
-Active-HDL 12.0.118.7745 2025-04-29 09:11:40
+Active-HDL 12.0.118.7745 2025-04-29 12:56:28
 
 Elaboration top modules:
-Architecture                  TB_ARCHITECTURE(ato_tb)
+Architecture                  Behavioral(TopLevel_tb)
 
 
--------------------------------------------------------------------------------------------------------
-Entity   | Architecture    | Library            | Info | Compiler Version        | Compilation Options
--------------------------------------------------------------------------------------------------------
-ato_tb   | TB_ARCHITECTURE | aquariumcontroller |      | 12.0.118.7745 (Windows) | -O3
-ATO      | Behavioral      | aquariumcontroller |      | 12.0.118.7745 (Windows) | -O3
--------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------
+Entity           | Architecture | Library            | Info | Compiler Version        | Compilation Options
+------------------------------------------------------------------------------------------------------------
+TopLevel_tb      | Behavioral   | aquariumcontroller |      | 12.0.118.7745 (Windows) | -O3
+TopLevel         | Behavioral   | aquariumcontroller |      | 12.0.118.7745 (Windows) | -O3
+RTC              | Behavioral   | aquariumcontroller |      | 12.0.118.7745 (Windows) | -O3
+Lighting_Control | Behavioral   | aquariumcontroller |      | 12.0.118.7745 (Windows) | -O3
+Heat_control     | behavioral   | aquariumcontroller |      | 12.0.118.7745 (Windows) | -O3
+maintenance      | Behavioral   | aquariumcontroller |      | 12.0.118.7745 (Windows) | -O3
+feedmode         | Behavioral   | aquariumcontroller |      | 12.0.118.7745 (Windows) | -O3
+ATO              | Behavioral   | aquariumcontroller |      | 12.0.118.7745 (Windows) | -O3
+------------------------------------------------------------------------------------------------------------
 
--------------------------------------------------------------------------------------------------------
-VHDL Package               | Library            | Info | Compiler Version        | Compilation Options
--------------------------------------------------------------------------------------------------------
-standard                   | std                |      |                         | <unavailable>
-TEXTIO                     | std                |      |                         | <unavailable>
-std_logic_1164             | ieee               |      |                         | <unavailable>
-NUMERIC_STD                | ieee               |      |                         | <unavailable>
--------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------
+VHDL Package                    | Library            | Info | Compiler Version        | Compilation Options
+------------------------------------------------------------------------------------------------------------
+standard                        | std                |      |                         | <unavailable>
+TEXTIO                          | std                |      |                         | <unavailable>
+std_logic_1164                  | ieee               |      |                         | <unavailable>
+NUMERIC_STD                     | ieee               |      |                         | <unavailable>
+------------------------------------------------------------------------------------------------------------
 
--------------------------------------------------------------------------------------------------------
-Library                    | Comment
--------------------------------------------------------------------------------------------------------
-aquariumcontroller         | None
-ieee                       | Standard IEEE packages library
-std                        | Standard VHDL library
--------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------
+Library                         | Comment
+------------------------------------------------------------------------------------------------------------
+aquariumcontroller              | None
+ieee                            | Standard IEEE packages library
+std                             | Standard VHDL library
+------------------------------------------------------------------------------------------------------------
+
+
+Simulation Options: asim -O5 +access +r +m+TopLevel_tb TopLevel_tb Behavioral
+
+
+The performance of simulation is reduced. Version EDU Edition

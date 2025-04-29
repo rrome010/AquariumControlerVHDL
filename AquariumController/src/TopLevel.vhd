@@ -94,6 +94,8 @@ architecture Behavioral of TopLevel is
     signal tempmin_sig      : unsigned(12 downto 0) := (others => '0');
 
 	signal ato_error_signal : std_logic;
+	signal skimmer_feed_sig : std_logic := '0'; -- New internal signal
+
 	
 	-- Function to convert BIT to STD_LOGIC
     function to_stdlogic(b: bit) return std_logic is
@@ -165,14 +167,15 @@ begin
 			maint_pumps    => maint_pumps
         );
 -- Instantiation of feed mode
-    FeedMode_Inst : entity work.feedmode
+FeedMode_Inst : entity work.feedmode
     port map (
         compclock => compclock,
         clk_1hz   => clk_1hz,
         feed_mode => Feed, 
         feed_pumps => feed_pumps,
-        skimmer   => Skimmer
+        skimmer   => skimmer_feed_sig  -- <<< connect to internal signal now
     );
+
 	-- Instantiation of ATO
 	ATOController: entity work.ATO
     port map (
@@ -192,8 +195,13 @@ begin
     light_out     <= to_stdlogic(light_on_off_sig);
     ato_pump_out  <= ato_pump_signal;
     Hold_Heat     <= maintenance_holdheat; 
-   	Pumps <=  (maint_pumps or feed_pumps);
-    min_on_out    <= min_on_sig;
+   	--Pumps <=  (maint_pumps or feed_pumps);
+	Pumps   <= '0' when maint_pumps = '1' else feed_pumps;
+	Skimmer <= '0' when maint_pumps = '1' else skimmer_feed_sig;
+
+
+	   
+	min_on_out    <= min_on_sig;
     hour_on_out   <= hour_on_sig;
     min_off_out   <= min_off_sig;
     hour_off_out  <= hour_off_sig;

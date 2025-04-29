@@ -11,7 +11,7 @@ entity ATO is
         S1ATO       : in  STD_LOGIC;
         S2ATO       : in  STD_LOGIC;
         ATO_PUMP    : out STD_LOGIC;
-        ATO_ERROR   : buffer STD_LOGIC
+        ATO_ERROR   : out STD_LOGIC
     );
 end ATO;
 
