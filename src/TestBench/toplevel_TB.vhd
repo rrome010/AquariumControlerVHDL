@@ -107,7 +107,7 @@ begin
         pumps => pumps
     );
 
-    -- Fast simulated 1Hz clock (1 ms period)
+    -- "Simulated" 1Hz clock (1 ms period)
     clk1hz_proc: process
     begin
         loop
@@ -129,14 +129,16 @@ begin
         end loop;
     end process;
 
-    -- Stimulus process (scaled for fast simulation)
+    -- Stimulus process
     stimulus_proc: process
     begin
-        reset <= '1';
+        
+        reset <= '1'; -- initial reset
         wait for 1 ms;
         reset <= '0';
 
-        btn_time <= '1';
+        --RTC time input
+        btn_time <= '1'; --change time to 8:29
         wait for 1 ms;
         for i in 1 to 8 loop
             btn_hour <= '1'; wait for 1 ms; btn_hour <= '0'; wait for 1 ms;
@@ -147,7 +149,7 @@ begin
         btn_time <= '0';
         wait for 2 ms;
 
-        btn_time_lights_on <= '1';
+        btn_time_lights_on <= '1'; --change light on to 8:30
         wait for 1 ms;
         for i in 1 to 8 loop
             btn_light_hour <= '1'; wait for 1 ms; btn_light_hour <= '0'; wait for 1 ms;
@@ -158,7 +160,8 @@ begin
         btn_time_lights_on <= '0';
         wait for 2 ms;
 
-        btn_time_lights_of <= '1';
+        --Lighting time input    
+        btn_time_lights_of <= '1'; --change lights off time to 4 pm / 16:00
         wait for 1 ms;
         for i in 1 to 8 loop
             btn_light_hour <= '1'; wait for 1 ms; btn_light_hour <= '0'; wait for 1 ms;
@@ -170,13 +173,14 @@ begin
         btn_time_lights_of <= '0';
         wait for 2 ms;
 
-        for raw_temp in 320 to 408 loop
+        for raw_temp in 320 to 408 loop -- slowly increment temp from 20c to 25.5c
             CurrentTemp_override <= to_unsigned(raw_temp, 13);
             wait for 1 ms;
         end loop;
         wait for 10 ms;
 
-        btn_time <= '1';
+        --lighting test
+        btn_time <= '1'; --advance time to watch lights go out
         wait for 1 ms;
         for i in 1 to 7 loop
             btn_hour <= '1'; wait for 1 ms; btn_hour <= '0'; wait for 1 ms;
@@ -187,16 +191,17 @@ begin
         btn_time <= '0';
         wait for 1 ms;
 
-        CurrentTemp_override <= to_unsigned(392, 13);
+        --temp tests
+        CurrentTemp_override <= to_unsigned(392, 13); --set temp low to view heater behavior in maintenance mode
         wait for 2 ms;
         sw_maint <= '1';
         wait for 5 ms;
         sw_maint <= '0';
         wait for 5 ms;
-        CurrentTemp_override <= to_unsigned(408, 13);
+        CurrentTemp_override <= to_unsigned(408, 13); --set temp to expected temp
         wait for 2 ms;
 
-        btn_change_temp <= '1';
+        btn_change_temp <= '1';--test max, user, min temps
         wait for 2 ms;
         btn_temp_up <= '1'; wait for 1 ms; btn_temp_up <= '0';
         wait for 2 ms;
@@ -209,24 +214,34 @@ begin
         btn_change_temp <= '0';
         wait for 1 ms;
 
-        CurrentTemp_override <= to_unsigned(350, 13);
+        CurrentTemp_override <= to_unsigned(350, 13); --set temp low and wait for heater timeout
         wait for 2 ms;
 
-        S1ATO_override <= '0'; S2ATO_override <= '0'; wait for 5 ms;
-        S1ATO_override <= '1'; wait for 5 ms;
+        --ATO tests/Maintenance test
+        S1ATO_override <= '0'; S2ATO_override <= '0'; wait for 5 ms;--ato testing
+        S1ATO_override <= '1'; wait for 5 ms;--test if ato activates
         S1ATO_override <= '0'; wait for 8 ms;
-        sw_maint <= '1'; wait for 5 ms;
+        sw_maint <= '1'; wait for 5 ms; --reset/ test maint mode/ skimmer, heater, ato pumps
         sw_maint <= '0'; wait for 5 ms;
-        S1ATO_override <= '1'; S2ATO_override <= '1'; wait for 5 ms;
-        S2ATO_override <= '0'; wait for 2 ms;
-        sw_maint <= '1'; wait for 5 ms;
+        S1ATO_override <= '1'; S2ATO_override <= '1'; wait for 5 ms; --test ato error overflow
+        S2ATO_override <= '1'; wait for 2 ms;
+        sw_maint <= '1'; wait for 5 ms; --reset ato error
         sw_maint <= '0'; wait for 5 ms;
-        S1ATO_override <= '0'; S2ATO_override <= '0'; wait for 5 ms;
-        sw_maint <= '1'; wait for 5 ms;
-        S1ATO_override <= '1'; S2ATO_override <= '0'; wait for 2 ms;
+        S1ATO_override <= '0'; 
+        S2ATO_override <= '1'; wait for 5 ms;--test ato sensor error
+        sw_maint <= '1'; wait for 5 ms; --reset
+        sw_maint <= '0'; wait for 5 ms; 
+        S1ATO_override <= '0'; --test ato timeout
+        S2ATO_override <= '0'; 
+        wait for 125 ms;
+        sw_maint <= '1'; wait for 5 ms; --reset
         sw_maint <= '0'; wait for 5 ms;
-
-        Feed <= '1'; wait for 5 ms; Feed <= '0'; wait for 2 ms;
+        
+            
+        --Feed mode test    
+        Feed <= '1'; --test feed mode// wait to make sure pumps/ skimmer come back on
+        wait for 5 ms;
+        Feed <= '0'; 
 
         wait;
     end process;
