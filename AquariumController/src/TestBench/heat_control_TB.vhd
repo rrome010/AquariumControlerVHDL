@@ -6,7 +6,7 @@ entity heat_control_tb is
 end heat_control_tb;
 
 architecture TB_ARCHITECTURE of heat_control_tb is
-    -- Component declaration of the tested unit
+    -- Component declaration
     component heat_control
         port(
             Hold_Heat       : in STD_LOGIC;
@@ -25,17 +25,16 @@ architecture TB_ARCHITECTURE of heat_control_tb is
         );
     end component;
 
-    -- Stimulus signals
+    -- Signals
     signal Hold_Heat       : STD_LOGIC := '0';
     signal compclock       : STD_LOGIC := '0';
     signal reset_heat      : STD_LOGIC := '0';
     signal btn_change_temp : STD_LOGIC := '0';
     signal btn_temp_up     : STD_LOGIC := '0';
     signal btn_temp_down   : STD_LOGIC := '0';
-    signal CurrentTemp     : UNSIGNED(12 downto 0) := to_unsigned(408,13); -- Start at 25.5°C
+    signal CurrentTemp     : UNSIGNED(12 downto 0) := to_unsigned(408,13);
     signal min_out         : UNSIGNED(5 downto 0) := (others => '0');
 
-    -- Observed signals
     signal tempmax         : UNSIGNED(12 downto 0);
     signal tempuser        : UNSIGNED(12 downto 0);
     signal tempmin         : UNSIGNED(12 downto 0);
@@ -44,7 +43,7 @@ architecture TB_ARCHITECTURE of heat_control_tb is
 
 begin
 
-    -- Unit Under Test port map
+    -- Instantiate the Unit Under Test (UUT)
     UUT : heat_control
         port map (
             Hold_Heat       => Hold_Heat,
@@ -62,18 +61,18 @@ begin
             TempError       => TempError
         );
 
-    -- 1kHz compclock generation
+    -- 1kHz compclock (1 ms period)
     compclock_process : process
     begin
         while true loop
             compclock <= '0';
-            wait for 500000 ns;
+            wait for 0.5 ms;
             compclock <= '1';
-            wait for 500000 ns;
+            wait for 0.5 ms;
         end loop;
     end process;
 
-    -- Simulate min_out as time counter
+    -- Simulated minute counter
     min_out_process : process
     begin
         while true loop
@@ -91,29 +90,37 @@ begin
         reset_heat <= '0';
         wait for 5 ms;
 
-        -- Normal heating: simulate under-temp
+
+        -- NORMAL operation
         CurrentTemp <= to_unsigned(396,13); -- 24.75°C
         wait for 5 sec;
 
-        -- Reaching normal temp
+
+        -- Reach setpoint: heat off
+
         CurrentTemp <= to_unsigned(409,13); -- 25.56°C
         wait for 5 sec;
 
-        -- Simulate overheating (should trigger ERROR immediately)
+
+        -- Over-temp triggers ERROR
+ 
         CurrentTemp <= to_unsigned(420,13); -- 26.25°C
         wait for 5 sec;
 
-        -- Cooling down (should still stay in ERROR state)
-        CurrentTemp <= to_unsigned(407,13); -- 25.43°C
+
+        -- Cooling test error
+        CurrentTemp <= to_unsigned(407,13);
         wait for 5 sec;
 
-        -- Apply reset to clear ERROR
+
+        -- Reset to clear ERROR
         reset_heat <= '1';
         wait for 2 ms;
         reset_heat <= '0';
         wait for 5 sec;
 
-        -- Test increasing temp setpoint
+
+        -- Increase set temp
         btn_change_temp <= '1';
         btn_temp_up <= '1';
         wait for 2 ms;
@@ -121,31 +128,30 @@ begin
         btn_temp_up <= '0';
         wait for 5 sec;
 
-        -- Test decreasing temp setpoint
+        -- Decrease set temp
         btn_change_temp <= '1';
         btn_temp_down <= '1';
         wait for 2 ms;
         btn_change_temp <= '0';
         btn_temp_down <= '0';
         wait for 5 sec;
-
-        -- Enter maintenance mode
+		
+		-- Enter MAINTENANCE mode (should disable heater & clear error)
         Hold_Heat <= '1';
         wait for 5 sec;
 
-        -- During Hold: simulate temp drop (heater should stay OFF)
+        -- undertemp
         CurrentTemp <= to_unsigned(390,13); -- 24.375°C
         wait for 5 sec;
 
-        -- Exit maintenance mode
+        -- Exit MAINTENANCE
         Hold_Heat <= '0';
         wait for 5 sec;
 
-        -- After maintenance: simulate temp low again (heater ON)
-        CurrentTemp <= to_unsigned(396,13);
-        wait for 5 sec;
+        -- Trigger timeot
+        wait for 60 sec;
 
-        wait; -- End simulation
+        wait;
     end process;
 
 end TB_ARCHITECTURE;

@@ -7,7 +7,7 @@ entity TopLevel is
         clk_1hz        : in std_logic;
         compclock      : in std_logic;
         reset          : in std_logic;
-        btn_feed       : in std_logic;
+        --btn_feed       : in std_logic;
         sw_maint       : in std_logic;
 		
 		Feed : in std_logic;
@@ -71,7 +71,7 @@ architecture Behavioral of TopLevel is
 	
 	signal Feed_in : std_logic := '0';
 
-    signal feed_active      : std_logic := '0';
+    --signal feed_active      : std_logic := '0';
     signal feed_start_min   : unsigned(5 downto 0) := (others => '0');
 
     signal ato_pump_signal  : std_logic := '0';
@@ -94,7 +94,7 @@ architecture Behavioral of TopLevel is
     signal tempmin_sig      : unsigned(12 downto 0) := (others => '0');
 
 	signal ato_error_signal : std_logic;
-	signal skimmer_feed_sig : std_logic := '0'; -- New internal signal
+	signal skimmer_feed_sig : std_logic := '0'; 
 
 	
 	-- Function to convert BIT to STD_LOGIC
@@ -143,7 +143,7 @@ begin
     -- Instantiation of Heat control
     HeaterController: entity work.Heat_control
         port map (
-            Hold_Heat       => maintenance_holdheat, -- <<< connects internal signal
+            Hold_Heat       => maintenance_holdheat,
             compclock       => compclock,
             reset_heat      => reset,
             btn_change_temp => btn_change_temp,
@@ -173,7 +173,7 @@ FeedMode_Inst : entity work.feedmode
         clk_1hz   => clk_1hz,
         feed_mode => Feed, 
         feed_pumps => feed_pumps,
-        skimmer   => skimmer_feed_sig  -- <<< connect to internal signal now
+        skimmer   => skimmer_feed_sig  
     );
 
 	-- Instantiation of ATO
@@ -207,7 +207,7 @@ FeedMode_Inst : entity work.feedmode
     hour_off_out  <= hour_off_sig;
     tempuser_out  <= tempuser_sig;
 	ato_pump_out <= ato_pump_signal;
-	ATO_ERROR    <= ato_error_signal;
+	
 
 
     -- Debug outputs

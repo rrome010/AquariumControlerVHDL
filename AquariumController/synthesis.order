@@ -12,3 +12,4 @@ i<>.\src\TestBench\heat_control_TB.vhd
 i<>.\src\TestBench\ato_TB.vhd
 i<>.\src\TestBench\simheatadc_TB.vhd
 i<>.\src\TestBench\rtc_TB.vhd
+i<>.\src\TestBench\maintenance_TB.vhd

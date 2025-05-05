@@ -9,10 +9,10 @@ architecture TB_ARCHITECTURE of feedmode_tb is
     -- Component declaration of the tested unit
     component feedmode
     port(
-        compclock : in STD_LOGIC;
-        clk_1hz   : in STD_LOGIC;
-        feed_mode : in STD_LOGIC;
-        feed_pumps : out STD_LOGIC;  
+        compclock  : in  STD_LOGIC;
+        clk_1hz    : in  STD_LOGIC;
+        feed_mode  : in  STD_LOGIC;
+        Feed_Pumps : out STD_LOGIC;  
         skimmer    : out STD_LOGIC
     );
     end component;
@@ -21,7 +21,7 @@ architecture TB_ARCHITECTURE of feedmode_tb is
     signal compclock  : STD_LOGIC := '0';
     signal clk_1hz    : STD_LOGIC := '0';
     signal feed_mode  : STD_LOGIC := '0';
-    signal feed_pumps : STD_LOGIC;   
+    signal Feed_Pumps : STD_LOGIC;   
     signal skimmer    : STD_LOGIC;
 
 begin
@@ -32,7 +32,7 @@ begin
             compclock  => compclock,
             clk_1hz    => clk_1hz,
             feed_mode  => feed_mode,
-            feed_pumps => feed_pumps,  
+            Feed_Pumps => Feed_Pumps,
             skimmer    => skimmer
         );
 
@@ -47,12 +47,12 @@ begin
         end loop;
     end process;
 
-    -- 1Hz clock simulation 
+    -- Simulated faster "1Hz"
     clk1hz_proc : process
     begin
         loop
             clk_1hz <= '0';
-            wait for 0.5 ms;   -- <<< FIX: real 1Hz: 1ms cycle (0.5ms low + 0.5ms high)
+            wait for 0.5 ms;
             clk_1hz <= '1';
             wait for 0.5 ms;
         end loop;
@@ -61,18 +61,17 @@ begin
     -- Stimulus Process
     stimulus : process
     begin
-        -- Wait for system to stabilize
+        -- Wait for initial stabilization
         wait for 2 ms;
 
-        -- Enter feed mode
+        -- Trigger feed mode
         feed_mode <= '1';
-        wait for 1 ms; -- short pulse
+        wait for 1 ms;
         feed_mode <= '0';
 
-        -- Let the system process for a while
-        wait for 10 sec;  
+        wait for 20 ms; 
 
-        -- Simulation done
+        -- End simulation
         wait;
     end process;
 

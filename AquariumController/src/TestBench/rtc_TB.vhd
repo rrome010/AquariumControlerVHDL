@@ -20,18 +20,17 @@ architecture TB_ARCHITECTURE of rtc_tb is
 	end component;
 
 	-- Signals
-	signal clk_1hz   : STD_LOGIC := '0';
-	signal rst       : STD_LOGIC := '0';
-	signal btn_time  : STD_LOGIC := '0';
-	signal btn_hour  : STD_LOGIC := '0';
-	signal btn_min   : STD_LOGIC := '0';
+	signal clk_1hz   : STD_LOGIC ;
+	signal rst       : STD_LOGIC;
+	signal btn_time  : STD_LOGIC;
+	signal btn_hour  : STD_LOGIC;
+	signal btn_min   : STD_LOGIC;
 	signal sec_out   : UNSIGNED(5 downto 0);
 	signal min_out   : UNSIGNED(5 downto 0);
 	signal hour_out  : UNSIGNED(4 downto 0);
 
 begin
 
-	-- Instantiate the UUT
 	UUT: rtc
 		port map (
 			clk_1hz   => clk_1hz,
@@ -44,54 +43,53 @@ begin
 			hour_out  => hour_out
 		);
 
-	-- 10 ns clock generation (100 MHz)
+	-- Simulate a real-time 1Hz clock (1 second period)
 	clk_process: process
 	begin
-		while true loop
+		loop
 			clk_1hz <= '0';
-			wait for 10 ns;
+			wait for 500 ms;
 			clk_1hz <= '1';
-			wait for 10 ns;
+			wait for 500 ms;
 		end loop;
 	end process;
 
-	-- Stimulus process
 	stim_proc: process
 	begin
 		-- Assert reset
 		rst <= '1';
-		wait for 20 ns;
+		wait for 1 sec;
 		rst <= '0';
 
-		-- Let it run for 200 ns (20 clock ticks)
-		wait for 200 ns;
+		-- Wait briefly before time set
+		wait for 2 sec;
 
 		-- Enter time set mode
 		btn_time <= '1';
+		wait for 1 sec;
 
-		-- Pulse hour button once (1 clock tick)
-		btn_hour <= '1';
-		wait for 10 ns;
-		btn_hour <= '0';
+		-- Increment hour to 23
+		for i in 1 to 23 loop
+			btn_hour <= '1';
+			wait for 1 sec;
+			btn_hour <= '0';
+			wait for 1 sec;
+		end loop;
 
-		-- Wait a few ticks
-		wait for 30 ns;
-
-		-- Pulse minute button twice
-		btn_min <= '1';
-		wait for 10 ns;
-		btn_min <= '0';
-		wait for 20 ns;
-		btn_min <= '1';
-		wait for 10 ns;
-		btn_min <= '0';
+		-- Increment minute to 58
+		for i in 1 to 58 loop
+			btn_min <= '1';
+			wait for 1 sec;
+			btn_min <= '0';
+			wait for 1 sec;
+		end loop;
 
 		-- Exit time set mode
-		wait for 20 ns;
 		btn_time <= '0';
+		wait for 1 sec;
 
-		-- Let clock tick normally for another 100 ns
-		wait for 100 ns;
+		-- Let RTC run normally for 10 seconds
+		wait for 10 sec;
 
 		-- End simulation
 		wait;

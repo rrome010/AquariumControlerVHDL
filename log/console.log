@@ -1,0 +1,69 @@
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+acom -reorder -O3 -e 100 -work aquariumcontroller -2019  "$dsn/src/RTC CLOCK.vhd" $dsn/src/SimHeatADC.vhd "$dsn/src/Lighting control.vhd" $dsn/src/Maitenence.vhd $dsn/src/Feed.vhd "$dsn/src/Heat control.vhd" $dsn/src/ATO.vhd $dsn/src/TestBench/feedmode_TB.vhd $dsn/src/TestBench/lighting_control_TB.vhd $dsn/src/TestBench/heat_control_TB.vhd $dsn/src/TestBench/ato_TB.vhd $dsn/src/TestBench/simheatadc_TB.vhd $dsn/src/TestBench/rtc_TB.vhd $dsn/src/TopLevel.vhd $dsn/src/TestBench/toplevel_TB.vhd $dsn/src/testbench/maintenance_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/Users/Da Hunums/Desktop/controller/AquariumController/src/RTC CLOCK.vhd
+# Compile Entity "RTC"
+# Compile Architecture "Behavioral" of Entity "RTC"
+# File: C:/Users/Da Hunums/Desktop/controller/AquariumController/src/SimHeatADC.vhd
+# Compile Entity "SimHeatADC"
+# Compile Architecture "behavior" of Entity "SimHeatADC"
+# File: C:/Users/Da Hunums/Desktop/controller/AquariumController/src/Lighting control.vhd
+# Compile Entity "Lighting_Control"
+# Compile Architecture "Behavioral" of Entity "Lighting_Control"
+# File: C:/Users/Da Hunums/Desktop/controller/AquariumController/src/Maitenence.vhd
+# Compile Entity "maintenance"
+# Compile Architecture "Behavioral" of Entity "maintenance"
+# File: C:/Users/Da Hunums/Desktop/controller/AquariumController/src/Feed.vhd
+# Compile Entity "feedmode"
+# Compile Architecture "Behavioral" of Entity "feedmode"
+# File: C:/Users/Da Hunums/Desktop/controller/AquariumController/src/Heat control.vhd
+# Compile Entity "Heat_control"
+# Compile Architecture "behavioral" of Entity "Heat_control"
+# File: C:/Users/Da Hunums/Desktop/controller/AquariumController/src/ATO.vhd
+# Compile Entity "ATO"
+# Compile Architecture "Behavioral" of Entity "ATO"
+# File: C:/Users/Da Hunums/Desktop/controller/AquariumController/src/TestBench/feedmode_TB.vhd
+# Compile Entity "feedmode_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "feedmode_tb"
+# Compile Configuration "TESTBENCH_FOR_feedmode"
+# File: C:/Users/Da Hunums/Desktop/controller/AquariumController/src/TestBench/lighting_control_TB.vhd
+# Compile Entity "lighting_control_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "lighting_control_tb"
+# Compile Configuration "TESTBENCH_FOR_lighting_control"
+# File: C:/Users/Da Hunums/Desktop/controller/AquariumController/src/TestBench/heat_control_TB.vhd
+# Compile Entity "heat_control_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "heat_control_tb"
+# Compile Configuration "TESTBENCH_FOR_heat_control"
+# File: C:/Users/Da Hunums/Desktop/controller/AquariumController/src/TestBench/ato_TB.vhd
+# Compile Entity "ato_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "ato_tb"
+# Compile Configuration "TESTBENCH_FOR_ato"
+# File: C:/Users/Da Hunums/Desktop/controller/AquariumController/src/TestBench/simheatadc_TB.vhd
+# Compile Entity "SimHeatADC_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "SimHeatADC_tb"
+# Compile Configuration "TESTBENCH_FOR_SimHeatADC"
+# File: C:/Users/Da Hunums/Desktop/controller/AquariumController/src/TestBench/rtc_TB.vhd
+# Compile Entity "rtc_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "rtc_tb"
+# Compile Configuration "TESTBENCH_FOR_rtc"
+# File: C:/Users/Da Hunums/Desktop/controller/AquariumController/src/TopLevel.vhd
+# Compile Entity "TopLevel"
+# Compile Architecture "Behavioral" of Entity "TopLevel"
+# File: C:/Users/Da Hunums/Desktop/controller/AquariumController/src/TestBench/toplevel_TB.vhd
+# Compile Entity "TopLevel_tb"
+# Compile Architecture "Behavioral" of Entity "TopLevel_tb"
+# File: C:/Users/Da Hunums/Desktop/controller/AquariumController/src/testbench/maintenance_tb.vhd
+# Compile Entity "maintenance_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "maintenance_tb"
+# Compile Configuration "TESTBENCH_FOR_maintenance"
+# Top-level unit(s) detected:
+# Configuration => TESTBENCH_FOR_lighting_control
+# Configuration => TESTBENCH_FOR_SimHeatADC
+# Entity => TopLevel_tb
+# Configuration => TESTBENCH_FOR_rtc
+# Configuration => TESTBENCH_FOR_maintenance
+# Configuration => TESTBENCH_FOR_feedmode
+# Configuration => TESTBENCH_FOR_heat_control
+# Configuration => TESTBENCH_FOR_ato
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.5 [s]

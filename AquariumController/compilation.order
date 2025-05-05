@@ -13,3 +13,4 @@
 .\src\TestBench\rtc_TB.vhd
 .\src\TopLevel.vhd
 .\src\TestBench\toplevel_TB.vhd
+.\src\testbench\maintenance_tb.vhd

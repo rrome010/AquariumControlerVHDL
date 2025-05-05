@@ -1,119 +1,6 @@
 # ELBREAD: Elaboration process.
 # ELBREAD: Elaboration time 0.0 [s].
-acom -reorder -O3 -e 100 -work aquariumcontroller -2002  "$dsn/src/rtc clock.vhd" $dsn/src/simheatadc.vhd "$dsn/src/lighting control.vhd" $dsn/src/maitenence.vhd $dsn/src/feed.vhd "$dsn/src/heat control.vhd" $dsn/src/ato.vhd $dsn/src/toplevel.vhd $dsn/src/testbench/toplevel_tb.vhd $dsn/src/testbench/feedmode_tb.vhd $dsn/src/testbench/lighting_control_tb.vhd $dsn/src/testbench/heat_control_tb.vhd $dsn/src/testbench/ato_tb.vhd $dsn/src/testbench/simheatadc_tb.vhd $dsn/src/testbench/rtc_tb.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/rtc clock.vhd
-# Compile Entity "RTC"
-# Compile Architecture "Behavioral" of Entity "RTC"
-# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/simheatadc.vhd
-# Compile Entity "SimHeatADC"
-# Compile Architecture "behavior" of Entity "SimHeatADC"
-# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/lighting control.vhd
-# Compile Entity "Lighting_Control"
-# Compile Architecture "Behavioral" of Entity "Lighting_Control"
-# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/maitenence.vhd
-# Compile Entity "maintenance"
-# Compile Architecture "Behavioral" of Entity "maintenance"
-# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/feed.vhd
-# Compile Entity "feedmode"
-# Compile Architecture "Behavioral" of Entity "feedmode"
-# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/heat control.vhd
-# Compile Entity "Heat_control"
-# Compile Architecture "behavioral" of Entity "Heat_control"
-# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/ato.vhd
-# Compile Entity "ATO"
-# Compile Architecture "Behavioral" of Entity "ATO"
-# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/toplevel.vhd
-# Compile Entity "TopLevel"
-# Compile Architecture "Behavioral" of Entity "TopLevel"
-# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/testbench/toplevel_tb.vhd
-# Compile Entity "TopLevel_tb"
-# Compile Architecture "Behavioral" of Entity "TopLevel_tb"
-# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/testbench/feedmode_tb.vhd
-# Compile Entity "feedmode_tb"
-# Compile Architecture "TB_ARCHITECTURE" of Entity "feedmode_tb"
-# Compile Configuration "TESTBENCH_FOR_feedmode"
-# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/testbench/lighting_control_tb.vhd
-# Compile Entity "lighting_control_tb"
-# Compile Architecture "TB_ARCHITECTURE" of Entity "lighting_control_tb"
-# Compile Configuration "TESTBENCH_FOR_lighting_control"
-# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/testbench/heat_control_tb.vhd
-# Compile Entity "heat_control_tb"
-# Compile Architecture "TB_ARCHITECTURE" of Entity "heat_control_tb"
-# Compile Configuration "TESTBENCH_FOR_heat_control"
-# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/testbench/ato_tb.vhd
-# Compile Entity "ato_tb"
-# Compile Architecture "TB_ARCHITECTURE" of Entity "ato_tb"
-# Compile Configuration "TESTBENCH_FOR_ato"
-# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/testbench/simheatadc_tb.vhd
-# Compile Entity "SimHeatADC_tb"
-# Compile Architecture "TB_ARCHITECTURE" of Entity "SimHeatADC_tb"
-# Compile Configuration "TESTBENCH_FOR_SimHeatADC"
-# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/testbench/rtc_tb.vhd
-# Compile Entity "rtc_tb"
-# Compile Architecture "TB_ARCHITECTURE" of Entity "rtc_tb"
-# Compile Configuration "TESTBENCH_FOR_rtc"
-# Top-level unit(s) detected:
-# Configuration => TESTBENCH_FOR_heat_control
-# Entity => TopLevel_tb
-# Configuration => TESTBENCH_FOR_rtc
-# Configuration => TESTBENCH_FOR_SimHeatADC
-# Configuration => TESTBENCH_FOR_lighting_control
-# Configuration => TESTBENCH_FOR_feedmode
-# Configuration => TESTBENCH_FOR_ato
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.4 [s]
-asim -O5 +access +r +m+ato_tb ato_tb TB_ARCHITECTURE
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-# VSIM: Stack memory: 32MB
-# VSIM: Retval memory: 32MB
-# 
-acom -O3 -e 100 -work aquariumcontroller -2002  $dsn/src/ATO.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/ATO.vhd
-# Compile Entity "ATO"
-# Compile Architecture "Behavioral" of Entity "ATO"
-# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
-# ELBREAD: Elaboration process.
-# ELBREAD: Error: The contents of entity 'aquariumcontroller.ato' instantiated in architecture 'TB_ARCHITECTURE:ato_tb' differ from the contents available during the compilation of this architecture.
-# ELBREAD: Error: Elaboration process completed with errors.
-# Design: Error: Elaboration failed
-# ELBREAD: Elaboration process.
-# ULM: Warning: ULM_0021 Architecture `tb_architecture' of entity `aquariumcontroller.toplevel_tb' is not up-to-date. Please recompile file `C:\My_Designs\Aquarium_Controller\AquariumControlerVHDL\AquariumController/src/testbench/toplevel_tb.vhd'.
-# ELBREAD: Error: Architecture 'tb_architecture' of entity 'TopLevel_tb' not found in library 'aquariumcontroller'.
-# ELBREAD: Error: Elaboration process completed with errors.
-# Design: Error: Elaboration failed
-# ELBREAD: Elaboration process.
-# ULM: Warning: ULM_0021 Architecture `tb_architecture' of entity `aquariumcontroller.toplevel_tb' is not up-to-date. Please recompile file `C:\My_Designs\Aquarium_Controller\AquariumControlerVHDL\AquariumController/src/testbench/toplevel_tb.vhd'.
-# ELBREAD: Error: Architecture 'tb_architecture' of entity 'TopLevel_tb' not found in library 'aquariumcontroller'.
-# ELBREAD: Error: Elaboration process completed with errors.
-# Design: Error: Elaboration failed
-# ELBREAD: Elaboration process.
-# ELBREAD: Error: The contents of entity 'aquariumcontroller.ato' instantiated in architecture 'Behavioral:TopLevel' differ from the contents available during the compilation of this architecture.
-# ELBREAD: Error: Elaboration process completed with errors.
-# Design: Error: Elaboration failed
-# ELBREAD: Elaboration process.
-# ELBREAD: Error: Configuration testbench_for_toplevel (library aquariumcontroller) not found.
-# ELBREAD: Error: Elaboration process completed with errors.
-# Design: Error: Elaboration failed
-# ELBREAD: Elaboration process.
-# ULM: Warning: ULM_0021 Architecture `tb_architecture' of entity `aquariumcontroller.toplevel_tb' is not up-to-date. Please recompile file `C:\My_Designs\Aquarium_Controller\AquariumControlerVHDL\AquariumController/src/testbench/toplevel_tb.vhd'.
-# ELBREAD: Error: Architecture 'tb_architecture' of entity 'TopLevel_tb' not found in library 'aquariumcontroller'.
-# ELBREAD: Error: Elaboration process completed with errors.
-# Design: Error: Elaboration failed
-# ELBREAD: Elaboration process.
-# ELBREAD: Error: The contents of entity 'aquariumcontroller.ato' instantiated in architecture 'Behavioral:TopLevel' differ from the contents available during the compilation of this architecture.
-# ELBREAD: Error: Elaboration process completed with errors.
-# Design: Error: Elaboration failed
-# ELBREAD: Elaboration process.
-# ELBREAD: Error: The contents of entity 'aquariumcontroller.ato' instantiated in architecture 'Behavioral:TopLevel' differ from the contents available during the compilation of this architecture.
-# ELBREAD: Error: Elaboration process completed with errors.
-# Design: Error: Elaboration failed
-# ELBREAD: Elaboration process.
-# ELBREAD: Error: The contents of entity 'aquariumcontroller.ato' instantiated in architecture 'Behavioral:TopLevel' differ from the contents available during the compilation of this architecture.
-# ELBREAD: Error: Elaboration process completed with errors.
-# Design: Error: Elaboration failed
-acom -reorder -O3 -e 100 -work aquariumcontroller -2002  "$dsn/src/RTC CLOCK.vhd" $dsn/src/SimHeatADC.vhd "$dsn/src/Lighting control.vhd" $dsn/src/Maitenence.vhd $dsn/src/Feed.vhd "$dsn/src/Heat control.vhd" $dsn/src/ATO.vhd $dsn/src/TestBench/feedmode_TB.vhd $dsn/src/TestBench/lighting_control_TB.vhd $dsn/src/TestBench/heat_control_TB.vhd $dsn/src/TestBench/ato_TB.vhd $dsn/src/TestBench/simheatadc_TB.vhd $dsn/src/TestBench/rtc_TB.vhd $dsn/src/TopLevel.vhd $dsn/src/TestBench/toplevel_TB.vhd
+acom -reorder -O3 -e 100 -work aquariumcontroller -2019  "$dsn/src/RTC CLOCK.vhd" $dsn/src/SimHeatADC.vhd "$dsn/src/Lighting control.vhd" $dsn/src/Maitenence.vhd $dsn/src/Feed.vhd "$dsn/src/Heat control.vhd" $dsn/src/ATO.vhd $dsn/src/TestBench/feedmode_TB.vhd $dsn/src/TestBench/lighting_control_TB.vhd $dsn/src/TestBench/heat_control_TB.vhd $dsn/src/TestBench/ato_TB.vhd $dsn/src/TestBench/simheatadc_TB.vhd $dsn/src/TestBench/rtc_TB.vhd $dsn/src/TopLevel.vhd $dsn/src/TestBench/toplevel_TB.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
 # File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/RTC CLOCK.vhd
 # Compile Entity "RTC"
@@ -174,7 +61,1508 @@ acom -reorder -O3 -e 100 -work aquariumcontroller -2002  "$dsn/src/RTC CLOCK.vhd
 # Configuration => TESTBENCH_FOR_rtc
 # Configuration => TESTBENCH_FOR_heat_control
 # Configuration => TESTBENCH_FOR_ato
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.8 [s]
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.6 [s]
+acom -reorder -O3 -e 100 -work aquariumcontroller -2019  "$dsn/src/RTC CLOCK.vhd" $dsn/src/SimHeatADC.vhd "$dsn/src/Lighting control.vhd" $dsn/src/Maitenence.vhd $dsn/src/Feed.vhd "$dsn/src/Heat control.vhd" $dsn/src/ATO.vhd $dsn/src/TestBench/feedmode_TB.vhd $dsn/src/TestBench/lighting_control_TB.vhd $dsn/src/TestBench/heat_control_TB.vhd $dsn/src/TestBench/ato_TB.vhd $dsn/src/TestBench/simheatadc_TB.vhd $dsn/src/TestBench/rtc_TB.vhd $dsn/src/TopLevel.vhd $dsn/src/TestBench/toplevel_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/RTC CLOCK.vhd
+# Compile Entity "RTC"
+# Compile Architecture "Behavioral" of Entity "RTC"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/SimHeatADC.vhd
+# Compile Entity "SimHeatADC"
+# Compile Architecture "behavior" of Entity "SimHeatADC"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/Lighting control.vhd
+# Compile Entity "Lighting_Control"
+# Compile Architecture "Behavioral" of Entity "Lighting_Control"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/Maitenence.vhd
+# Compile Entity "maintenance"
+# Compile Architecture "Behavioral" of Entity "maintenance"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/Feed.vhd
+# Compile Entity "feedmode"
+# Compile Architecture "Behavioral" of Entity "feedmode"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/Heat control.vhd
+# Compile Entity "Heat_control"
+# Compile Architecture "behavioral" of Entity "Heat_control"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/ATO.vhd
+# Compile Entity "ATO"
+# Compile Architecture "Behavioral" of Entity "ATO"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/feedmode_TB.vhd
+# Compile Entity "feedmode_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "feedmode_tb"
+# Compile Configuration "TESTBENCH_FOR_feedmode"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/lighting_control_TB.vhd
+# Compile Entity "lighting_control_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "lighting_control_tb"
+# Compile Configuration "TESTBENCH_FOR_lighting_control"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/heat_control_TB.vhd
+# Compile Entity "heat_control_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "heat_control_tb"
+# Compile Configuration "TESTBENCH_FOR_heat_control"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/ato_TB.vhd
+# Compile Entity "ato_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "ato_tb"
+# Compile Configuration "TESTBENCH_FOR_ato"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/simheatadc_TB.vhd
+# Compile Entity "SimHeatADC_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "SimHeatADC_tb"
+# Compile Configuration "TESTBENCH_FOR_SimHeatADC"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/rtc_TB.vhd
+# Compile Entity "rtc_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "rtc_tb"
+# Compile Configuration "TESTBENCH_FOR_rtc"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TopLevel.vhd
+# Compile Entity "TopLevel"
+# Compile Architecture "Behavioral" of Entity "TopLevel"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/toplevel_TB.vhd
+# Compile Entity "TopLevel_tb"
+# Compile Architecture "Behavioral" of Entity "TopLevel_tb"
+# Top-level unit(s) detected:
+# Configuration => TESTBENCH_FOR_feedmode
+# Configuration => TESTBENCH_FOR_SimHeatADC
+# Entity => TopLevel_tb
+# Configuration => TESTBENCH_FOR_lighting_control
+# Configuration => TESTBENCH_FOR_rtc
+# Configuration => TESTBENCH_FOR_heat_control
+# Configuration => TESTBENCH_FOR_ato
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.5 [s]
+asim -O5 +access +r +m+TopLevel_tb TopLevel_tb Behavioral
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.1 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6223 kB (elbread=256 elab2=5828 kernel=138 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\Aquarium_Controller\AquariumControlerVHDL\AquariumController\src\wave.asdb
+#  9:14 AM, Monday, May 5, 2025
+#  Simulation has been initialized
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+feedmode_tb feedmode_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5174 kB (elbread=256 elab2=4780 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\Aquarium_Controller\AquariumControlerVHDL\AquariumController\src\wave.asdb
+#  9:15 AM, Monday, May 5, 2025
+#  Simulation has been initialized
+# 5 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/wave.asdb'.
+run @16 sec
+# KERNEL: stopped at time: 249340300 ns
+run
+# KERNEL: stopped at time: 1090369765 ns
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+feedmode_tb feedmode_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+acom -O3 -e 100 -work aquariumcontroller -2019  $dsn/src/Feed.vhd $dsn/src/TestBench/feedmode_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/Feed.vhd
+# Compile Entity "feedmode"
+# Compile Architecture "Behavioral" of Entity "feedmode"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/feedmode_TB.vhd
+# Compile Entity "feedmode_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "feedmode_tb"
+# Compile Configuration "TESTBENCH_FOR_feedmode"
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5174 kB (elbread=256 elab2=4780 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\Aquarium_Controller\AquariumControlerVHDL\AquariumController\src\wave.asdb
+#  9:19 AM, Monday, May 5, 2025
+#  Simulation has been initialized
+# 5 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/wave.asdb'.
+run @3 sec
+# KERNEL: stopped at time: 117384625 ns
+run
+# KERNEL: stopped at time: 246208995 ns
+# Waveform file 'C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/feedmode(sped-up).awc' connected to 'C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/feedmode(sped-up).asdb'.
+# Adding file C:\My_Designs\Aquarium_Controller\AquariumControlerVHDL\AquariumController\src\feedmode(sped-up).asdb ... Done
+# Adding file C:\My_Designs\Aquarium_Controller\AquariumControlerVHDL\AquariumController\src\feedmode(sped-up).awc ... Done
+endsim
+# VSIM: Simulation has finished.
+acom -reorder -O3 -e 100 -work aquariumcontroller -2019  "$dsn/src/RTC CLOCK.vhd" $dsn/src/SimHeatADC.vhd "$dsn/src/Lighting control.vhd" $dsn/src/Maitenence.vhd $dsn/src/Feed.vhd "$dsn/src/Heat control.vhd" $dsn/src/ATO.vhd $dsn/src/TestBench/feedmode_TB.vhd $dsn/src/TestBench/lighting_control_TB.vhd $dsn/src/TestBench/heat_control_TB.vhd $dsn/src/TestBench/ato_TB.vhd $dsn/src/TestBench/simheatadc_TB.vhd $dsn/src/TestBench/rtc_TB.vhd $dsn/src/TopLevel.vhd $dsn/src/TestBench/toplevel_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/RTC CLOCK.vhd
+# Compile Entity "RTC"
+# Compile Architecture "Behavioral" of Entity "RTC"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/SimHeatADC.vhd
+# Compile Entity "SimHeatADC"
+# Compile Architecture "behavior" of Entity "SimHeatADC"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/Lighting control.vhd
+# Compile Entity "Lighting_Control"
+# Compile Architecture "Behavioral" of Entity "Lighting_Control"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/Maitenence.vhd
+# Compile Entity "maintenance"
+# Compile Architecture "Behavioral" of Entity "maintenance"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/Feed.vhd
+# Compile Entity "feedmode"
+# Compile Architecture "Behavioral" of Entity "feedmode"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/Heat control.vhd
+# Compile Entity "Heat_control"
+# Compile Architecture "behavioral" of Entity "Heat_control"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/ATO.vhd
+# Compile Entity "ATO"
+# Compile Architecture "Behavioral" of Entity "ATO"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/feedmode_TB.vhd
+# Compile Entity "feedmode_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "feedmode_tb"
+# Compile Configuration "TESTBENCH_FOR_feedmode"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/lighting_control_TB.vhd
+# Compile Entity "lighting_control_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "lighting_control_tb"
+# Compile Configuration "TESTBENCH_FOR_lighting_control"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/heat_control_TB.vhd
+# Compile Entity "heat_control_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "heat_control_tb"
+# Compile Configuration "TESTBENCH_FOR_heat_control"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/ato_TB.vhd
+# Compile Entity "ato_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "ato_tb"
+# Compile Configuration "TESTBENCH_FOR_ato"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/simheatadc_TB.vhd
+# Compile Entity "SimHeatADC_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "SimHeatADC_tb"
+# Compile Configuration "TESTBENCH_FOR_SimHeatADC"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/rtc_TB.vhd
+# Compile Entity "rtc_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "rtc_tb"
+# Compile Configuration "TESTBENCH_FOR_rtc"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TopLevel.vhd
+# Compile Entity "TopLevel"
+# Compile Architecture "Behavioral" of Entity "TopLevel"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/toplevel_TB.vhd
+# Compile Entity "TopLevel_tb"
+# Compile Architecture "Behavioral" of Entity "TopLevel_tb"
+# Top-level unit(s) detected:
+# Configuration => TESTBENCH_FOR_feedmode
+# Configuration => TESTBENCH_FOR_SimHeatADC
+# Entity => TopLevel_tb
+# Configuration => TESTBENCH_FOR_lighting_control
+# Configuration => TESTBENCH_FOR_rtc
+# Configuration => TESTBENCH_FOR_heat_control
+# Configuration => TESTBENCH_FOR_ato
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.5 [s]
+acom -reorder -O3 -e 100 -work aquariumcontroller -2019  "$dsn/src/RTC CLOCK.vhd" $dsn/src/SimHeatADC.vhd "$dsn/src/Lighting control.vhd" $dsn/src/Maitenence.vhd $dsn/src/Feed.vhd "$dsn/src/Heat control.vhd" $dsn/src/ATO.vhd $dsn/src/TestBench/feedmode_TB.vhd $dsn/src/TestBench/lighting_control_TB.vhd $dsn/src/TestBench/heat_control_TB.vhd $dsn/src/TestBench/ato_TB.vhd $dsn/src/TestBench/simheatadc_TB.vhd $dsn/src/TestBench/rtc_TB.vhd $dsn/src/TopLevel.vhd $dsn/src/TestBench/toplevel_TB.vhd $dsn/src/testbench/maintenance_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/RTC CLOCK.vhd
+# Compile Entity "RTC"
+# Compile Architecture "Behavioral" of Entity "RTC"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/SimHeatADC.vhd
+# Compile Entity "SimHeatADC"
+# Compile Architecture "behavior" of Entity "SimHeatADC"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/Lighting control.vhd
+# Compile Entity "Lighting_Control"
+# Compile Architecture "Behavioral" of Entity "Lighting_Control"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/Maitenence.vhd
+# Compile Entity "maintenance"
+# Compile Architecture "Behavioral" of Entity "maintenance"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/Feed.vhd
+# Compile Entity "feedmode"
+# Compile Architecture "Behavioral" of Entity "feedmode"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/Heat control.vhd
+# Compile Entity "Heat_control"
+# Compile Architecture "behavioral" of Entity "Heat_control"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/ATO.vhd
+# Compile Entity "ATO"
+# Compile Architecture "Behavioral" of Entity "ATO"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/feedmode_TB.vhd
+# Compile Entity "feedmode_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "feedmode_tb"
+# Compile Configuration "TESTBENCH_FOR_feedmode"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/lighting_control_TB.vhd
+# Compile Entity "lighting_control_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "lighting_control_tb"
+# Compile Configuration "TESTBENCH_FOR_lighting_control"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/heat_control_TB.vhd
+# Compile Entity "heat_control_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "heat_control_tb"
+# Compile Configuration "TESTBENCH_FOR_heat_control"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/ato_TB.vhd
+# Compile Entity "ato_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "ato_tb"
+# Compile Configuration "TESTBENCH_FOR_ato"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/simheatadc_TB.vhd
+# Compile Entity "SimHeatADC_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "SimHeatADC_tb"
+# Compile Configuration "TESTBENCH_FOR_SimHeatADC"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/rtc_TB.vhd
+# Compile Entity "rtc_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "rtc_tb"
+# Compile Configuration "TESTBENCH_FOR_rtc"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TopLevel.vhd
+# Compile Entity "TopLevel"
+# Compile Architecture "Behavioral" of Entity "TopLevel"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/toplevel_TB.vhd
+# Compile Entity "TopLevel_tb"
+# Compile Architecture "Behavioral" of Entity "TopLevel_tb"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/testbench/maintenance_tb.vhd
+# Compile Entity "maintenance_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "maintenance_tb"
+# Compile Configuration "TESTBENCH_FOR_maintenance"
+# Top-level unit(s) detected:
+# Configuration => TESTBENCH_FOR_lighting_control
+# Configuration => TESTBENCH_FOR_SimHeatADC
+# Entity => TopLevel_tb
+# Configuration => TESTBENCH_FOR_rtc
+# Configuration => TESTBENCH_FOR_maintenance
+# Configuration => TESTBENCH_FOR_feedmode
+# Configuration => TESTBENCH_FOR_heat_control
+# Configuration => TESTBENCH_FOR_ato
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.6 [s]
+asim -O5 +access +r +m+feedmode_tb feedmode_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5174 kB (elbread=256 elab2=4780 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\Aquarium_Controller\AquariumControlerVHDL\AquariumController\src\wave.asdb
+#  9:25 AM, Monday, May 5, 2025
+#  Simulation has been initialized
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+maintenance maintenance Behavioral
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5044 kB (elbread=256 elab2=4650 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\Aquarium_Controller\AquariumControlerVHDL\AquariumController\src\wave.asdb
+#  9:25 AM, Monday, May 5, 2025
+#  Simulation has been initialized
+# 5 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/wave.asdb'.
+run @800ns
+# KERNEL: stopped at time: 800 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+maintenance maintenance Behavioral
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5044 kB (elbread=256 elab2=4650 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\Aquarium_Controller\AquariumControlerVHDL\AquariumController\src\wave.asdb
+#  9:27 AM, Monday, May 5, 2025
+#  Simulation has been initialized
+# 5 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/wave.asdb'.
+run @800 ns
+# KERNEL: stopped at time: 800 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+maintenance maintenance Behavioral
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5044 kB (elbread=256 elab2=4650 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\Aquarium_Controller\AquariumControlerVHDL\AquariumController\src\wave.asdb
+#  9:27 AM, Monday, May 5, 2025
+#  Simulation has been initialized
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+maintenance_tb maintenance_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+acom -O3 -e 100 -work aquariumcontroller -2019  $dsn/src/testbench/maintenance_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/testbench/maintenance_tb.vhd
+# Compile Entity "maintenance_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "maintenance_tb"
+# Compile Configuration "TESTBENCH_FOR_maintenance"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 5045 kB (elbread=256 elab2=4651 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\Aquarium_Controller\AquariumControlerVHDL\AquariumController\src\wave.asdb
+#  9:28 AM, Monday, May 5, 2025
+#  Simulation has been initialized
+# 4 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/wave.asdb'.
+run @800 ns
+# KERNEL: stopped at time: 800 ns
+# Waveform file 'C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/maintencemode.awc' connected to 'C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/maintencemode.asdb'.
+# Adding file C:\My_Designs\Aquarium_Controller\AquariumControlerVHDL\AquariumController\src\maintencemode.asdb ... Done
+# Adding file C:\My_Designs\Aquarium_Controller\AquariumControlerVHDL\AquariumController\src\maintencemode.awc ... Done
+endsim
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+rtc_tb rtc_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6072 kB (elbread=256 elab2=5677 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\Aquarium_Controller\AquariumControlerVHDL\AquariumController\src\wave.asdb
+#  9:31 AM, Monday, May 5, 2025
+#  Simulation has been initialized
+# 8 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/wave.asdb'.
+run @2 sec
+# KERNEL: stopped at time: 355677390 ns
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+rtc_tb rtc_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+acom -O3 -e 100 -work aquariumcontroller -2019  $dsn/src/TestBench/rtc_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/rtc_TB.vhd
+# Compile Entity "rtc_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "rtc_tb"
+# Compile Configuration "TESTBENCH_FOR_rtc"
+# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6072 kB (elbread=256 elab2=5678 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\Aquarium_Controller\AquariumControlerVHDL\AquariumController\src\wave.asdb
+#  9:37 AM, Monday, May 5, 2025
+#  Simulation has been initialized
+# 8 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/wave.asdb'.
+run @20 sec
+# KERNEL: stopped at time: 20 sec
+run @600 sec
+# KERNEL: stopped at time: 10 min
+acom -reorder -O3 -e 100 -work aquariumcontroller -2019  "$dsn/src/RTC CLOCK.vhd" $dsn/src/SimHeatADC.vhd "$dsn/src/Lighting control.vhd" $dsn/src/Maitenence.vhd $dsn/src/Feed.vhd "$dsn/src/Heat control.vhd" $dsn/src/ATO.vhd $dsn/src/TestBench/feedmode_TB.vhd $dsn/src/TestBench/lighting_control_TB.vhd $dsn/src/TestBench/heat_control_TB.vhd $dsn/src/TestBench/ato_TB.vhd $dsn/src/TestBench/simheatadc_TB.vhd $dsn/src/TestBench/rtc_TB.vhd $dsn/src/TopLevel.vhd $dsn/src/TestBench/toplevel_TB.vhd $dsn/src/testbench/maintenance_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/RTC CLOCK.vhd
+# Compile Entity "rtc_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "rtc_tb"
+# Compile Configuration "TESTBENCH_FOR_rtc"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/SimHeatADC.vhd
+# Compile Entity "SimHeatADC"
+# Compile Architecture "behavior" of Entity "SimHeatADC"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/Lighting control.vhd
+# Compile Entity "Lighting_Control"
+# Compile Architecture "Behavioral" of Entity "Lighting_Control"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/Maitenence.vhd
+# Compile Entity "maintenance"
+# Compile Architecture "Behavioral" of Entity "maintenance"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/Feed.vhd
+# Compile Entity "feedmode"
+# Compile Architecture "Behavioral" of Entity "feedmode"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/Heat control.vhd
+# Compile Entity "Heat_control"
+# Compile Architecture "behavioral" of Entity "Heat_control"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/ATO.vhd
+# Compile Entity "ATO"
+# Compile Architecture "Behavioral" of Entity "ATO"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/feedmode_TB.vhd
+# Compile Entity "feedmode_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "feedmode_tb"
+# Compile Configuration "TESTBENCH_FOR_feedmode"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/lighting_control_TB.vhd
+# Compile Entity "lighting_control_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "lighting_control_tb"
+# Compile Configuration "TESTBENCH_FOR_lighting_control"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/heat_control_TB.vhd
+# Compile Entity "heat_control_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "heat_control_tb"
+# Compile Configuration "TESTBENCH_FOR_heat_control"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/ato_TB.vhd
+# Compile Entity "ato_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "ato_tb"
+# Compile Configuration "TESTBENCH_FOR_ato"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/simheatadc_TB.vhd
+# Compile Entity "SimHeatADC_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "SimHeatADC_tb"
+# Compile Configuration "TESTBENCH_FOR_SimHeatADC"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/rtc_TB.vhd
+# Compile Entity "rtc_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "rtc_tb"
+# Warning: COMP96_0994: TestBench/rtc_TB.vhd : (8, 1): Multiple architecture "TB_ARCHITECTURE" of entity "rtc_tb" found in "C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/rtc_TB.vhd", "C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/RTC CLOCK.vhd".
+# Compile Configuration "TESTBENCH_FOR_rtc"
+# Warning: COMP96_0994: TestBench/rtc_TB.vhd : (98, 1): Multiple configuration "TESTBENCH_FOR_rtc" found in "C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/rtc_TB.vhd", "C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/RTC CLOCK.vhd".
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TopLevel.vhd
+# Compile Entity "TopLevel"
+# Compile Architecture "Behavioral" of Entity "TopLevel"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/toplevel_TB.vhd
+# Compile Entity "TopLevel_tb"
+# Compile Architecture "Behavioral" of Entity "TopLevel_tb"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/testbench/maintenance_tb.vhd
+# Compile Entity "maintenance_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "maintenance_tb"
+# Compile Configuration "TESTBENCH_FOR_maintenance"
+# Warning: COMP96_0993: Automatically determined compilation order may be incorrect because duplicate secondary design units were found.
+# Top-level unit(s) detected:
+# Configuration => TESTBENCH_FOR_rtc
+# Configuration => TESTBENCH_FOR_lighting_control
+# Configuration => TESTBENCH_FOR_SimHeatADC
+# Entity => TopLevel_tb
+# Configuration => TESTBENCH_FOR_rtc
+# Entity => rtc_tb
+# Configuration => TESTBENCH_FOR_maintenance
+# Configuration => TESTBENCH_FOR_feedmode
+# Configuration => TESTBENCH_FOR_heat_control
+# Configuration => TESTBENCH_FOR_ato
+# Compile success 0 Errors 3 Warnings  Analysis time :  1.0 [s]
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+rtc_tb rtc_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6072 kB (elbread=256 elab2=5678 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\Aquarium_Controller\AquariumControlerVHDL\AquariumController\src\wave.asdb
+#  9:39 AM, Monday, May 5, 2025
+#  Simulation has been initialized
+# 8 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/wave.asdb'.
+run @600 sec
+# KERNEL: stopped at time: 10 min
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+rtc_tb rtc_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+acom -O3 -e 100 -work aquariumcontroller -2019  "$dsn/src/RTC CLOCK.vhd"
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/RTC CLOCK.vhd
+# Compile Entity "rtc_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "rtc_tb"
+# Compile Configuration "TESTBENCH_FOR_rtc"
+# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6072 kB (elbread=256 elab2=5677 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\Aquarium_Controller\AquariumControlerVHDL\AquariumController\src\wave.asdb
+#  9:42 AM, Monday, May 5, 2025
+#  Simulation has been initialized
+# 8 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/wave.asdb'.
+run @120 sec
+# KERNEL: stopped at time: 2 min
+acom -reorder -O3 -e 100 -work aquariumcontroller -2019  "$dsn/src/RTC CLOCK.vhd" $dsn/src/SimHeatADC.vhd "$dsn/src/Lighting control.vhd" $dsn/src/Maitenence.vhd $dsn/src/Feed.vhd "$dsn/src/Heat control.vhd" $dsn/src/ATO.vhd $dsn/src/TestBench/feedmode_TB.vhd $dsn/src/TestBench/lighting_control_TB.vhd $dsn/src/TestBench/heat_control_TB.vhd $dsn/src/TestBench/ato_TB.vhd $dsn/src/TestBench/simheatadc_TB.vhd $dsn/src/TestBench/rtc_TB.vhd $dsn/src/TopLevel.vhd $dsn/src/TestBench/toplevel_TB.vhd $dsn/src/testbench/maintenance_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/RTC CLOCK.vhd
+# Compile Entity "RTC"
+# Compile Architecture "Behavioral" of Entity "RTC"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/SimHeatADC.vhd
+# Compile Entity "SimHeatADC"
+# Compile Architecture "behavior" of Entity "SimHeatADC"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/Lighting control.vhd
+# Compile Entity "Lighting_Control"
+# Compile Architecture "Behavioral" of Entity "Lighting_Control"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/Maitenence.vhd
+# Compile Entity "maintenance"
+# Compile Architecture "Behavioral" of Entity "maintenance"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/Feed.vhd
+# Compile Entity "feedmode"
+# Compile Architecture "Behavioral" of Entity "feedmode"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/Heat control.vhd
+# Compile Entity "Heat_control"
+# Compile Architecture "behavioral" of Entity "Heat_control"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/ATO.vhd
+# Compile Entity "ATO"
+# Compile Architecture "Behavioral" of Entity "ATO"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/feedmode_TB.vhd
+# Compile Entity "feedmode_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "feedmode_tb"
+# Compile Configuration "TESTBENCH_FOR_feedmode"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/lighting_control_TB.vhd
+# Compile Entity "lighting_control_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "lighting_control_tb"
+# Compile Configuration "TESTBENCH_FOR_lighting_control"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/heat_control_TB.vhd
+# Compile Entity "heat_control_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "heat_control_tb"
+# Compile Configuration "TESTBENCH_FOR_heat_control"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/ato_TB.vhd
+# Compile Entity "ato_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "ato_tb"
+# Compile Configuration "TESTBENCH_FOR_ato"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/simheatadc_TB.vhd
+# Compile Entity "SimHeatADC_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "SimHeatADC_tb"
+# Compile Configuration "TESTBENCH_FOR_SimHeatADC"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/rtc_TB.vhd
+# Compile Entity "rtc_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "rtc_tb"
+# Compile Configuration "TESTBENCH_FOR_rtc"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TopLevel.vhd
+# Compile Entity "TopLevel"
+# Compile Architecture "Behavioral" of Entity "TopLevel"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/toplevel_TB.vhd
+# Compile Entity "TopLevel_tb"
+# Compile Architecture "Behavioral" of Entity "TopLevel_tb"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/testbench/maintenance_tb.vhd
+# Compile Entity "maintenance_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "maintenance_tb"
+# Compile Configuration "TESTBENCH_FOR_maintenance"
+# Top-level unit(s) detected:
+# Configuration => TESTBENCH_FOR_lighting_control
+# Configuration => TESTBENCH_FOR_SimHeatADC
+# Entity => TopLevel_tb
+# Configuration => TESTBENCH_FOR_rtc
+# Configuration => TESTBENCH_FOR_maintenance
+# Configuration => TESTBENCH_FOR_feedmode
+# Configuration => TESTBENCH_FOR_heat_control
+# Configuration => TESTBENCH_FOR_ato
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.5 [s]
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+rtc_tb rtc_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6072 kB (elbread=256 elab2=5677 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\Aquarium_Controller\AquariumControlerVHDL\AquariumController\src\wave.asdb
+#  9:43 AM, Monday, May 5, 2025
+#  Simulation has been initialized
+# 8 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/wave.asdb'.
+run @120
+# KERNEL: stopped at time: 120 ps
+acom -reorder -O3 -e 100 -work aquariumcontroller -2019  "$dsn/src/RTC CLOCK.vhd" $dsn/src/SimHeatADC.vhd "$dsn/src/Lighting control.vhd" $dsn/src/Maitenence.vhd $dsn/src/Feed.vhd "$dsn/src/Heat control.vhd" $dsn/src/ATO.vhd $dsn/src/TestBench/feedmode_TB.vhd $dsn/src/TestBench/lighting_control_TB.vhd $dsn/src/TestBench/heat_control_TB.vhd $dsn/src/TestBench/ato_TB.vhd $dsn/src/TestBench/simheatadc_TB.vhd $dsn/src/TestBench/rtc_TB.vhd $dsn/src/TopLevel.vhd $dsn/src/TestBench/toplevel_TB.vhd $dsn/src/testbench/maintenance_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/RTC CLOCK.vhd
+# Compile Entity "RTC"
+# Compile Architecture "Behavioral" of Entity "RTC"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/SimHeatADC.vhd
+# Compile Entity "SimHeatADC"
+# Compile Architecture "behavior" of Entity "SimHeatADC"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/Lighting control.vhd
+# Compile Entity "Lighting_Control"
+# Compile Architecture "Behavioral" of Entity "Lighting_Control"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/Maitenence.vhd
+# Compile Entity "maintenance"
+# Compile Architecture "Behavioral" of Entity "maintenance"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/Feed.vhd
+# Compile Entity "feedmode"
+# Compile Architecture "Behavioral" of Entity "feedmode"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/Heat control.vhd
+# Compile Entity "Heat_control"
+# Compile Architecture "behavioral" of Entity "Heat_control"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/ATO.vhd
+# Compile Entity "ATO"
+# Compile Architecture "Behavioral" of Entity "ATO"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/feedmode_TB.vhd
+# Compile Entity "feedmode_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "feedmode_tb"
+# Compile Configuration "TESTBENCH_FOR_feedmode"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/lighting_control_TB.vhd
+# Compile Entity "lighting_control_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "lighting_control_tb"
+# Compile Configuration "TESTBENCH_FOR_lighting_control"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/heat_control_TB.vhd
+# Compile Entity "heat_control_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "heat_control_tb"
+# Compile Configuration "TESTBENCH_FOR_heat_control"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/ato_TB.vhd
+# Compile Entity "ato_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "ato_tb"
+# Compile Configuration "TESTBENCH_FOR_ato"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/simheatadc_TB.vhd
+# Compile Entity "SimHeatADC_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "SimHeatADC_tb"
+# Compile Configuration "TESTBENCH_FOR_SimHeatADC"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/rtc_TB.vhd
+# Compile Entity "rtc_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "rtc_tb"
+# Compile Configuration "TESTBENCH_FOR_rtc"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TopLevel.vhd
+# Compile Entity "TopLevel"
+# Compile Architecture "Behavioral" of Entity "TopLevel"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/toplevel_TB.vhd
+# Compile Entity "TopLevel_tb"
+# Compile Architecture "Behavioral" of Entity "TopLevel_tb"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/testbench/maintenance_tb.vhd
+# Compile Entity "maintenance_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "maintenance_tb"
+# Compile Configuration "TESTBENCH_FOR_maintenance"
+# Top-level unit(s) detected:
+# Configuration => TESTBENCH_FOR_lighting_control
+# Configuration => TESTBENCH_FOR_SimHeatADC
+# Entity => TopLevel_tb
+# Configuration => TESTBENCH_FOR_rtc
+# Configuration => TESTBENCH_FOR_maintenance
+# Configuration => TESTBENCH_FOR_feedmode
+# Configuration => TESTBENCH_FOR_heat_control
+# Configuration => TESTBENCH_FOR_ato
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.5 [s]
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+rtc_tb rtc_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6072 kB (elbread=256 elab2=5677 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\Aquarium_Controller\AquariumControlerVHDL\AquariumController\src\wave.asdb
+#  9:44 AM, Monday, May 5, 2025
+#  Simulation has been initialized
+# 8 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/wave.asdb'.
+run @120 sec
+# KERNEL: stopped at time: 2 min
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+rtc_tb rtc_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+acom -O3 -e 100 -work aquariumcontroller -2019  $dsn/src/TestBench/rtc_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/rtc_TB.vhd
+# Compile Entity "rtc_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "rtc_tb"
+# Compile Configuration "TESTBENCH_FOR_rtc"
+# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6072 kB (elbread=256 elab2=5677 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\Aquarium_Controller\AquariumControlerVHDL\AquariumController\src\wave.asdb
+#  9:45 AM, Monday, May 5, 2025
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/wave.asdb'.
+# 8 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/wave.asdb'.
+run @120 sec
+# KERNEL: stopped at time: 2 min
+acom -reorder -O3 -e 100 -work aquariumcontroller -2019  "$dsn/src/RTC CLOCK.vhd" $dsn/src/SimHeatADC.vhd "$dsn/src/Lighting control.vhd" $dsn/src/Maitenence.vhd $dsn/src/Feed.vhd "$dsn/src/Heat control.vhd" $dsn/src/ATO.vhd $dsn/src/TestBench/feedmode_TB.vhd $dsn/src/TestBench/lighting_control_TB.vhd $dsn/src/TestBench/heat_control_TB.vhd $dsn/src/TestBench/ato_TB.vhd $dsn/src/TestBench/simheatadc_TB.vhd $dsn/src/TestBench/rtc_TB.vhd $dsn/src/TopLevel.vhd $dsn/src/TestBench/toplevel_TB.vhd $dsn/src/testbench/maintenance_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/RTC CLOCK.vhd
+# Compile Entity "RTC"
+# Compile Architecture "Behavioral" of Entity "RTC"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/SimHeatADC.vhd
+# Compile Entity "SimHeatADC"
+# Compile Architecture "behavior" of Entity "SimHeatADC"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/Lighting control.vhd
+# Compile Entity "Lighting_Control"
+# Compile Architecture "Behavioral" of Entity "Lighting_Control"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/Maitenence.vhd
+# Compile Entity "maintenance"
+# Compile Architecture "Behavioral" of Entity "maintenance"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/Feed.vhd
+# Compile Entity "feedmode"
+# Compile Architecture "Behavioral" of Entity "feedmode"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/Heat control.vhd
+# Compile Entity "Heat_control"
+# Compile Architecture "behavioral" of Entity "Heat_control"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/ATO.vhd
+# Compile Entity "ATO"
+# Compile Architecture "Behavioral" of Entity "ATO"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/feedmode_TB.vhd
+# Compile Entity "feedmode_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "feedmode_tb"
+# Compile Configuration "TESTBENCH_FOR_feedmode"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/lighting_control_TB.vhd
+# Compile Entity "lighting_control_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "lighting_control_tb"
+# Compile Configuration "TESTBENCH_FOR_lighting_control"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/heat_control_TB.vhd
+# Compile Entity "heat_control_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "heat_control_tb"
+# Compile Configuration "TESTBENCH_FOR_heat_control"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/ato_TB.vhd
+# Compile Entity "ato_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "ato_tb"
+# Compile Configuration "TESTBENCH_FOR_ato"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/simheatadc_TB.vhd
+# Compile Entity "SimHeatADC_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "SimHeatADC_tb"
+# Compile Configuration "TESTBENCH_FOR_SimHeatADC"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/rtc_TB.vhd
+# Compile Entity "rtc_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "rtc_tb"
+# Compile Configuration "TESTBENCH_FOR_rtc"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TopLevel.vhd
+# Compile Entity "TopLevel"
+# Compile Architecture "Behavioral" of Entity "TopLevel"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/toplevel_TB.vhd
+# Compile Entity "TopLevel_tb"
+# Compile Architecture "Behavioral" of Entity "TopLevel_tb"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/testbench/maintenance_tb.vhd
+# Compile Entity "maintenance_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "maintenance_tb"
+# Compile Configuration "TESTBENCH_FOR_maintenance"
+# Top-level unit(s) detected:
+# Configuration => TESTBENCH_FOR_lighting_control
+# Configuration => TESTBENCH_FOR_SimHeatADC
+# Entity => TopLevel_tb
+# Configuration => TESTBENCH_FOR_rtc
+# Configuration => TESTBENCH_FOR_maintenance
+# Configuration => TESTBENCH_FOR_feedmode
+# Configuration => TESTBENCH_FOR_heat_control
+# Configuration => TESTBENCH_FOR_ato
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.5 [s]
+# KERNEL: Warning: KERNEL_0291 Signal '/rtc_tb/clk_1hz' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/rtc_tb/rst' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/rtc_tb/btn_time' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/rtc_tb/btn_hour' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/rtc_tb/btn_min' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/rtc_tb/sec_out' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/rtc_tb/min_out' has already been traced.
+# KERNEL: Warning: KERNEL_0291 Signal '/rtc_tb/hour_out' has already been traced.
+# 0 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/wave.asdb'.
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+rtc_tb rtc_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6072 kB (elbread=256 elab2=5677 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\Aquarium_Controller\AquariumControlerVHDL\AquariumController\src\wave.asdb
+#  9:47 AM, Monday, May 5, 2025
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/wave.asdb'.
+# 8 object(s) traced.
+run @120
+# KERNEL: stopped at time: 120 ps
+endsim
+# VSIM: Simulation has finished.
+acom -reorder -O3 -e 100 -work aquariumcontroller -2019  "$dsn/src/RTC CLOCK.vhd" $dsn/src/SimHeatADC.vhd "$dsn/src/Lighting control.vhd" $dsn/src/Maitenence.vhd $dsn/src/Feed.vhd "$dsn/src/Heat control.vhd" $dsn/src/ATO.vhd $dsn/src/TestBench/feedmode_TB.vhd $dsn/src/TestBench/lighting_control_TB.vhd $dsn/src/TestBench/heat_control_TB.vhd $dsn/src/TestBench/ato_TB.vhd $dsn/src/TestBench/simheatadc_TB.vhd $dsn/src/TestBench/rtc_TB.vhd $dsn/src/TopLevel.vhd $dsn/src/TestBench/toplevel_TB.vhd $dsn/src/testbench/maintenance_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/RTC CLOCK.vhd
+# Compile Entity "RTC"
+# Compile Architecture "Behavioral" of Entity "RTC"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/SimHeatADC.vhd
+# Compile Entity "SimHeatADC"
+# Compile Architecture "behavior" of Entity "SimHeatADC"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/Lighting control.vhd
+# Compile Entity "Lighting_Control"
+# Compile Architecture "Behavioral" of Entity "Lighting_Control"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/Maitenence.vhd
+# Compile Entity "maintenance"
+# Compile Architecture "Behavioral" of Entity "maintenance"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/Feed.vhd
+# Compile Entity "feedmode"
+# Compile Architecture "Behavioral" of Entity "feedmode"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/Heat control.vhd
+# Compile Entity "Heat_control"
+# Compile Architecture "behavioral" of Entity "Heat_control"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/ATO.vhd
+# Compile Entity "ATO"
+# Compile Architecture "Behavioral" of Entity "ATO"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/feedmode_TB.vhd
+# Compile Entity "feedmode_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "feedmode_tb"
+# Compile Configuration "TESTBENCH_FOR_feedmode"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/lighting_control_TB.vhd
+# Compile Entity "lighting_control_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "lighting_control_tb"
+# Compile Configuration "TESTBENCH_FOR_lighting_control"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/heat_control_TB.vhd
+# Compile Entity "heat_control_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "heat_control_tb"
+# Compile Configuration "TESTBENCH_FOR_heat_control"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/ato_TB.vhd
+# Compile Entity "ato_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "ato_tb"
+# Compile Configuration "TESTBENCH_FOR_ato"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/simheatadc_TB.vhd
+# Compile Entity "SimHeatADC_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "SimHeatADC_tb"
+# Compile Configuration "TESTBENCH_FOR_SimHeatADC"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/rtc_TB.vhd
+# Compile Entity "rtc_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "rtc_tb"
+# Compile Configuration "TESTBENCH_FOR_rtc"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TopLevel.vhd
+# Compile Entity "TopLevel"
+# Compile Architecture "Behavioral" of Entity "TopLevel"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/toplevel_TB.vhd
+# Compile Entity "TopLevel_tb"
+# Compile Architecture "Behavioral" of Entity "TopLevel_tb"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/testbench/maintenance_tb.vhd
+# Compile Entity "maintenance_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "maintenance_tb"
+# Compile Configuration "TESTBENCH_FOR_maintenance"
+# Top-level unit(s) detected:
+# Configuration => TESTBENCH_FOR_lighting_control
+# Configuration => TESTBENCH_FOR_SimHeatADC
+# Entity => TopLevel_tb
+# Configuration => TESTBENCH_FOR_rtc
+# Configuration => TESTBENCH_FOR_maintenance
+# Configuration => TESTBENCH_FOR_feedmode
+# Configuration => TESTBENCH_FOR_heat_control
+# Configuration => TESTBENCH_FOR_ato
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.5 [s]
+asim -O5 +access +r +m+rtc_tb rtc_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6072 kB (elbread=256 elab2=5677 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\Aquarium_Controller\AquariumControlerVHDL\AquariumController\src\wave.asdb
+#  9:47 AM, Monday, May 5, 2025
+#  Simulation has been initialized
+# 8 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/wave.asdb'.
+run @120
+# KERNEL: stopped at time: 120 ps
+acom -reorder -O3 -e 100 -work aquariumcontroller -2019  "$dsn/src/RTC CLOCK.vhd" $dsn/src/SimHeatADC.vhd "$dsn/src/Lighting control.vhd" $dsn/src/Maitenence.vhd $dsn/src/Feed.vhd "$dsn/src/Heat control.vhd" $dsn/src/ATO.vhd $dsn/src/TestBench/feedmode_TB.vhd $dsn/src/TestBench/lighting_control_TB.vhd $dsn/src/TestBench/heat_control_TB.vhd $dsn/src/TestBench/ato_TB.vhd $dsn/src/TestBench/simheatadc_TB.vhd $dsn/src/TestBench/rtc_TB.vhd $dsn/src/TopLevel.vhd $dsn/src/TestBench/toplevel_TB.vhd $dsn/src/testbench/maintenance_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/RTC CLOCK.vhd
+# Compile Entity "RTC"
+# Compile Architecture "Behavioral" of Entity "RTC"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/SimHeatADC.vhd
+# Compile Entity "SimHeatADC"
+# Compile Architecture "behavior" of Entity "SimHeatADC"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/Lighting control.vhd
+# Compile Entity "Lighting_Control"
+# Compile Architecture "Behavioral" of Entity "Lighting_Control"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/Maitenence.vhd
+# Compile Entity "maintenance"
+# Compile Architecture "Behavioral" of Entity "maintenance"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/Feed.vhd
+# Compile Entity "feedmode"
+# Compile Architecture "Behavioral" of Entity "feedmode"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/Heat control.vhd
+# Compile Entity "Heat_control"
+# Compile Architecture "behavioral" of Entity "Heat_control"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/ATO.vhd
+# Compile Entity "ATO"
+# Compile Architecture "Behavioral" of Entity "ATO"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/feedmode_TB.vhd
+# Compile Entity "feedmode_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "feedmode_tb"
+# Compile Configuration "TESTBENCH_FOR_feedmode"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/lighting_control_TB.vhd
+# Compile Entity "lighting_control_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "lighting_control_tb"
+# Compile Configuration "TESTBENCH_FOR_lighting_control"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/heat_control_TB.vhd
+# Compile Entity "heat_control_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "heat_control_tb"
+# Compile Configuration "TESTBENCH_FOR_heat_control"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/ato_TB.vhd
+# Compile Entity "ato_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "ato_tb"
+# Compile Configuration "TESTBENCH_FOR_ato"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/simheatadc_TB.vhd
+# Compile Entity "SimHeatADC_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "SimHeatADC_tb"
+# Compile Configuration "TESTBENCH_FOR_SimHeatADC"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/rtc_TB.vhd
+# Compile Entity "rtc_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "rtc_tb"
+# Compile Configuration "TESTBENCH_FOR_rtc"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TopLevel.vhd
+# Compile Entity "TopLevel"
+# Compile Architecture "Behavioral" of Entity "TopLevel"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/toplevel_TB.vhd
+# Compile Entity "TopLevel_tb"
+# Compile Architecture "Behavioral" of Entity "TopLevel_tb"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/testbench/maintenance_tb.vhd
+# Compile Entity "maintenance_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "maintenance_tb"
+# Compile Configuration "TESTBENCH_FOR_maintenance"
+# Top-level unit(s) detected:
+# Configuration => TESTBENCH_FOR_lighting_control
+# Configuration => TESTBENCH_FOR_SimHeatADC
+# Entity => TopLevel_tb
+# Configuration => TESTBENCH_FOR_rtc
+# Configuration => TESTBENCH_FOR_maintenance
+# Configuration => TESTBENCH_FOR_feedmode
+# Configuration => TESTBENCH_FOR_heat_control
+# Configuration => TESTBENCH_FOR_ato
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.5 [s]
+endsim
+# VSIM: Simulation has finished.
+asim -O5 +access +r +m+rtc_tb rtc_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6072 kB (elbread=256 elab2=5677 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\Aquarium_Controller\AquariumControlerVHDL\AquariumController\src\wave.asdb
+#  10:10 AM, Monday, May 5, 2025
+#  Simulation has been initialized
+# 8 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/wave.asdb'.
+run @20 sec
+# KERNEL: stopped at time: 20 sec
+run @40 sec
+# KERNEL: stopped at time: 40 sec
+run @60 sec 
+# KERNEL: stopped at time: 1 min
+run @200 sec
+# KERNEL: stopped at time: 200 sec
+run @500 sec
+# KERNEL: stopped at time: 500 sec
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6072 kB (elbread=256 elab2=5677 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\Aquarium_Controller\AquariumControlerVHDL\AquariumController\src\wave.asdb
+#  10:12 AM, Monday, May 5, 2025
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/wave.asdb'.
+run @440 sec
+# KERNEL: stopped at time: 440 sec
+# Waveform file 'C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/RTC.awc' connected to 'C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/RTC.asdb'.
+# Adding file C:\My_Designs\Aquarium_Controller\AquariumControlerVHDL\AquariumController\src\RTC.asdb ... Done
+# Adding file C:\My_Designs\Aquarium_Controller\AquariumControlerVHDL\AquariumController\src\RTC.awc ... Done
+endsim
+# VSIM: Simulation has finished.
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+lighting_control_tb lighting_control_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6074 kB (elbread=256 elab2=5679 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\Aquarium_Controller\AquariumControlerVHDL\AquariumController\src\wave.asdb
+#  10:13 AM, Monday, May 5, 2025
+#  Simulation has been initialized
+# 13 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/wave.asdb'.
+run @1 sec
+# KERNEL: stopped at time: 84049560 ns
+run
+# KERNEL: stopped at time: 110119545 ns
+endsim
+# VSIM: Simulation has finished.
+acom -reorder -O3 -e 100 -work aquariumcontroller -2019  "$dsn/src/RTC CLOCK.vhd" $dsn/src/SimHeatADC.vhd "$dsn/src/Lighting control.vhd" $dsn/src/Maitenence.vhd $dsn/src/Feed.vhd "$dsn/src/Heat control.vhd" $dsn/src/ATO.vhd $dsn/src/TestBench/feedmode_TB.vhd $dsn/src/TestBench/lighting_control_TB.vhd $dsn/src/TestBench/heat_control_TB.vhd $dsn/src/TestBench/ato_TB.vhd $dsn/src/TestBench/simheatadc_TB.vhd $dsn/src/TestBench/rtc_TB.vhd $dsn/src/TopLevel.vhd $dsn/src/TestBench/toplevel_TB.vhd $dsn/src/testbench/maintenance_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/RTC CLOCK.vhd
+# Compile Entity "RTC"
+# Compile Architecture "Behavioral" of Entity "RTC"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/SimHeatADC.vhd
+# Compile Entity "SimHeatADC"
+# Compile Architecture "behavior" of Entity "SimHeatADC"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/Lighting control.vhd
+# Compile Entity "Lighting_Control"
+# Compile Architecture "Behavioral" of Entity "Lighting_Control"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/Maitenence.vhd
+# Compile Entity "maintenance"
+# Compile Architecture "Behavioral" of Entity "maintenance"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/Feed.vhd
+# Compile Entity "feedmode"
+# Compile Architecture "Behavioral" of Entity "feedmode"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/Heat control.vhd
+# Compile Entity "Heat_control"
+# Compile Architecture "behavioral" of Entity "Heat_control"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/ATO.vhd
+# Compile Entity "ATO"
+# Compile Architecture "Behavioral" of Entity "ATO"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/feedmode_TB.vhd
+# Compile Entity "feedmode_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "feedmode_tb"
+# Compile Configuration "TESTBENCH_FOR_feedmode"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/lighting_control_TB.vhd
+# Compile Entity "lighting_control_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "lighting_control_tb"
+# Compile Configuration "TESTBENCH_FOR_lighting_control"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/heat_control_TB.vhd
+# Compile Entity "heat_control_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "heat_control_tb"
+# Compile Configuration "TESTBENCH_FOR_heat_control"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/ato_TB.vhd
+# Compile Entity "ato_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "ato_tb"
+# Compile Configuration "TESTBENCH_FOR_ato"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/simheatadc_TB.vhd
+# Compile Entity "SimHeatADC_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "SimHeatADC_tb"
+# Compile Configuration "TESTBENCH_FOR_SimHeatADC"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/rtc_TB.vhd
+# Compile Entity "rtc_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "rtc_tb"
+# Compile Configuration "TESTBENCH_FOR_rtc"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TopLevel.vhd
+# Compile Entity "TopLevel"
+# Compile Architecture "Behavioral" of Entity "TopLevel"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/toplevel_TB.vhd
+# Compile Entity "TopLevel_tb"
+# Compile Architecture "Behavioral" of Entity "TopLevel_tb"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/testbench/maintenance_tb.vhd
+# Compile Entity "maintenance_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "maintenance_tb"
+# Compile Configuration "TESTBENCH_FOR_maintenance"
+# Top-level unit(s) detected:
+# Configuration => TESTBENCH_FOR_lighting_control
+# Configuration => TESTBENCH_FOR_SimHeatADC
+# Entity => TopLevel_tb
+# Configuration => TESTBENCH_FOR_rtc
+# Configuration => TESTBENCH_FOR_maintenance
+# Configuration => TESTBENCH_FOR_feedmode
+# Configuration => TESTBENCH_FOR_heat_control
+# Configuration => TESTBENCH_FOR_ato
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.6 [s]
+asim -O5 +access +r +m+lighting_control_tb lighting_control_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6074 kB (elbread=256 elab2=5679 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\Aquarium_Controller\AquariumControlerVHDL\AquariumController\src\wave.asdb
+#  10:17 AM, Monday, May 5, 2025
+#  Simulation has been initialized
+# 13 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/wave.asdb'.
+run @500 ns
+# KERNEL: stopped at time: 500 ns
+acom -reorder -O3 -e 100 -work aquariumcontroller -2019  "$dsn/src/RTC CLOCK.vhd" $dsn/src/SimHeatADC.vhd "$dsn/src/Lighting control.vhd" $dsn/src/Maitenence.vhd $dsn/src/Feed.vhd "$dsn/src/Heat control.vhd" $dsn/src/ATO.vhd $dsn/src/TestBench/feedmode_TB.vhd $dsn/src/TestBench/lighting_control_TB.vhd $dsn/src/TestBench/heat_control_TB.vhd $dsn/src/TestBench/ato_TB.vhd $dsn/src/TestBench/simheatadc_TB.vhd $dsn/src/TestBench/rtc_TB.vhd $dsn/src/TopLevel.vhd $dsn/src/TestBench/toplevel_TB.vhd $dsn/src/testbench/maintenance_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/RTC CLOCK.vhd
+# Compile Entity "RTC"
+# Compile Architecture "Behavioral" of Entity "RTC"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/SimHeatADC.vhd
+# Compile Entity "SimHeatADC"
+# Compile Architecture "behavior" of Entity "SimHeatADC"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/Lighting control.vhd
+# Compile Entity "Lighting_Control"
+# Compile Architecture "Behavioral" of Entity "Lighting_Control"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/Maitenence.vhd
+# Compile Entity "maintenance"
+# Compile Architecture "Behavioral" of Entity "maintenance"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/Feed.vhd
+# Compile Entity "feedmode"
+# Compile Architecture "Behavioral" of Entity "feedmode"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/Heat control.vhd
+# Compile Entity "Heat_control"
+# Compile Architecture "behavioral" of Entity "Heat_control"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/ATO.vhd
+# Compile Entity "ATO"
+# Compile Architecture "Behavioral" of Entity "ATO"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/feedmode_TB.vhd
+# Compile Entity "feedmode_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "feedmode_tb"
+# Compile Configuration "TESTBENCH_FOR_feedmode"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/lighting_control_TB.vhd
+# Compile Entity "lighting_control_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "lighting_control_tb"
+# Compile Configuration "TESTBENCH_FOR_lighting_control"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/heat_control_TB.vhd
+# Compile Entity "heat_control_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "heat_control_tb"
+# Compile Configuration "TESTBENCH_FOR_heat_control"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/ato_TB.vhd
+# Compile Entity "ato_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "ato_tb"
+# Compile Configuration "TESTBENCH_FOR_ato"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/simheatadc_TB.vhd
+# Compile Entity "SimHeatADC_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "SimHeatADC_tb"
+# Compile Configuration "TESTBENCH_FOR_SimHeatADC"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/rtc_TB.vhd
+# Compile Entity "rtc_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "rtc_tb"
+# Compile Configuration "TESTBENCH_FOR_rtc"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TopLevel.vhd
+# Compile Entity "TopLevel"
+# Compile Architecture "Behavioral" of Entity "TopLevel"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/toplevel_TB.vhd
+# Compile Entity "TopLevel_tb"
+# Compile Architecture "Behavioral" of Entity "TopLevel_tb"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/testbench/maintenance_tb.vhd
+# Compile Entity "maintenance_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "maintenance_tb"
+# Compile Configuration "TESTBENCH_FOR_maintenance"
+# Top-level unit(s) detected:
+# Configuration => TESTBENCH_FOR_lighting_control
+# Configuration => TESTBENCH_FOR_SimHeatADC
+# Entity => TopLevel_tb
+# Configuration => TESTBENCH_FOR_rtc
+# Configuration => TESTBENCH_FOR_maintenance
+# Configuration => TESTBENCH_FOR_feedmode
+# Configuration => TESTBENCH_FOR_heat_control
+# Configuration => TESTBENCH_FOR_ato
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.5 [s]
+endsim
+# VSIM: Simulation has finished.
+# Error: Accelerated Waveform: Simulation database is not connected. Initialize simulation or load simulation database by opening waveform file (AWC, ASDB).
+asim -O5 +access +r +m+lighting_control_tb lighting_control_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6074 kB (elbread=256 elab2=5679 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\Aquarium_Controller\AquariumControlerVHDL\AquariumController\src\wave.asdb
+#  10:22 AM, Monday, May 5, 2025
+#  Simulation has been initialized
+# 13 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/wave.asdb'.
+run @500 ns
+# KERNEL: stopped at time: 500 ns
+run @600ns
+# KERNEL: stopped at time: 600 ns
+run @1 sec
+# KERNEL: stopped at time: 40846300 ns
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6074 kB (elbread=256 elab2=5679 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\Aquarium_Controller\AquariumControlerVHDL\AquariumController\src\wave.asdb
+#  10:23 AM, Monday, May 5, 2025
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/wave.asdb'.
+run @1000ns
+# KERNEL: stopped at time: 1 us
+run @2000ns
+# KERNEL: stopped at time: 2 us
+# Waveform file 'C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/lighting.awc' connected to 'C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/lighting.asdb'.
+# Adding file C:\My_Designs\Aquarium_Controller\AquariumControlerVHDL\AquariumController\src\lighting.asdb ... Done
+# Adding file C:\My_Designs\Aquarium_Controller\AquariumControlerVHDL\AquariumController\src\lighting.awc ... Done
+endsim
+# VSIM: Simulation has finished.
 # ELBREAD: Elaboration process.
 # ELBREAD: Elaboration time 0.0 [s].
 asim -O5 +access +r +m+TopLevel_tb TopLevel_tb Behavioral
@@ -197,22 +1585,26 @@ asim -O5 +access +r +m+TopLevel_tb TopLevel_tb Behavioral
 # KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
 # KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
 # KERNEL: Kernel process initialization done.
-# Allocation: Simulator allocated 6224 kB (elbread=256 elab2=5829 kernel=138 sdf=0)
+# Allocation: Simulator allocated 6223 kB (elbread=256 elab2=5828 kernel=138 sdf=0)
 # KERNEL: ASDB file was created in location C:\My_Designs\Aquarium_Controller\AquariumControlerVHDL\AquariumController\src\wave.asdb
-#  12:43 PM, Tuesday, April 29, 2025
+#  10:26 AM, Monday, May 5, 2025
 #  Simulation has been initialized
-# 43 object(s) traced.
+# 42 object(s) traced.
 # Waveform file 'untitled.awc' connected to 'C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/wave.asdb'.
-run @800 ms
+run @500 ns
 # KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
 # KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /TopLevel_tb/uut/LightController,  Process: line__80.
 # KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
 # KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /TopLevel_tb/uut/LightController,  Process: line__80.
-# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
-# KERNEL: Time: 5000005 ns,  Iteration: 1,  Instance: /TopLevel_tb/uut/HeaterController,  Process: line__35.
-# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
-# KERNEL: Time: 5000005 ns,  Iteration: 1,  Instance: /TopLevel_tb/uut/HeaterController,  Process: line__35.
-# KERNEL: stopped at time: 800 ms
+# KERNEL: stopped at time: 500 ns
+run @2 sec
+# KERNEL: stopped at time: 470953560 ns
+acom -O3 -e 100 -work aquariumcontroller -2019  $dsn/src/TestBench/toplevel_TB.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/toplevel_TB.vhd
+# Compile Entity "TopLevel_tb"
+# Compile Architecture "Behavioral" of Entity "TopLevel_tb"
+# Compile success 0 Errors 0 Warnings  Analysis time :  94.0 [ms]
 endsim
 # VSIM: Simulation has finished.
 asim -O5 +access +r +m+TopLevel_tb TopLevel_tb Behavioral
@@ -221,15 +1613,12 @@ asim -O5 +access +r +m+TopLevel_tb TopLevel_tb Behavioral
 # VSIM: Stack memory: 32MB
 # VSIM: Retval memory: 32MB
 # 
-acom -O3 -e 100 -work aquariumcontroller -2002  $dsn/src/Maitenence.vhd $dsn/src/TestBench/toplevel_TB.vhd
+acom -O3 -e 100 -work aquariumcontroller -2019  $dsn/src/TopLevel.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/Maitenence.vhd
-# Compile Entity "maintenance"
-# Compile Architecture "Behavioral" of Entity "maintenance"
-# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/toplevel_TB.vhd
-# Compile Entity "TopLevel_tb"
-# Compile Architecture "Behavioral" of Entity "TopLevel_tb"
-# Compile success 0 Errors 0 Warnings  Analysis time :  0.1 [s]
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TopLevel.vhd
+# Compile Entity "TopLevel"
+# Compile Architecture "Behavioral" of Entity "TopLevel"
+# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
 # ELBREAD: Elaboration process.
 # ELBREAD: Elaboration time 0.0 [s].
 # KERNEL: Main thread initiated.
@@ -248,40 +1637,609 @@ acom -O3 -e 100 -work aquariumcontroller -2002  $dsn/src/Maitenence.vhd $dsn/src
 # KERNEL: Kernel process initialization done.
 # Allocation: Simulator allocated 6225 kB (elbread=256 elab2=5830 kernel=138 sdf=0)
 # KERNEL: ASDB file was created in location C:\My_Designs\Aquarium_Controller\AquariumControlerVHDL\AquariumController\src\wave.asdb
-#  12:49 PM, Tuesday, April 29, 2025
+#  10:32 AM, Monday, May 5, 2025
 #  Simulation has been initialized
-# 43 object(s) traced.
+run @600 sec
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /TopLevel_tb/uut/LightController,  Process: line__80.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /TopLevel_tb/uut/LightController,  Process: line__80.
+endsim
+# KERNEL: stopped at time: 38387070 ns
+# VSIM: Simulation has finished.
+acom -reorder -O3 -e 100 -work aquariumcontroller -2019  "$dsn/src/RTC CLOCK.vhd" $dsn/src/SimHeatADC.vhd "$dsn/src/Lighting control.vhd" $dsn/src/Maitenence.vhd $dsn/src/Feed.vhd "$dsn/src/Heat control.vhd" $dsn/src/ATO.vhd $dsn/src/TestBench/feedmode_TB.vhd $dsn/src/TestBench/lighting_control_TB.vhd $dsn/src/TestBench/heat_control_TB.vhd $dsn/src/TestBench/ato_TB.vhd $dsn/src/TestBench/simheatadc_TB.vhd $dsn/src/TestBench/rtc_TB.vhd $dsn/src/TopLevel.vhd $dsn/src/TestBench/toplevel_TB.vhd $dsn/src/testbench/maintenance_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/RTC CLOCK.vhd
+# Compile Entity "RTC"
+# Compile Architecture "Behavioral" of Entity "RTC"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/SimHeatADC.vhd
+# Compile Entity "SimHeatADC"
+# Compile Architecture "behavior" of Entity "SimHeatADC"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/Lighting control.vhd
+# Compile Entity "Lighting_Control"
+# Compile Architecture "Behavioral" of Entity "Lighting_Control"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/Maitenence.vhd
+# Compile Entity "maintenance"
+# Compile Architecture "Behavioral" of Entity "maintenance"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/Feed.vhd
+# Compile Entity "feedmode"
+# Compile Architecture "Behavioral" of Entity "feedmode"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/Heat control.vhd
+# Compile Entity "Heat_control"
+# Compile Architecture "behavioral" of Entity "Heat_control"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/ATO.vhd
+# Compile Entity "ATO"
+# Compile Architecture "Behavioral" of Entity "ATO"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/feedmode_TB.vhd
+# Compile Entity "feedmode_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "feedmode_tb"
+# Compile Configuration "TESTBENCH_FOR_feedmode"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/lighting_control_TB.vhd
+# Compile Entity "lighting_control_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "lighting_control_tb"
+# Compile Configuration "TESTBENCH_FOR_lighting_control"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/heat_control_TB.vhd
+# Compile Entity "heat_control_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "heat_control_tb"
+# Compile Configuration "TESTBENCH_FOR_heat_control"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/ato_TB.vhd
+# Compile Entity "ato_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "ato_tb"
+# Compile Configuration "TESTBENCH_FOR_ato"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/simheatadc_TB.vhd
+# Compile Entity "SimHeatADC_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "SimHeatADC_tb"
+# Compile Configuration "TESTBENCH_FOR_SimHeatADC"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/rtc_TB.vhd
+# Compile Entity "rtc_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "rtc_tb"
+# Compile Configuration "TESTBENCH_FOR_rtc"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TopLevel.vhd
+# Compile Entity "TopLevel"
+# Compile Architecture "Behavioral" of Entity "TopLevel"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/toplevel_TB.vhd
+# Compile Entity "TopLevel_tb"
+# Compile Architecture "Behavioral" of Entity "TopLevel_tb"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/testbench/maintenance_tb.vhd
+# Compile Entity "maintenance_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "maintenance_tb"
+# Compile Configuration "TESTBENCH_FOR_maintenance"
+# Top-level unit(s) detected:
+# Configuration => TESTBENCH_FOR_lighting_control
+# Configuration => TESTBENCH_FOR_SimHeatADC
+# Entity => TopLevel_tb
+# Configuration => TESTBENCH_FOR_rtc
+# Configuration => TESTBENCH_FOR_maintenance
+# Configuration => TESTBENCH_FOR_feedmode
+# Configuration => TESTBENCH_FOR_heat_control
+# Configuration => TESTBENCH_FOR_ato
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.6 [s]
+asim -O5 +access +r +m+TopLevel_tb TopLevel_tb Behavioral
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6225 kB (elbread=256 elab2=5830 kernel=138 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\Aquarium_Controller\AquariumControlerVHDL\AquariumController\src\wave.asdb
+#  10:35 AM, Monday, May 5, 2025
+#  Simulation has been initialized
+# 42 object(s) traced.
 # Waveform file 'untitled.awc' connected to 'C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/wave.asdb'.
-run @100 ms
+run @500ms
 # KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
 # KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /TopLevel_tb/uut/LightController,  Process: line__80.
 # KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
 # KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /TopLevel_tb/uut/LightController,  Process: line__80.
 # KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
-# KERNEL: Time: 5000005 ns,  Iteration: 1,  Instance: /TopLevel_tb/uut/HeaterController,  Process: line__35.
+# KERNEL: Time: 1000005 ns,  Iteration: 1,  Instance: /TopLevel_tb/uut/HeaterController,  Process: line__35.
 # KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
-# KERNEL: Time: 5000005 ns,  Iteration: 1,  Instance: /TopLevel_tb/uut/HeaterController,  Process: line__35.
-# KERNEL: stopped at time: 100 ms
-acom -O3 -e 100 -work aquariumcontroller -2002  $dsn/src/TopLevel.vhd
+# KERNEL: Time: 1000005 ns,  Iteration: 1,  Instance: /TopLevel_tb/uut/HeaterController,  Process: line__35.
+# KERNEL: stopped at time: 500 ms
+run @500ns
+# VSIM: Error: 500ns is less than current simulation time.
+run @1000ns
+# VSIM: Error: 1us is less than current simulation time.
+run @1000ns
+# VSIM: Error: 1us is less than current simulation time.
+run @1000ms
+# KERNEL: stopped at time: 1 sec
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+acom -reorder -O3 -e 100 -work aquariumcontroller -2019  "$dsn/src/RTC CLOCK.vhd" $dsn/src/SimHeatADC.vhd "$dsn/src/Lighting control.vhd" $dsn/src/Maitenence.vhd $dsn/src/Feed.vhd "$dsn/src/Heat control.vhd" $dsn/src/ATO.vhd $dsn/src/TestBench/feedmode_TB.vhd $dsn/src/TestBench/lighting_control_TB.vhd $dsn/src/TestBench/heat_control_TB.vhd $dsn/src/TestBench/ato_TB.vhd $dsn/src/TestBench/simheatadc_TB.vhd $dsn/src/TestBench/rtc_TB.vhd $dsn/src/TopLevel.vhd $dsn/src/TestBench/toplevel_TB.vhd $dsn/src/testbench/maintenance_tb.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/RTC CLOCK.vhd
+# Compile Entity "RTC"
+# Compile Architecture "Behavioral" of Entity "RTC"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/SimHeatADC.vhd
+# Compile Entity "SimHeatADC"
+# Compile Architecture "behavior" of Entity "SimHeatADC"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/Lighting control.vhd
+# Compile Entity "Lighting_Control"
+# Compile Architecture "Behavioral" of Entity "Lighting_Control"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/Maitenence.vhd
+# Compile Entity "maintenance"
+# Compile Architecture "Behavioral" of Entity "maintenance"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/Feed.vhd
+# Compile Entity "feedmode"
+# Compile Architecture "Behavioral" of Entity "feedmode"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/Heat control.vhd
+# Compile Entity "Heat_control"
+# Compile Architecture "behavioral" of Entity "Heat_control"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/ATO.vhd
+# Compile Entity "ATO"
+# Compile Architecture "Behavioral" of Entity "ATO"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/feedmode_TB.vhd
+# Compile Entity "feedmode_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "feedmode_tb"
+# Compile Configuration "TESTBENCH_FOR_feedmode"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/lighting_control_TB.vhd
+# Compile Entity "lighting_control_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "lighting_control_tb"
+# Compile Configuration "TESTBENCH_FOR_lighting_control"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/heat_control_TB.vhd
+# Compile Entity "heat_control_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "heat_control_tb"
+# Compile Configuration "TESTBENCH_FOR_heat_control"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/ato_TB.vhd
+# Compile Entity "ato_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "ato_tb"
+# Compile Configuration "TESTBENCH_FOR_ato"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/simheatadc_TB.vhd
+# Compile Entity "SimHeatADC_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "SimHeatADC_tb"
+# Compile Configuration "TESTBENCH_FOR_SimHeatADC"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/rtc_TB.vhd
+# Compile Entity "rtc_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "rtc_tb"
+# Compile Configuration "TESTBENCH_FOR_rtc"
 # File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TopLevel.vhd
 # Compile Entity "TopLevel"
 # Compile Architecture "Behavioral" of Entity "TopLevel"
-# Error: COMP96_0393: TopLevel.vhd : (200, 44): Cannot read output : "Skimmer".
-# Compile failure 1 Errors 0 Warnings  Analysis time :  31.0 [ms]
-acom -O3 -e 100 -work aquariumcontroller -2002  $dsn/src/TopLevel.vhd
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/toplevel_TB.vhd
+# Compile Entity "TopLevel_tb"
+# Compile Architecture "Behavioral" of Entity "TopLevel_tb"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/testbench/maintenance_tb.vhd
+# Compile Entity "maintenance_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "maintenance_tb"
+# Compile Configuration "TESTBENCH_FOR_maintenance"
+# Top-level unit(s) detected:
+# Configuration => TESTBENCH_FOR_lighting_control
+# Configuration => TESTBENCH_FOR_SimHeatADC
+# Entity => TopLevel_tb
+# Configuration => TESTBENCH_FOR_rtc
+# Configuration => TESTBENCH_FOR_maintenance
+# Configuration => TESTBENCH_FOR_feedmode
+# Configuration => TESTBENCH_FOR_heat_control
+# Configuration => TESTBENCH_FOR_ato
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.5 [s]
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+heat_control_tb heat_control_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6203 kB (elbread=256 elab2=5808 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\Aquarium_Controller\AquariumControlerVHDL\AquariumController\src\wave.asdb
+#  10:49 AM, Monday, May 5, 2025
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/wave.asdb'.
+# 13 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/wave.asdb'.
+run @500 ns
+# KERNEL: stopped at time: 500 ns
+acom -reorder -O3 -e 100 -work aquariumcontroller -2019  "$dsn/src/RTC CLOCK.vhd" $dsn/src/SimHeatADC.vhd "$dsn/src/Lighting control.vhd" $dsn/src/Maitenence.vhd $dsn/src/Feed.vhd "$dsn/src/Heat control.vhd" $dsn/src/ATO.vhd $dsn/src/TestBench/feedmode_TB.vhd $dsn/src/TestBench/lighting_control_TB.vhd $dsn/src/TestBench/heat_control_TB.vhd $dsn/src/TestBench/ato_TB.vhd $dsn/src/TestBench/simheatadc_TB.vhd $dsn/src/TestBench/rtc_TB.vhd $dsn/src/TopLevel.vhd $dsn/src/TestBench/toplevel_TB.vhd $dsn/src/testbench/maintenance_tb.vhd
 # Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/RTC CLOCK.vhd
+# Compile Entity "RTC"
+# Compile Architecture "Behavioral" of Entity "RTC"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/SimHeatADC.vhd
+# Compile Entity "SimHeatADC"
+# Compile Architecture "behavior" of Entity "SimHeatADC"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/Lighting control.vhd
+# Compile Entity "Lighting_Control"
+# Compile Architecture "Behavioral" of Entity "Lighting_Control"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/Maitenence.vhd
+# Compile Entity "maintenance"
+# Compile Architecture "Behavioral" of Entity "maintenance"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/Feed.vhd
+# Compile Entity "feedmode"
+# Compile Architecture "Behavioral" of Entity "feedmode"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/Heat control.vhd
+# Compile Entity "Heat_control"
+# Compile Architecture "behavioral" of Entity "Heat_control"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/ATO.vhd
+# Compile Entity "ATO"
+# Compile Architecture "Behavioral" of Entity "ATO"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/feedmode_TB.vhd
+# Compile Entity "feedmode_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "feedmode_tb"
+# Compile Configuration "TESTBENCH_FOR_feedmode"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/lighting_control_TB.vhd
+# Compile Entity "lighting_control_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "lighting_control_tb"
+# Compile Configuration "TESTBENCH_FOR_lighting_control"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/heat_control_TB.vhd
+# Compile Entity "heat_control_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "heat_control_tb"
+# Compile Configuration "TESTBENCH_FOR_heat_control"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/ato_TB.vhd
+# Compile Entity "ato_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "ato_tb"
+# Compile Configuration "TESTBENCH_FOR_ato"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/simheatadc_TB.vhd
+# Compile Entity "SimHeatADC_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "SimHeatADC_tb"
+# Compile Configuration "TESTBENCH_FOR_SimHeatADC"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/rtc_TB.vhd
+# Compile Entity "rtc_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "rtc_tb"
+# Compile Configuration "TESTBENCH_FOR_rtc"
 # File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TopLevel.vhd
 # Compile Entity "TopLevel"
 # Compile Architecture "Behavioral" of Entity "TopLevel"
-# Error: COMP96_0393: TopLevel.vhd : (200, 44): Cannot read output : "Skimmer".
-# Error: COMP96_0617: TopLevel.vhd : (200, 44): Assignment target incompatible with right side. Cannot convert 'BOOLEAN' to 'STD_ULOGIC'.
-# Compile failure 2 Errors 0 Warnings  Analysis time :  16.0 [ms]
-acom -O3 -e 100 -work aquariumcontroller -2002  $dsn/src/TopLevel.vhd
-# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
-# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TopLevel.vhd
-# Compile Entity "TopLevel"
-# Compile Architecture "Behavioral" of Entity "TopLevel"
-# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/toplevel_TB.vhd
+# Compile Entity "TopLevel_tb"
+# Compile Architecture "Behavioral" of Entity "TopLevel_tb"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/testbench/maintenance_tb.vhd
+# Compile Entity "maintenance_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "maintenance_tb"
+# Compile Configuration "TESTBENCH_FOR_maintenance"
+# Top-level unit(s) detected:
+# Configuration => TESTBENCH_FOR_lighting_control
+# Configuration => TESTBENCH_FOR_SimHeatADC
+# Entity => TopLevel_tb
+# Configuration => TESTBENCH_FOR_rtc
+# Configuration => TESTBENCH_FOR_maintenance
+# Configuration => TESTBENCH_FOR_feedmode
+# Configuration => TESTBENCH_FOR_heat_control
+# Configuration => TESTBENCH_FOR_ato
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.5 [s]
 endsim
 # VSIM: Simulation has finished.
+# Error: Accelerated Waveform: Simulation database is not connected. Initialize simulation or load simulation database by opening waveform file (AWC, ASDB).
+# Error: Accelerated Waveform: Simulation database is not connected. Initialize simulation or load simulation database by opening waveform file (AWC, ASDB).
+asim -O5 +access +r +m+heat_control_tb heat_control_tb TB_ARCHITECTURE
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6203 kB (elbread=256 elab2=5808 kernel=137 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\Aquarium_Controller\AquariumControlerVHDL\AquariumController\src\wave.asdb
+#  10:51 AM, Monday, May 5, 2025
+#  Simulation has been initialized
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/wave.asdb'.
+# 13 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/wave.asdb'.
+run @130 sec
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 2500 us,  Iteration: 1,  Instance: /heat_control_tb/UUT,  Process: line__35.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 2500 us,  Iteration: 1,  Instance: /heat_control_tb/UUT,  Process: line__35.
+# KERNEL: stopped at time: 130 sec
+# Waveform file 'C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/HeatControl.awc' connected to 'C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/HeatControl.asdb'.
+# Adding file C:\My_Designs\Aquarium_Controller\AquariumControlerVHDL\AquariumController\src\HeatControl.asdb ... Done
+# Adding file C:\My_Designs\Aquarium_Controller\AquariumControlerVHDL\AquariumController\src\HeatControl.awc ... Done
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+asim -O5 +access +r +m+TopLevel_tb TopLevel_tb Behavioral
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6225 kB (elbread=256 elab2=5830 kernel=138 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\Aquarium_Controller\AquariumControlerVHDL\AquariumController\src\wave.asdb
+#  10:57 AM, Monday, May 5, 2025
+#  Simulation has been initialized
+acom -reorder -O3 -e 100 -work aquariumcontroller -2019  "$dsn/src/RTC CLOCK.vhd" $dsn/src/SimHeatADC.vhd "$dsn/src/Lighting control.vhd" $dsn/src/Maitenence.vhd $dsn/src/Feed.vhd "$dsn/src/Heat control.vhd" $dsn/src/ATO.vhd $dsn/src/TestBench/feedmode_TB.vhd $dsn/src/TestBench/lighting_control_TB.vhd $dsn/src/TestBench/heat_control_TB.vhd $dsn/src/TestBench/ato_TB.vhd $dsn/src/TestBench/simheatadc_TB.vhd $dsn/src/TestBench/rtc_TB.vhd $dsn/src/TopLevel.vhd $dsn/src/TestBench/toplevel_TB.vhd $dsn/src/testbench/maintenance_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/RTC CLOCK.vhd
+# Compile Entity "RTC"
+# Compile Architecture "Behavioral" of Entity "RTC"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/SimHeatADC.vhd
+# Compile Entity "SimHeatADC"
+# Compile Architecture "behavior" of Entity "SimHeatADC"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/Lighting control.vhd
+# Compile Entity "Lighting_Control"
+# Compile Architecture "Behavioral" of Entity "Lighting_Control"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/Maitenence.vhd
+# Compile Entity "maintenance"
+# Compile Architecture "Behavioral" of Entity "maintenance"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/Feed.vhd
+# Compile Entity "feedmode"
+# Compile Architecture "Behavioral" of Entity "feedmode"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/Heat control.vhd
+# Compile Entity "Heat_control"
+# Compile Architecture "behavioral" of Entity "Heat_control"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/ATO.vhd
+# Compile Entity "ATO"
+# Compile Architecture "Behavioral" of Entity "ATO"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/feedmode_TB.vhd
+# Compile Entity "feedmode_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "feedmode_tb"
+# Compile Configuration "TESTBENCH_FOR_feedmode"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/lighting_control_TB.vhd
+# Compile Entity "lighting_control_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "lighting_control_tb"
+# Compile Configuration "TESTBENCH_FOR_lighting_control"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/heat_control_TB.vhd
+# Compile Entity "heat_control_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "heat_control_tb"
+# Compile Configuration "TESTBENCH_FOR_heat_control"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/ato_TB.vhd
+# Compile Entity "ato_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "ato_tb"
+# Compile Configuration "TESTBENCH_FOR_ato"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/simheatadc_TB.vhd
+# Compile Entity "SimHeatADC_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "SimHeatADC_tb"
+# Compile Configuration "TESTBENCH_FOR_SimHeatADC"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/rtc_TB.vhd
+# Compile Entity "rtc_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "rtc_tb"
+# Compile Configuration "TESTBENCH_FOR_rtc"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TopLevel.vhd
+# Compile Entity "TopLevel"
+# Compile Architecture "Behavioral" of Entity "TopLevel"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/toplevel_TB.vhd
+# Compile Entity "TopLevel_tb"
+# Compile Architecture "Behavioral" of Entity "TopLevel_tb"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/testbench/maintenance_tb.vhd
+# Compile Entity "maintenance_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "maintenance_tb"
+# Compile Configuration "TESTBENCH_FOR_maintenance"
+# Top-level unit(s) detected:
+# Configuration => TESTBENCH_FOR_lighting_control
+# Configuration => TESTBENCH_FOR_SimHeatADC
+# Entity => TopLevel_tb
+# Configuration => TESTBENCH_FOR_rtc
+# Configuration => TESTBENCH_FOR_maintenance
+# Configuration => TESTBENCH_FOR_feedmode
+# Configuration => TESTBENCH_FOR_heat_control
+# Configuration => TESTBENCH_FOR_ato
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.5 [s]
+endsim
+# VSIM: Simulation has finished.
+acom -reorder -O3 -e 100 -work aquariumcontroller -2019  "$dsn/src/RTC CLOCK.vhd" $dsn/src/SimHeatADC.vhd "$dsn/src/Lighting control.vhd" $dsn/src/Maitenence.vhd $dsn/src/Feed.vhd "$dsn/src/Heat control.vhd" $dsn/src/ATO.vhd $dsn/src/TestBench/feedmode_TB.vhd $dsn/src/TestBench/lighting_control_TB.vhd $dsn/src/TestBench/heat_control_TB.vhd $dsn/src/TestBench/ato_TB.vhd $dsn/src/TestBench/simheatadc_TB.vhd $dsn/src/TestBench/rtc_TB.vhd $dsn/src/TopLevel.vhd $dsn/src/TestBench/toplevel_TB.vhd $dsn/src/testbench/maintenance_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/RTC CLOCK.vhd
+# Compile Entity "RTC"
+# Compile Architecture "Behavioral" of Entity "RTC"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/SimHeatADC.vhd
+# Compile Entity "SimHeatADC"
+# Compile Architecture "behavior" of Entity "SimHeatADC"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/Lighting control.vhd
+# Compile Entity "Lighting_Control"
+# Compile Architecture "Behavioral" of Entity "Lighting_Control"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/Maitenence.vhd
+# Compile Entity "maintenance"
+# Compile Architecture "Behavioral" of Entity "maintenance"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/Feed.vhd
+# Compile Entity "feedmode"
+# Compile Architecture "Behavioral" of Entity "feedmode"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/Heat control.vhd
+# Compile Entity "Heat_control"
+# Compile Architecture "behavioral" of Entity "Heat_control"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/ATO.vhd
+# Compile Entity "ATO"
+# Compile Architecture "Behavioral" of Entity "ATO"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/feedmode_TB.vhd
+# Compile Entity "feedmode_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "feedmode_tb"
+# Compile Configuration "TESTBENCH_FOR_feedmode"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/lighting_control_TB.vhd
+# Compile Entity "lighting_control_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "lighting_control_tb"
+# Compile Configuration "TESTBENCH_FOR_lighting_control"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/heat_control_TB.vhd
+# Compile Entity "heat_control_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "heat_control_tb"
+# Compile Configuration "TESTBENCH_FOR_heat_control"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/ato_TB.vhd
+# Compile Entity "ato_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "ato_tb"
+# Compile Configuration "TESTBENCH_FOR_ato"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/simheatadc_TB.vhd
+# Compile Entity "SimHeatADC_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "SimHeatADC_tb"
+# Compile Configuration "TESTBENCH_FOR_SimHeatADC"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/rtc_TB.vhd
+# Compile Entity "rtc_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "rtc_tb"
+# Compile Configuration "TESTBENCH_FOR_rtc"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TopLevel.vhd
+# Compile Entity "TopLevel"
+# Compile Architecture "Behavioral" of Entity "TopLevel"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/toplevel_TB.vhd
+# Compile Entity "TopLevel_tb"
+# Compile Architecture "Behavioral" of Entity "TopLevel_tb"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/testbench/maintenance_tb.vhd
+# Compile Entity "maintenance_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "maintenance_tb"
+# Compile Configuration "TESTBENCH_FOR_maintenance"
+# Top-level unit(s) detected:
+# Configuration => TESTBENCH_FOR_lighting_control
+# Configuration => TESTBENCH_FOR_SimHeatADC
+# Entity => TopLevel_tb
+# Configuration => TESTBENCH_FOR_rtc
+# Configuration => TESTBENCH_FOR_maintenance
+# Configuration => TESTBENCH_FOR_feedmode
+# Configuration => TESTBENCH_FOR_heat_control
+# Configuration => TESTBENCH_FOR_ato
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.5 [s]
+acom -reorder -O3 -e 100 -work aquariumcontroller -2019  "$dsn/src/RTC CLOCK.vhd" $dsn/src/SimHeatADC.vhd "$dsn/src/Lighting control.vhd" $dsn/src/Maitenence.vhd $dsn/src/Feed.vhd "$dsn/src/Heat control.vhd" $dsn/src/ATO.vhd $dsn/src/TestBench/feedmode_TB.vhd $dsn/src/TestBench/lighting_control_TB.vhd $dsn/src/TestBench/heat_control_TB.vhd $dsn/src/TestBench/ato_TB.vhd $dsn/src/TestBench/simheatadc_TB.vhd $dsn/src/TestBench/rtc_TB.vhd $dsn/src/TopLevel.vhd $dsn/src/TestBench/toplevel_TB.vhd $dsn/src/testbench/maintenance_tb.vhd
+# Warning: DAGGEN_0523: The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available.
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/RTC CLOCK.vhd
+# Compile Entity "RTC"
+# Compile Architecture "Behavioral" of Entity "RTC"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/SimHeatADC.vhd
+# Compile Entity "SimHeatADC"
+# Compile Architecture "behavior" of Entity "SimHeatADC"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/Lighting control.vhd
+# Compile Entity "Lighting_Control"
+# Compile Architecture "Behavioral" of Entity "Lighting_Control"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/Maitenence.vhd
+# Compile Entity "maintenance"
+# Compile Architecture "Behavioral" of Entity "maintenance"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/Feed.vhd
+# Compile Entity "feedmode"
+# Compile Architecture "Behavioral" of Entity "feedmode"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/Heat control.vhd
+# Compile Entity "Heat_control"
+# Compile Architecture "behavioral" of Entity "Heat_control"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/ATO.vhd
+# Compile Entity "ATO"
+# Compile Architecture "Behavioral" of Entity "ATO"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/feedmode_TB.vhd
+# Compile Entity "feedmode_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "feedmode_tb"
+# Compile Configuration "TESTBENCH_FOR_feedmode"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/lighting_control_TB.vhd
+# Compile Entity "lighting_control_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "lighting_control_tb"
+# Compile Configuration "TESTBENCH_FOR_lighting_control"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/heat_control_TB.vhd
+# Compile Entity "heat_control_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "heat_control_tb"
+# Compile Configuration "TESTBENCH_FOR_heat_control"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/ato_TB.vhd
+# Compile Entity "ato_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "ato_tb"
+# Compile Configuration "TESTBENCH_FOR_ato"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/simheatadc_TB.vhd
+# Compile Entity "SimHeatADC_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "SimHeatADC_tb"
+# Compile Configuration "TESTBENCH_FOR_SimHeatADC"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/rtc_TB.vhd
+# Compile Entity "rtc_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "rtc_tb"
+# Compile Configuration "TESTBENCH_FOR_rtc"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TopLevel.vhd
+# Compile Entity "TopLevel"
+# Compile Architecture "Behavioral" of Entity "TopLevel"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/TestBench/toplevel_TB.vhd
+# Compile Entity "TopLevel_tb"
+# Compile Architecture "Behavioral" of Entity "TopLevel_tb"
+# File: C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/testbench/maintenance_tb.vhd
+# Compile Entity "maintenance_tb"
+# Compile Architecture "TB_ARCHITECTURE" of Entity "maintenance_tb"
+# Compile Configuration "TESTBENCH_FOR_maintenance"
+# Top-level unit(s) detected:
+# Configuration => TESTBENCH_FOR_lighting_control
+# Configuration => TESTBENCH_FOR_SimHeatADC
+# Entity => TopLevel_tb
+# Configuration => TESTBENCH_FOR_rtc
+# Configuration => TESTBENCH_FOR_maintenance
+# Configuration => TESTBENCH_FOR_feedmode
+# Configuration => TESTBENCH_FOR_heat_control
+# Configuration => TESTBENCH_FOR_ato
+# Compile success 0 Errors 0 Warnings  Analysis time :  0.5 [s]
+asim -O5 +access +r +m+TopLevel_tb TopLevel_tb Behavioral
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL EDU Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6225 kB (elbread=256 elab2=5830 kernel=138 sdf=0)
+# KERNEL: ASDB file was created in location C:\My_Designs\Aquarium_Controller\AquariumControlerVHDL\AquariumController\src\wave.asdb
+#  10:57 AM, Monday, May 5, 2025
+#  Simulation has been initialized
+# 42 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/wave.asdb'.
+run @ sec
+# Error: run: unexpected parameter sec
+# Error: Usage:
+# Error: run -help
+# Error: run [-all | -continue | -delta {<number> | @<number>} | -next | <time_step> | @<time>]
+run @1 sec
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /TopLevel_tb/uut/LightController,  Process: line__80.
+# KERNEL: WARNING: NUMERIC_STD."=": metavalue detected, returning FALSE
+# KERNEL: Time: 0 ps,  Iteration: 0,  Instance: /TopLevel_tb/uut/LightController,  Process: line__80.
+# KERNEL: WARNING: NUMERIC_STD.">": metavalue detected, returning FALSE
+# KERNEL: Time: 1000005 ns,  Iteration: 1,  Instance: /TopLevel_tb/uut/HeaterController,  Process: line__35.
+# KERNEL: WARNING: NUMERIC_STD."<": metavalue detected, returning FALSE
+# KERNEL: Time: 1000005 ns,  Iteration: 1,  Instance: /TopLevel_tb/uut/HeaterController,  Process: line__35.
+# KERNEL: stopped at time: 1 sec
+# Waveform file 'untitled.awc' connected to 'C:/My_Designs/Aquarium_Controller/AquariumControlerVHDL/AquariumController/src/toplevelwaveform.asdb'.
+# Adding file C:\My_Designs\Aquarium_Controller\AquariumControlerVHDL\AquariumController\src\toplevelwaveform.asdb ... Done
+# Adding file C:\My_Designs\Aquarium_Controller\AquariumControlerVHDL\AquariumController\src\toplevelwaveform.awc ... Done
+# Adding file C:\My_Designs\Aquarium_Controller\AquariumControlerVHDL\AquariumController\src\toplevelwaveform.awc ... Done
+# Design: Saving current design...
+# Design: ...done

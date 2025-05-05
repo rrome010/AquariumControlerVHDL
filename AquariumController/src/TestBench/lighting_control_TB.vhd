@@ -63,7 +63,7 @@ begin
             Light_on_off => Light_on_off
         );
 
-    -- 10 ns clock generation (200 MHz)
+    -- 100 MHz clock generation (10 ns period)
     clk_process : process
     begin
         while true loop
@@ -83,43 +83,43 @@ begin
         reset_lights <= '0';
         wait for 20 ns;
 
-        -- Set ON time: 01:05
-        btn_hour <= '1'; wait for 10 ns; btn_hour <= '0';  -- hour = 1
-        wait for 10 ns;
-        for i in 1 to 5 loop
-            btn_min <= '1'; wait for 10 ns; btn_min <= '0';
-            wait for 10 ns;
+        -- Set ON time: 08:30
+        btn_time_lights_on <= '1'; wait for 10 ns;
+		for i in 1 to 8 loop
+            btn_hour <= '1'; wait for 10 ns; btn_hour <= '0'; wait for 10 ns;
         end loop;
-        btn_time_lights_on <= '1'; wait for 10 ns; btn_time_lights_on <= '0';
+        for i in 1 to 30 loop
+            btn_min <= '1'; wait for 10 ns; btn_min <= '0'; wait for 10 ns;
+        end loop;
+        btn_time_lights_on <= '0';
         wait for 30 ns;
 
-        -- Set OFF time: 03:10
-        for i in 1 to 2 loop
-            btn_hour <= '1'; wait for 10 ns; btn_hour <= '0';
-            wait for 10 ns;
+        -- Set OFF time: 16:00
+        btn_time_lights_of <= '1'; wait for 10 ns;
+		for i in 1 to 8 loop
+            btn_hour <= '1'; wait for 10 ns; btn_hour <= '0'; wait for 10 ns;
         end loop;
-        for i in 1 to 5 loop
-            btn_min <= '1'; wait for 10 ns; btn_min <= '0';
-            wait for 10 ns;
+        for i in 1 to 30 loop
+            btn_min <= '1'; wait for 10 ns; btn_min <= '0'; wait for 10 ns;
         end loop;
-        btn_time_lights_of <= '1'; wait for 10 ns; btn_time_lights_of <= '0';
+        btn_time_lights_of <= '0';
         wait for 30 ns;
 
         -- Simulate current time & test output
         -- Before ON time
-        hour_out <= to_unsigned(0, 5); min_out <= to_unsigned(59, 6); wait for 20 ns;
+        hour_out <= to_unsigned(7, 5); min_out <= to_unsigned(45, 6); wait for 20 ns;
 
         -- Exactly ON time
-        hour_out <= to_unsigned(1, 5); min_out <= to_unsigned(5, 6); wait for 20 ns;
+        hour_out <= to_unsigned(8, 5); min_out <= to_unsigned(30, 6); wait for 20 ns;
 
         -- Between ON and OFF
-        hour_out <= to_unsigned(2, 5); min_out <= to_unsigned(30, 6); wait for 20 ns;
+        hour_out <= to_unsigned(12, 5); min_out <= to_unsigned(0, 6); wait for 20 ns;
 
         -- Exactly OFF time
-        hour_out <= to_unsigned(3, 5); min_out <= to_unsigned(10, 6); wait for 20 ns;
+        hour_out <= to_unsigned(16, 5); min_out <= to_unsigned(30, 6); wait for 20 ns;
 
         -- After OFF time
-        hour_out <= to_unsigned(4, 5); min_out <= to_unsigned(0, 6); wait for 20 ns;
+        hour_out <= to_unsigned(17, 5); min_out <= to_unsigned(0, 6); wait for 20 ns;
 
         wait;
     end process;
