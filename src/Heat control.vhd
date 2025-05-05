@@ -24,7 +24,7 @@ architecture behavioral of Heat_control is
     type state_type is (NORMAL, UNDER_TEMP, ERROR, MAINTENANCE);
     signal current_state : state_type := NORMAL;
 
-    signal set_usr     : unsigned(12 downto 0) := to_unsigned(408, 13); -- 25.5°C
+    signal set_usr     : unsigned(12 downto 0) := to_unsigned(408, 13); -- 25.5Â°C
     signal set_min     : unsigned(12 downto 0);
     signal set_max     : unsigned(12 downto 0);
     signal heater_on   : std_logic := '0';
@@ -35,7 +35,7 @@ begin
     process(compclock, reset_heat)
     begin
         if reset_heat = '1' then
-            set_usr       <= to_unsigned(408, 13); -- Reset to 25.5°C
+            set_usr       <= to_unsigned(408, 13); -- Reset to 25.5Â°C
             heater_on     <= '0';
             current_state <= NORMAL;
             min_start     <= (others => '0');
@@ -97,7 +97,8 @@ begin
                             heater_on   <= '0';
                             time_active <= '0';
                             current_state <= NORMAL;
-                        elsif time_active = '1' and (min_out - min_start >= to_unsigned(59, 6)) then
+                        --elsif time_active = '1' and (min_out - min_start >= to_unsigned(59, 6)) then
+                        elsif time_active = '1' and (abs(to_integer(min_out) - to_integer(min_start)) >= 30) --convert counter and minustes to vector and compare to "30" mins
                             TempError     <= '1';
                             heater_on     <= '0';
                             current_state <= ERROR;
