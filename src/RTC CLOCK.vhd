@@ -16,9 +16,9 @@ entity RTC is
 end RTC;
 
 architecture Behavioral of RTC is
-    signal seconds : UNSIGNED(5 downto 0) := (others => '0');  -- 0–59
-    signal minutes : UNSIGNED(5 downto 0) := (others => '0');  -- 0–59
-    signal hours   : UNSIGNED(4 downto 0) := (others => '0');  -- 0–23
+    signal seconds : UNSIGNED(5 downto 0) := (others => '0');  -- 0â€“59
+    signal minutes : UNSIGNED(5 downto 0) := (others => '0');  -- 0â€“59
+    signal hours   : UNSIGNED(4 downto 0) := (others => '0');  -- 0â€“23
 begin
 
     process(clk_1hz, rst)
@@ -48,10 +48,10 @@ begin
             else
                 -- Normal clock operation
                 seconds <= seconds + 1;
-                if seconds = to_unsigned(60, 6) then
+                if seconds = to_unsigned(59, 6) then
                     seconds <= (others => '0');
                     minutes <= minutes + 1;
-                    if minutes = to_unsigned(60, 6) then
+                    if minutes = to_unsigned(59, 6) then
                         minutes <= (others => '0');
                         if hours = to_unsigned(23, 5) then
                             hours <= (others => '0');
