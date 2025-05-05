@@ -28,7 +28,7 @@ WindowVisible=0
 Synchronize=0
 
 [HierarchyViewer]
-HierarchyInformation=feedmode_tb|TB_ARCHITECTURE|0 heat_control_tb|TB_ARCHITECTURE|0 lighting_control_tb|TB_ARCHITECTURE|0 maintenance|Behavioral|0 maintenance_tb|TB_ARCHITECTURE|0 rtc_tb|TB_ARCHITECTURE|0 toplevel_tb|Behavioral|0 
+HierarchyInformation=toplevel_tb|Behavioral|0    
 ShowHide=ShowTopLevel
 Selected=
 
@@ -105,3 +105,31 @@ TestBench/maintenance_TB_runtest.do=-1
 .\src\TestBench\maintenance_TB.vhd=VHDL Test Bench
 .\src\TestBench\maintenance_TB_runtest.do=Macro
 
+[Folders]
+Name0=Event Lists
+Directory0=C:\My_Designs\Aquarium_Controller\AquariumControlerVHDL\
+Extension0=lst
+Name1=Logs
+Directory1=C:\My_Designs\Aquarium_Controller\AquariumControlerVHDL\
+Extension1=log;htm;xml;txt
+Name2=Waveforms
+Directory2=C:\My_Designs\Aquarium_Controller\AquariumControlerVHDL\
+Extension2=asdb;awc;asdbc;asdbe
+Name3=Makefiles
+Directory3=C:\My_Designs\Aquarium_Controller\AquariumControlerVHDL\
+Extension3=mak
+Name4=Memory
+Directory4=C:\My_Designs\Aquarium_Controller\AquariumControlerVHDL\
+Extension4=mem;mif;hex
+Name5=Dll Libraries
+Directory5=C:\My_Designs\Aquarium_Controller\AquariumControlerVHDL\
+Extension5=dll
+Name6=PDF
+Directory6=C:\My_Designs\Aquarium_Controller\AquariumControlerVHDL\
+Extension6=pdf
+Name7=HTML
+Directory7=C:\My_Designs\Aquarium_Controller\AquariumControlerVHDL\
+Extension7=htm;html
+Name8=ALINT-PRO Workspaces
+Directory8=C:\My_Designs\Aquarium_Controller\AquariumControlerVHDL\
+Extension8=alintws

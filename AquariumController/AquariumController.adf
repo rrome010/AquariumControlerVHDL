@@ -28,7 +28,7 @@ WindowVisible=0
 Synchronize=0
 
 [HierarchyViewer]
-HierarchyInformation=feedmode_tb|TB_ARCHITECTURE|0 heat_control_tb|TB_ARCHITECTURE|0 lighting_control_tb|TB_ARCHITECTURE|0 maintenance|Behavioral|0 maintenance_tb|TB_ARCHITECTURE|0 rtc_tb|TB_ARCHITECTURE|0 toplevel_tb|Behavioral|0 
+HierarchyInformation=toplevel_tb|Behavioral|0  
 ShowHide=ShowTopLevel
 Selected=
 
