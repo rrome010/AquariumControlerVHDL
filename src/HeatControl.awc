@@ -6,7 +6,7 @@
     </comment>
     <databases>
         <database id="">*virtual*</database>
-        <database id="347df6871e5a5dd018687e21aea31d00">HeatControl.asdb</database>
+        <database id="347df6871e5ac62919683f620ba50800">HeatControl.asdb</database>
     </databases>
     <gridshown/>
     <signallists>
@@ -66,7 +66,7 @@
     </propertybases>
     <timebases>
         <timebase id="0">
-            <time start_time="0" end_time="132939365810796" />
+            <time start_time="0" end_time="122713260196791" />
         </timebase>
     </timebases>
     <prefbases>
@@ -79,7 +79,7 @@
     </bookmarkbases>
     <cursorbases>
         <cursors id="0">
-            <cursor value="23782117702835" label="Cursor 1" locked="0" />
+            <cursor value="75000500000000" label="Cursor 1" locked="0" />
         </cursors>
     </cursorbases>
     <measurementbases>

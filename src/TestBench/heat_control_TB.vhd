@@ -21,7 +21,7 @@ architecture TB_ARCHITECTURE of heat_control_tb is
             tempuser        : out UNSIGNED(12 downto 0);
             tempmin         : out UNSIGNED(12 downto 0);
             heater          : out STD_LOGIC;
-            TempError       : out STD_LOGIC
+            TempError       : out STD_LOGIC;
         );
     end component;
 
@@ -73,13 +73,19 @@ begin
     end process;
 
     -- Simulated minute counter
-    min_out_process : process
-    begin
-        while true loop
-            wait for 1 sec;
+min_out_process : process
+begin
+    while true loop
+        wait for 1 sec;
+
+        if min_out = to_unsigned(59, 6) then
+            min_out <= to_unsigned(0, 6);
+        else
             min_out <= min_out + 1;
-        end loop;
-    end process;
+        end if;
+    end loop;
+end process;
+
 
     -- Stimulus process
     stim_proc : process

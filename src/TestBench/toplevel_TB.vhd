@@ -17,7 +17,7 @@ architecture Behavioral of TopLevel_tb is
     signal test_mode      : std_logic := '0';
     signal S1ATO_override : std_logic := '1';
     signal S2ATO_override : std_logic := '0';
-    signal CurrentTemp_override : unsigned(12 downto 0) := (others => '0');
+    signal CurrentTemp_override : unsigned(12 downto 0) := to_unsigned(408, 13);
 
     signal btn_time             : std_logic := '0';
     signal btn_hour             : std_logic := '0';
@@ -88,7 +88,7 @@ begin
         hour_on_debug => hour_on_debug,
         min_off_debug => min_off_debug,
         hour_off_debug => hour_off_debug,
-        test_mode => test_mode,
+        
         S1ATO_override => S1ATO_override,
         S2ATO_override => S2ATO_override,
         CurrentTemp_override => CurrentTemp_override,
@@ -173,11 +173,11 @@ begin
         btn_time_lights_of <= '0';
         wait for 2 ms;
 
-        for raw_temp in 320 to 408 loop -- slowly increment temp from 20c to 25.5c
-            CurrentTemp_override <= to_unsigned(raw_temp, 13);
-            wait for 1 ms;
-        end loop;
-        wait for 10 ms;
+        --for raw_temp in 320 to 408 loop -- slowly increment temp from 20c to 25.5c
+          --  CurrentTemp_override <= to_unsigned(raw_temp, 13);
+            --wait for 1 ms;
+        --end loop;
+        --wait for 10 ms;
 
         --lighting test
         btn_time <= '1'; --advance time to watch lights go out
@@ -231,11 +231,12 @@ begin
         S2ATO_override <= '1'; wait for 5 ms;--test ato sensor error
         sw_maint <= '1'; wait for 5 ms; --reset
         sw_maint <= '0'; wait for 5 ms; 
-        S1ATO_override <= '0'; --test ato timeout
+        S1ATO_override <= '1'; --test ato timeout
         S2ATO_override <= '0'; 
-        wait for 125 ms;
+        wait for 10 ms;
         sw_maint <= '1'; wait for 5 ms; --reset
         sw_maint <= '0'; wait for 5 ms;
+		 S1ATO_override <= '0'; -- wait for timeout
         
             
         --Feed mode test    

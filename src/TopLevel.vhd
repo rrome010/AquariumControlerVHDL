@@ -7,7 +7,6 @@ entity TopLevel is
         clk_1hz        : in std_logic;
         compclock      : in std_logic;
         reset          : in std_logic;
-        --btn_feed       : in std_logic;
         sw_maint       : in std_logic;
 		
 		Feed : in std_logic;
@@ -19,8 +18,6 @@ entity TopLevel is
         ato_pump_out   : out std_logic;
         Hold_Heat      : out std_logic;
 		
-		
-
         -- Debug outputs
         min_on_out     : out unsigned(5 downto 0);
         hour_on_out    : out unsigned(4 downto 0);
@@ -43,7 +40,6 @@ entity TopLevel is
         hour_off_debug : out unsigned(4 downto 0);
 
         -- Test/Override inputs
-        test_mode            : in std_logic := '0';
         S1ATO_override       : in std_logic := '0';
         S2ATO_override       : in std_logic := '0';
         CurrentTemp_override : in unsigned(12 downto 0) := (others => '0');
@@ -63,7 +59,7 @@ end TopLevel;
 architecture Behavioral of TopLevel is
 
     -- Internal signals
-    signal maintenance_in       : std_logic := '0';
+    signal maintenance_signal : std_logic := '0';  -- Renamed for clarity
     signal maintenance_holdheat : std_logic := '0';
 	signal maint_pumps : std_logic;
 	signal feed_pumps  : std_logic;
@@ -164,8 +160,12 @@ begin
             compclock => compclock,
             swmaint   => sw_maint,
             holdheat  => maintenance_holdheat,
-			maint_pumps    => maint_pumps
+			maint_pumps => maint_pumps
         );
+    
+    -- Connect maintenance signal for ATO (this was missing)
+    maintenance_signal <= sw_maint;
+
 -- Instantiation of feed mode
 FeedMode_Inst : entity work.feedmode
     port map (
@@ -182,7 +182,7 @@ FeedMode_Inst : entity work.feedmode
         clk_1hz        => clk_1hz,
         compclock      => compclock,
         ATO_RESET      => reset,
-        maintenance_in => maintenance_in,
+        maintenance_in => maintenance_signal,  -- Connect to maintenance signal
         S1ATO          => S1ATO_override,
         S2ATO          => S2ATO_override,
         ATO_PUMP       => ato_pump_signal,
@@ -212,7 +212,7 @@ FeedMode_Inst : entity work.feedmode
 
     -- Debug outputs
     light_on_off   <= to_stdlogic(light_on_off_sig);
-    ATO_ERROR      <= '0'; 
+    ATO_ERROR      <= ato_error_signal; 
     sec_out_debug  <= sec_out;
     min_out_debug  <= min_out;
     hour_out_debug <= hour_out;

@@ -1,0 +1,160 @@
+<config>
+    <version>
+        3.0
+    </version>
+    <comment>
+    </comment>
+    <databases>
+        <database id="">*virtual*</database>
+        <database id="347df6871e5ab8551968c40ab7a50c00">TopLevel(everythingsim).asdb</database>
+    </databases>
+    <gridshown/>
+    <signallists>
+        <signallist id="0">
+                AAAACQYAAAEERsYPBJsRAAAA
+|
+        </signallist>
+    </signallists>
+    <propertybases>
+        <propertybase id="0">
+            <propclass name="radix">
+                <property first="9" last="9">
+                10
+                </property>
+                <property first="17" last="17">
+                10
+                </property>
+                <property first="25" last="25">
+                10
+                </property>
+                <property first="36" last="36">
+                10
+                </property>
+                <property first="44" last="44">
+                10
+                </property>
+                <property first="51" last="51">
+                10
+                </property>
+                <property first="59" last="59">
+                10
+                </property>
+                <property first="68" last="68">
+                10
+                </property>
+                <property first="87" last="87">
+                10
+                </property>
+                <property first="102" last="102">
+                10
+                </property>
+                <property first="117" last="117">
+                10
+                </property>
+            </propclass>
+            <propclass name="mode">
+            </propclass>
+            <propclass name="notation">
+            </propclass>
+            <propclass name="reverse">
+            </propclass>
+            <propclass name="bold">
+            </propclass>
+            <propclass name="row_height">
+            </propclass>
+            <propclass name="color">
+            </propclass>
+            <propclass name="compared">
+            </propclass>
+            <propclass name="analog_bounds">
+                <property first="140" last="141">
+                [-1,1]
+                </property>
+                <property first="144" last="147">
+                [-1,1]
+                </property>
+            </propclass>
+            <propclass name="fixedpoint">
+            </propclass>
+            <propclass name="floating_encoding">
+            </propclass>
+            <propclass name="floating_notation">
+            </propclass>
+            <propclass name="floating_precision">
+            </propclass>
+            <propclass name="rounding_method">
+            </propclass>
+            <propclass name="aliasname">
+            </propclass>
+        </propertybase>
+    </propertybases>
+    <timebases>
+        <timebase id="0">
+            <time start_time="0" end_time="510912696320" />
+        </timebase>
+    </timebases>
+    <prefbases>
+        <prefbase id="0" >
+        </prefbase>
+    </prefbases>
+    <bookmarkbases>
+        <bookmarks id="0">
+        </bookmarks>
+    </bookmarkbases>
+    <cursorbases>
+        <cursors id="0">
+            <cursor value="189484126208" label="Cursor 1" locked="0" />
+        </cursors>
+    </cursorbases>
+    <measurementbases>
+    </measurementbases>
+    <commentbases>
+        <comments id="0">
+        </comments>
+    </commentbases>
+    <views>
+        <view signallist="0" propertybase="0" prefbase="0" type="1" bookmarks="0" cursors="0" measurements="-1" comments="-1" />
+    </views>
+    <virtualsources>
+        <virtualnamedrows>
+        </virtualnamedrows>
+        <virtualbuses>
+            <virtualbus id="1" name="Clocks and Reset" group="true" analog="false">
+                    AAAABgMAAAIBBxERAAAA
+|
+            </virtualbus>
+            <virtualbus id="5" name="Time and Lighting" group="true" analog="false">
+                    AAAAFAACAAAGAQ8BGAg5AQAAAwEHCB8IeVcRAAAA
+|
+            </virtualbus>
+            <virtualbus id="67" name="Temp and Heater Control" group="true" analog="false">
+                    AAAADgsAAEQXBwEDATETAADxkREAAAAA
+|
+            </virtualbus>
+            <virtualbus id="133" name="ATO" group="true" analog="false">
+                    AAAABwQAAIYBDwGcEQAA
+|
+            </virtualbus>
+            <virtualbus id="138" name="Feed Mode" group="true" analog="false">
+                    AAAABgMAAIsHAZgRAAAA
+|
+            </virtualbus>
+            <virtualbus id="142" name="Maint Mode" group="true" analog="false">
+                    AAAACAUAAI8fAQMBhhEAAAAA
+|
+            </virtualbus>
+        </virtualbuses>
+        <virtualalias>
+                AAAA8QAGP/8CAgAAEAMAABACAAAQBQAAEAYAABAETAIIEwAAEP//EgAAEBFVAh5VAR9MAAI3AAAQOE0C        Od8A//87xAHlAlldAQhFBBlVBU9PAP//SFUBSVQCfQBL3QAaXQDIVQybhQSZTQ/NXQ7MXRCCTQGNRQ6O        RQOPVQSoXwD//6pFAi5dCClFBCpdBivdAChVBoyFBJNUAHwFfQY2TQg1RQbeTAIL3wAAENgAABDAAF4A        ABARAAAA
+|
+        </virtualalias>
+        <virtualbusalias>
+                AAAAbg488wlEAAAQXQAAEAFFAAAQTGABCUIAABDPPEQAABA7Bl0BCVoBBwVVARtQAQEB888cQQYVaQEN        QQN3UgEFQ1EAVVQHATzzBWtBA1lNBQN0BoAGCAgAABDAAP4AABCWEQAA
+|
+        </virtualbusalias>
+        <virtualanalogalias>
+        </virtualanalogalias>
+        <virtualanalogbusalias>
+        </virtualanalogbusalias>
+        </virtualsources>
+</config>
