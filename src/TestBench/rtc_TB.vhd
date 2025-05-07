@@ -43,7 +43,7 @@ begin
 			hour_out  => hour_out
 		);
 
-	-- Simulate a real-time 1Hz clock (1 second period)
+	-- fake 1hz clock
 	clk_process: process
 	begin
 		loop

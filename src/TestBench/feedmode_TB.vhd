@@ -47,7 +47,7 @@ begin
         end loop;
     end process;
 
-    -- Simulated faster "1Hz"
+    -- fake 1hz clock
     clk1hz_proc : process
     begin
         loop
@@ -61,7 +61,7 @@ begin
     -- Stimulus Process
     stimulus : process
     begin
-        -- Wait for initial stabilization
+        
         wait for 2 ms;
 
         -- Trigger feed mode

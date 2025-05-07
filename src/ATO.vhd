@@ -16,7 +16,7 @@ entity ATO is
 end ATO;
 
 architecture Behavioral of ATO is
-    -- States based on flowchart
+
     type STATE_TYPE is (IDLE, FILL, ERROR_STATE, MAINTENANCE);
     signal state : STATE_TYPE := IDLE;
     signal seconds_counter : UNSIGNED(7 downto 0) := (others => '0');
@@ -25,7 +25,7 @@ begin
     process(compclock, ATO_RESET)
     begin
         if ATO_RESET = '1' then
-            -- Reset - go to IDLE state per flowchart
+            
             state <= IDLE;
             ATO_PUMP <= '0';
             ATO_ERROR <= '0';
@@ -39,7 +39,7 @@ begin
             ATO_PUMP <= '0';
             ATO_ERROR <= '0';
             
-            -- State machine logic
+            
             case state is
                 when IDLE =>
                     if maintenance_in = '1' then

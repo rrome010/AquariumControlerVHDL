@@ -13,7 +13,7 @@ end maintenance;
 
 architecture Behavioral of maintenance is
 
-    -- Define the states
+    
     type state_type is (normal, maint);
     signal current_state : state_type := normal;
 

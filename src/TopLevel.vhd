@@ -59,7 +59,7 @@ end TopLevel;
 architecture Behavioral of TopLevel is
 
     -- Internal signals
-    signal maintenance_signal : std_logic := '0';  -- Renamed for clarity
+    signal maintenance_signal : std_logic := '0';  
     signal maintenance_holdheat : std_logic := '0';
 	signal maint_pumps : std_logic;
 	signal feed_pumps  : std_logic;
@@ -67,7 +67,7 @@ architecture Behavioral of TopLevel is
 	
 	signal Feed_in : std_logic := '0';
 
-    --signal feed_active      : std_logic := '0';
+    
     signal feed_start_min   : unsigned(5 downto 0) := (others => '0');
 
     signal ato_pump_signal  : std_logic := '0';
@@ -93,7 +93,6 @@ architecture Behavioral of TopLevel is
 	signal skimmer_feed_sig : std_logic := '0'; 
 
 	
-	-- Function to convert BIT to STD_LOGIC
     function to_stdlogic(b: bit) return std_logic is
     begin
         if b = '0' then
@@ -162,9 +161,7 @@ begin
             holdheat  => maintenance_holdheat,
 			maint_pumps => maint_pumps
         );
-    
-    -- Connect maintenance signal for ATO (this was missing)
-    maintenance_signal <= sw_maint;
+    maintenance_signal <= sw_maint; --fix for assignment issue
 
 -- Instantiation of feed mode
 FeedMode_Inst : entity work.feedmode

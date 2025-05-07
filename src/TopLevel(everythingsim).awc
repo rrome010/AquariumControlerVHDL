@@ -6,49 +6,61 @@
     </comment>
     <databases>
         <database id="">*virtual*</database>
-        <database id="347df6871e5ab8551968c40ab7a50c00">TopLevel(everythingsim).asdb</database>
+        <database id="5811224e1bcb2be51b6871f234001a00">TopLevel(everythingsim).asdb</database>
     </databases>
     <gridshown/>
     <signallists>
         <signallist id="0">
-                AAAACQYAAAEERsYPBJsRAAAA
+                AAAACQYAAAE+vgcLHIQRAAAA
 |
         </signallist>
     </signallists>
     <propertybases>
         <propertybase id="0">
             <propclass name="radix">
-                <property first="9" last="9">
+                <property first="5" last="5">
                 10
                 </property>
-                <property first="17" last="17">
+                <property first="13" last="13">
                 10
                 </property>
-                <property first="25" last="25">
+                <property first="21" last="21">
                 10
                 </property>
-                <property first="36" last="36">
+                <property first="33" last="33">
                 10
                 </property>
-                <property first="44" last="44">
+                <property first="41" last="41">
                 10
                 </property>
-                <property first="51" last="51">
+                <property first="48" last="48">
                 10
                 </property>
-                <property first="59" last="59">
+                <property first="56" last="56">
                 10
                 </property>
-                <property first="68" last="68">
+                <property first="64" last="64">
                 10
                 </property>
-                <property first="87" last="87">
+                <property first="80" last="80">
                 10
                 </property>
-                <property first="102" last="102">
+                <property first="83" last="84">
                 10
                 </property>
-                <property first="117" last="117">
+                <property first="99" last="99">
+                10
+                </property>
+                <property first="114" last="114">
+                10
+                </property>
+                <property first="130" last="130">
+                10
+                </property>
+                <property first="134" last="134">
+                10
+                </property>
+                <property first="142" last="142">
                 10
                 </property>
             </propclass>
@@ -67,10 +79,19 @@
             <propclass name="compared">
             </propclass>
             <propclass name="analog_bounds">
-                <property first="140" last="141">
+                <property first="82" last="83">
                 [-1,1]
                 </property>
-                <property first="144" last="147">
+                <property first="99" last="99">
+                [-1,1]
+                </property>
+                <property first="132" last="133">
+                [-1,1]
+                </property>
+                <property first="136" last="140">
+                [-1,1]
+                </property>
+                <property first="143" last="144">
                 [-1,1]
                 </property>
             </propclass>
@@ -90,7 +111,7 @@
     </propertybases>
     <timebases>
         <timebase id="0">
-            <time start_time="0" end_time="510912696320" />
+            <time start_time="0" end_time="1209540961146" />
         </timebase>
     </timebases>
     <prefbases>
@@ -103,7 +124,7 @@
     </bookmarkbases>
     <cursorbases>
         <cursors id="0">
-            <cursor value="189484126208" label="Cursor 1" locked="0" />
+            <cursor value="64185034868" label="Cursor 1" locked="0" />
         </cursors>
     </cursorbases>
     <measurementbases>
@@ -119,37 +140,37 @@
         <virtualnamedrows>
         </virtualnamedrows>
         <virtualbuses>
-            <virtualbus id="1" name="Clocks and Reset" group="true" analog="false">
-                    AAAABgMAAAIBBxERAAAA
+            <virtualbus id="1" name="Time and Lighting" group="true" analog="false">
+                    AAAAFAACAAACAQcBCBgJAQAAAwE/AQgZCC0RAAAA
 |
             </virtualbus>
-            <virtualbus id="5" name="Time and Lighting" group="true" analog="false">
-                    AAAAFAACAAAGAQ8BGAg5AQAAAwEHCB8IeVcRAAAA
+            <virtualbus id="63" name="Temp and Heater control" group="true" analog="false">
+                    AAAADgsAAEAPHwEDAQc3AAARZxEAAAAA
 |
             </virtualbus>
-            <virtualbus id="67" name="Temp and Heater Control" group="true" analog="false">
-                    AAAADgsAAEQXBwEDATETAADxkREAAAAA
+            <virtualbus id="129" name="ATO" group="true" analog="false">
+                    AAAABwQAAIIBBwGQEQAA
 |
             </virtualbus>
-            <virtualbus id="133" name="ATO" group="true" analog="false">
-                    AAAABwQAAIYBDwGcEQAA
+            <virtualbus id="134" name="Maint mode" group="true" analog="false">
+                    AAAACQYAAIcPAQMBB5kRAAAA
 |
             </virtualbus>
-            <virtualbus id="138" name="Feed Mode" group="true" analog="false">
-                    AAAABgMAAIsHAZgRAAAA
+            <virtualbus id="141" name="Feed mode" group="true" analog="false">
+                    AAAABgMAAI4BH4URAAAA
 |
             </virtualbus>
-            <virtualbus id="142" name="Maint Mode" group="true" analog="false">
-                    AAAACAUAAI8fAQMBhhEAAAAA
+            <virtualbus id="145" name="Clocks and Reset signal" group="true" analog="false">
+                    AAAABgMAAJIBB4ERAAAA
 |
             </virtualbus>
         </virtualbuses>
         <virtualalias>
-                AAAA8QAGP/8CAgAAEAMAABACAAAQBQAAEAYAABAETAIIEwAAEP//EgAAEBFVAh5VAR9MAAI3AAAQOE0C        Od8A//87xAHlAlldAQhFBBlVBU9PAP//SFUBSVQCfQBL3QAaXQDIVQybhQSZTQ/NXQ7MXRCCTQGNRQ6O        RQOPVQSoXwD//6pFAi5dCClFBCpdBivdAChVBoyFBJNUAHwFfQY2TQg1RQbeTAIL3wAAENgAABDAAF4A        ABARAAAA
+                AAAA+QACP/8CFwAAEBYAABAVAAAQEgAAEBNMAAgLAAAQBAAAEP//BcUBB9wA/AECOwAAEACFBG9dBVNV        A0xNCE3dAE/dAB6FBB/VAZ1VAYdVDYZFBYVVDYJdAKVPAv//pFUCzlUEzE0AhF0Ji10BLkUDL98A//8t        TQWVVQOUVQLHTQ/A3QDFVQUrTAEE//8qAAAQKV0FNlUBN1UFNUUMklUDk9wAC/wAlQAAEJYAABAXAAAQ        EQAA
 |
         </virtualalias>
         <virtualbusalias>
-                AAAAbg488wlEAAAQXQAAEAFFAAAQTGABCUIAABDPPEQAABA7Bl0BCVoBBwVVARtQAQEB888cQQYVaQEN        QQN3UgEFQ1EAVVQHATzzBWtBA1lNBQN0BoAGCAgAABDAAP4AABCWEQAA
+                AAAAbgU88wVIAAAQQUwAAwFZAAAQQGABA04AABDPPGgBAzoDAAAQCmwCAgAAABAGXAIBH/PPH10EGEoB        Dw5BAQheAn5HRAQJSQAAEDzzGjsAABANWgEBX0ABDU0AABADDwAAEMAA/QAAEJURAAAA
 |
         </virtualbusalias>
         <virtualanalogalias>

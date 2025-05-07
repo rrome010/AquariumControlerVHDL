@@ -17,7 +17,7 @@ architecture Behavioral of feedmode is
     type state_type is (normal, feed);
     signal current_state : state_type := normal;
     
-    signal feed_counter   : unsigned(15 downto 0) := (others => '0'); -- enough for counting seconds (>1 hour)
+    signal feed_counter   : unsigned(15 downto 0) := (others => '0'); -- to track time
     signal clk_1hz_prev   : std_logic := '0'; -- For edge detection
 
 begin
@@ -49,10 +49,10 @@ begin
                         Feed_Pumps <= '0';  -- Pumps OFF during first 600 seconds (sped up for simulation)
                         skimmer    <= '0';
                     elsif feed_counter > to_unsigned(100, 16) and feed_counter < to_unsigned(200, 16) then
-                        Feed_Pumps <= '1';  -- Pumps ON after 600 seconds	  (sped up for simulation)
+                        Feed_Pumps <= '1';  -- short time for sim
                         skimmer    <= '0';
                     else -- feed_counter >= 14400
-                        skimmer    <= '1';  -- Skimmer ON after 1 hour		 (sped up for simulation)
+                        skimmer    <= '1';  -- Skimmer ON (short time for sim)
                         current_state <= normal;
                     end if;
 

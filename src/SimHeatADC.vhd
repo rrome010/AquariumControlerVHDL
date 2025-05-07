@@ -2,7 +2,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
--- Not synthesizable: simulation-only DS18B20 interface
+
 entity SimHeatADC is
     port (
         clk_1mhz         : in  std_logic;

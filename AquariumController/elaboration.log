@@ -1,4 +1,4 @@
-Active-HDL 12.0.118.7745 2025-05-07 17:54:43
+Active-HDL 12.0.118.7745 2025-05-07 19:12:03
 
 Elaboration top modules:
 Architecture                  Behavioral(TopLevel_tb)
@@ -7,14 +7,14 @@ Architecture                  Behavioral(TopLevel_tb)
 ------------------------------------------------------------------------------------------------------------
 Entity           | Architecture | Library            | Info | Compiler Version        | Compilation Options
 ------------------------------------------------------------------------------------------------------------
-TopLevel_tb      | Behavioral   | aquariumcontroller |      | 12.0.118.7745 (Windows) | -O3 -2019
-TopLevel         | Behavioral   | aquariumcontroller |      | 12.0.118.7745 (Windows) | -O3 -2019
-RTC              | Behavioral   | aquariumcontroller |      | 12.0.118.7745 (Windows) | -O3 -2019
-Lighting_Control | Behavioral   | aquariumcontroller |      | 12.0.118.7745 (Windows) | -O3 -2019
-Heat_control     | behavioral   | aquariumcontroller |      | 12.0.118.7745 (Windows) | -O3 -2019
-maintenance      | Behavioral   | aquariumcontroller |      | 12.0.118.7745 (Windows) | -O3 -2019
-feedmode         | Behavioral   | aquariumcontroller |      | 12.0.118.7745 (Windows) | -O3 -2019
-ATO              | Behavioral   | aquariumcontroller |      | 12.0.118.7745 (Windows) | -O3 -2019
+TopLevel_tb      | Behavioral   | aquariumcontroller |      | 12.0.118.7745 (Windows) | -O3
+TopLevel         | Behavioral   | aquariumcontroller |      | 12.0.118.7745 (Windows) | -O3
+RTC              | Behavioral   | aquariumcontroller |      | 12.0.118.7745 (Windows) | -O3
+Lighting_Control | Behavioral   | aquariumcontroller |      | 12.0.118.7745 (Windows) | -O3
+Heat_control     | behavioral   | aquariumcontroller |      | 12.0.118.7745 (Windows) | -O3
+maintenance      | Behavioral   | aquariumcontroller |      | 12.0.118.7745 (Windows) | -O3
+feedmode         | Behavioral   | aquariumcontroller |      | 12.0.118.7745 (Windows) | -O3
+ATO              | Behavioral   | aquariumcontroller |      | 12.0.118.7745 (Windows) | -O3
 ------------------------------------------------------------------------------------------------------------
 
 ------------------------------------------------------------------------------------------------------------
@@ -33,3 +33,9 @@ aquariumcontroller              | None
 ieee                            | Standard IEEE packages library
 std                             | Standard VHDL library
 ------------------------------------------------------------------------------------------------------------
+
+
+Simulation Options: asim -O5 +access +r +m+TopLevel_tb TopLevel_tb Behavioral
+
+
+The performance of simulation is reduced. Version EDU Edition

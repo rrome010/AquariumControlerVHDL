@@ -21,7 +21,7 @@ architecture TB_ARCHITECTURE of heat_control_tb is
             tempuser        : out UNSIGNED(12 downto 0);
             tempmin         : out UNSIGNED(12 downto 0);
             heater          : out STD_LOGIC;
-            TempError       : out STD_LOGIC;
+            TempError       : out STD_LOGIC
         );
     end component;
 

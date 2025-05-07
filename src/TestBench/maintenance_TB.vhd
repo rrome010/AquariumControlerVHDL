@@ -65,7 +65,6 @@ begin
 		swmaint <= '1';
 		wait for 200 ns;
 
-		-- Finish simulation
 		wait;
 	end process;
 

@@ -129,7 +129,7 @@ begin
         wait for 10 sec;	
 		maintenance_in <= '1';
         wait for 2 sec;
-        -- Hold forever to observe behavior
+        
         wait;
     end process;
 
