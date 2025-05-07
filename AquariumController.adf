@@ -28,7 +28,7 @@ WindowVisible=0
 Synchronize=0
 
 [HierarchyViewer]
-HierarchyInformation=ato_tb|TB_ARCHITECTURE|0 toplevel_tb|Behavioral|0 
+HierarchyInformation=toplevel_tb|Behavioral|0  
 ShowHide=ShowTopLevel
 Selected=
 

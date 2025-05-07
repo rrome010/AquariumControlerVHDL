@@ -148,36 +148,58 @@ begin
         end loop;
         btn_time <= '0';
         wait for 2 ms;
+--
+--        btn_time_lights_on <= '1'; --change light on to 8:30
+--        wait for 1 ms;
+--        for i in 1 to 8 loop
+--            btn_light_hour <= '1'; wait for 1 ms; btn_light_hour <= '0'; wait for 1 ms;
+--        end loop;
+--        for i in 1 to 30 loop
+--            btn_light_min <= '1'; wait for 1 ms; btn_light_min <= '0'; wait for 1 ms;
+--        end loop;
+--        btn_time_lights_on <= '0';
+--        wait for 2 ms;
+--
+--        --Lighting time input    
+--        btn_time_lights_of <= '1'; --change lights off time to 4 pm / 16:00
+--        wait for 1 ms;
+--        for i in 1 to 8 loop
+--            btn_light_hour <= '1'; wait for 1 ms; btn_light_hour <= '0'; wait for 1 ms;
+--        end loop;
+--        for i in 1 to 30 loop
+--            btn_light_min <= '1'; wait for 1 ms; btn_light_min <= '0'; wait for 1 ms;
+--        end loop;
+--        btn_time_lights_on <= '0';
+--        btn_time_lights_of <= '0';
+--        wait for 2 ms;
+		  btn_time_lights_on <= '1'; -- Set light on time mode
+wait for 10 ns;
 
-        btn_time_lights_on <= '1'; --change light on to 8:30
-        wait for 1 ms;
-        for i in 1 to 8 loop
-            btn_light_hour <= '1'; wait for 1 ms; btn_light_hour <= '0'; wait for 1 ms;
-        end loop;
-        for i in 1 to 30 loop
-            btn_light_min <= '1'; wait for 1 ms; btn_light_min <= '0'; wait for 1 ms;
-        end loop;
-        btn_time_lights_on <= '0';
-        wait for 2 ms;
+for i in 1 to 8 loop
+    btn_light_hour <= '1'; wait for 10 ns;
+    btn_light_hour <= '0'; wait for 10 ns;
+end loop;
 
-        --Lighting time input    
-        btn_time_lights_of <= '1'; --change lights off time to 4 pm / 16:00
-        wait for 1 ms;
-        for i in 1 to 8 loop
-            btn_light_hour <= '1'; wait for 1 ms; btn_light_hour <= '0'; wait for 1 ms;
-        end loop;
-        for i in 1 to 30 loop
-            btn_light_min <= '1'; wait for 1 ms; btn_light_min <= '0'; wait for 1 ms;
-        end loop;
-        btn_time_lights_on <= '0';
-        btn_time_lights_of <= '0';
-        wait for 2 ms;
+for i in 1 to 30 loop
+    btn_light_min <= '1'; wait for 10 ns;
+    btn_light_min <= '0'; wait for 10 ns;
+end loop;
 
-        --for raw_temp in 320 to 408 loop -- slowly increment temp from 20c to 25.5c
-          --  CurrentTemp_override <= to_unsigned(raw_temp, 13);
-            --wait for 1 ms;
-        --end loop;
-        --wait for 10 ms;
+btn_time_lights_on <= '0';
+wait for 20 ns;
+
+-- Lighting OFF time input
+btn_time_lights_of <= '1'; -- Set lights off to 16:00
+wait for 10 ns;
+
+for i in 1 to 16 loop
+    btn_light_hour <= '1'; wait for 10 ns;
+    btn_light_hour <= '0'; wait for 10 ns;
+end loop;
+btn_time_lights_of <= '0'; wait for 65 ms;
+
+
+
 
         --lighting test
         btn_time <= '1'; --advance time to watch lights go out
