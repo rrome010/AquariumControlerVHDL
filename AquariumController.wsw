@@ -1,8 +1,31 @@
 [OPENDOC|Aldec.WaveFormASDB.7|.\src\TopLevel(everythingsim).awc|]
 TemplateId=0
-ActiveDocument=1
+tab=lu
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\src\Heat control.vhd|]
+TemplateId=0
+tab=lu
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\src\ATO.vhd|]
+TemplateId=0
+tab=lu
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\src\Lighting control.vhd|]
+TemplateId=0
+tab=lu
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\src\RTC CLOCK.vhd|]
+TemplateId=0
+tab=lu
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\src\SimHeatADC.vhd|]
+TemplateId=0
+tab=lu
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\src\Maitenence.vhd|]
+TemplateId=0
 tab=lu
 [OPENDOC|Aldec.Hde.HdePlugIn.7|.\src\Feed.vhd|]
+TemplateId=0
+tab=lu
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\src\TopLevel.vhd|]
+TemplateId=0
+tab=lu
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\src\TestBench/toplevel_TB.vhd|]
 TemplateId=0
 tab=lu
 [OPENDOC|Aldec.Hde.HdePlugIn.7|.\src\TestBench/feedmode_TB.vhd|]
@@ -10,4 +33,17 @@ TemplateId=0
 tab=lu
 [OPENDOC|Aldec.Hde.HdePlugIn.7|.\src\TestBench/lighting_control_TB.vhd|]
 TemplateId=0
+tab=lu
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\src\TestBench/ato_TB.vhd|]
+TemplateId=0
+tab=lu
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\src\TestBench/simheatadc_TB.vhd|]
+TemplateId=0
+tab=lu
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\src\TestBench/rtc_TB.vhd|]
+TemplateId=0
+tab=lu
+[OPENDOC|Aldec.Hde.HdePlugIn.7|.\src\TestBench/maintenance_TB.vhd|]
+TemplateId=0
+ActiveDocument=1
 tab=lu

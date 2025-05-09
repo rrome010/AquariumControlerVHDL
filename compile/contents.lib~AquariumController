@@ -1,7 +1,7 @@
-356
+368
 ~E 1 "../src/ato.vhd" 5 ATO
 ~A 1 "../src/ato.vhd" 18 Behavioral
-~E 1 "../src/testbench/ato_tb.vhd" 5 ato_tb
+~E 1 "../src/TestBench/ato_TB.vhd" 5 ato_tb
 ~A 1 "../src/testbench/ato_tb.vhd" 8 TB_ARCHITECTURE
 ~E 1 "../src/feed.vhd" 5 feedmode
 ~A 1 "../src/feed.vhd" 15 Behavioral
@@ -9,23 +9,23 @@
 ~A 1 "../src/testbench/feedmode_tb.vhd" 8 TB_ARCHITECTURE
 ~E 1 "../src/heat control.vhd" 5 Heat_control
 ~A 1 "../src/heat control.vhd" 23 behavioral
-~E 1 "../src/testbench/heat_control_tb.vhd" 5 heat_control_tb
+~E 1 "../src/TestBench/heat_control_TB.vhd" 5 heat_control_tb
 ~A 1 "../src/testbench/heat_control_tb.vhd" 8 TB_ARCHITECTURE
 ~E 1 "../src/lighting control.vhd" 5 Lighting_Control
 ~A 1 "../src/lighting control.vhd" 23 Behavioral
-~E 1 "../src/testbench/lighting_control_tb.vhd" 5 lighting_control_tb
+~E 1 "../src/TestBench/lighting_control_TB.vhd" 5 lighting_control_tb
 ~A 1 "../src/testbench/lighting_control_tb.vhd" 8 TB_ARCHITECTURE
 ~E 1 "../src/maitenence.vhd" 5 maintenance
 ~A 1 "../src/maitenence.vhd" 14 Behavioral
-~E 1 "../src/testbench/maintenance_tb.vhd" 5 maintenance_tb
+~E 1 "../src/TestBench/maintenance_TB.vhd" 5 maintenance_tb
 ~A 1 "../src/testbench/maintenance_tb.vhd" 8 TB_ARCHITECTURE
 ~E 1 "../src/rtc clock.vhd" 5 RTC
 ~A 1 "../src/rtc clock.vhd" 18 Behavioral
-~E 1 "../src/testbench/rtc_tb.vhd" 5 rtc_tb
+~E 1 "../src/TestBench/rtc_TB.vhd" 5 rtc_tb
 ~A 1 "../src/testbench/rtc_tb.vhd" 8 TB_ARCHITECTURE
 ~E 1 "../src/simheatadc.vhd" 6 SimHeatADC
 ~A 1 "../src/simheatadc.vhd" 14 behavior
-~E 1 "../src/testbench/simheatadc_tb.vhd" 5 SimHeatADC_tb
+~E 1 "../src/TestBench/simheatadc_TB.vhd" 5 SimHeatADC_tb
 ~A 1 "../src/testbench/simheatadc_tb.vhd" 8 TB_ARCHITECTURE
 ~C 1 "../src/testbench/ato_tb.vhd" 138 testbench_for_ato
 ~C 1 "../src/testbench/feedmode_tb.vhd" 80 testbench_for_feedmode

@@ -11,6 +11,6 @@ acom -2019 -O3 -e 100 -protect 0 -reorder "$dsn/src/testbench/heat_control_tb.vh
 acom -2019 -O3 -e 100 -protect 0 -reorder "$dsn/src/testbench/ato_tb.vhd"
 acom -2019 -O3 -e 100 -protect 0 -reorder "$dsn/src/testbench/simheatadc_tb.vhd"
 acom -2019 -O3 -e 100 -protect 0 -reorder "$dsn/src/testbench/rtc_tb.vhd"
-acom -2019 -O3 -e 100 -protect 0 -reorder "$dsn/src/testbench/toplevel_tb.vhd"
 acom -2019 -O3 -e 100 -protect 0 -reorder "$dsn/src/testbench/maintenance_tb.vhd"
+acom -2019 -O3 -e 100 -protect 0 -reorder "$dsn/src/testbench/toplevel_tb.vhd"
 acom -2019 -O3 -e 100 -protect 0 -reorder "$dsn/src/toplevel.vhd"
